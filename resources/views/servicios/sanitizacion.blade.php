@@ -28,7 +28,7 @@
 
   {{-- Metodologia --}}
   <section class="metodologia">
-    <h2 class="color-greenUltraDark">¿Qué haremos por Usted?</h2>
+    <h2 class="present-title color-greenUltraDark">¿Qué haremos por Usted?</h2>
 
     <div class="items pd-lr">
       <div class="item">

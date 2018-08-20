@@ -443,7 +443,7 @@ header
 
 @media (min-width: 667px)
   .hero
-    padding: 0 92px
+    padding: 68px 92px 0 92px
     h1
       margin-bottom: 26px
     p
@@ -455,7 +455,7 @@ header
 
 @media (min-width: 990px)
   .hero
-    padding: 0 140px
+    padding: 84px 140px 0 140px
     h1
       margin-bottom: 28px
     p
@@ -469,7 +469,7 @@ header
 
 @media (min-width: 1200px)
   .hero
-    padding: 0 180px
+    padding: 94px 180px 0 180px
     h1
       margin-bottom: 28px
     p
@@ -479,6 +479,19 @@ header
       margin-bottom: 36px
       padding-left: 50px
       padding-right: 50px
+    .cta-button
+
+@media (min-width: 1400px)
+  .hero
+    padding: 94px 180px 0 180px
+    h1
+      margin: auto
+      margin-bottom: 28px
+      width: 900px
+    p
+      margin: auto
+      width: 900px
+      margin-bottom: 36px
     .cta-button
 
 /* Clientes */
@@ -609,9 +622,12 @@ header
   h2
     margin-bottom: 40px
   .items
-    display: grid
-    grid-template-columns: 1fr 1fr
+    display: flex
+    justify-content: center
+    flex-direction: row
+    flex-wrap: wrap
     .item
+      width: 50%
       padding-bottom: 24px
       opacity: 1
       transition: all ease-in-out 0.2s
@@ -637,24 +653,22 @@ header
     h2
       margin-bottom: 62px
     .items
-
+      // display: flex
+      flex-wrap: nowrap
       margin-bottom: 14px
+      // justify-content: center
       .item
         margin-bottom: 22px
-        // &:nth-child(4)
-        //   grid-column-start: 1
-        //   grid-column-end: 3
-        // &:nth-child(5)
-        //   grid-column-start: 3
-        //   grid-column-end: 5
+        width: 100%
 
 @media (min-width: 990px)
   .servicios
     h2
       padding-top: 6px
     .items
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+      margin: auto
       margin-top: 64px
+      width: 95%
       .item
         margin-bottom: 40px
         a
@@ -669,8 +683,9 @@ header
     h2
       padding-top: 24px
     .items
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr
+      // margin: auto
       margin-top: 74px
+      width: 90%
       .item
         margin-bottom: 60px
         a
@@ -685,10 +700,9 @@ header
     h2
       padding-top: 46px
     .items
-      grid-template-columns: 1fr 1fr 1fr 1fr 1fr
-      margin-top: 80px
+      margin-top: 84px
       .item
-        margin-bottom: 60px
+        margin-bottom: 70px
         a
           img
             height: 68px
@@ -705,14 +719,14 @@ header
   h2
     margin-bottom: 32px
   .items
-    display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    justify-content: center
+    display: flex
+    justify-content: space-around
+    flex-direction: row
+    flex-wrap: wrap
     .item
-      // height: 70px
-      width: 100%
-      display: block
-      margin: auto
+      width: 120px
+      height: 100%
+      // margin: auto
       margin-bottom: 18px
 
 @media (min-width: 667px)
@@ -722,9 +736,10 @@ header
     h2
       margin-bottom: 38px
     .items
-      grid-template-columns: 1fr 1fr 1fr 1fr
+      justify-content: center
       .item
-        width: 85%
+        width: 150px
+        margin: 0 10px 0 10px
         margin-bottom: 21px
 
 @media (min-width: 990px)
@@ -732,40 +747,41 @@ header
     padding-top: 42px
     padding-bottom: 62px
     h2
+      margin-left: auto
+      margin-right: auto
       margin-bottom: 48px
-      padding: 0 160px
+      padding: 0
+      width: 80%
     .items
-      // grid-template-columns: 1fr 1fr 1fr
+      width: 90%
+      margin: auto
       .item
-        width: 70%
         margin-bottom: 21px
 
 @media (min-width: 1200px)
   .marcas
-    // padding-top: 42px
-    padding-bottom: 64px
-    // h2
-    //   margin-bottom: 48px
-    //   padding: 0 160px
+    padding-bottom: 58px
+    h2
+      width: 70%
     .items
-      // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
+      margin-left: auto
+      margin-right: auto
+      max-width: 800px
       .item
-        width: 60%
+        margin-left: 14px
+        margin-right: 14px
         margin-bottom: 28px
+        width: 160px
 
 @media (min-width: 1400px)
   .marcas
     padding-top: 46px
-    padding-bottom: 68px
+    padding-bottom: 70px
     h2
       margin-bottom: 54px
-    //   padding: 0 160px
     .items
-      // grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr
       .item
-        width: 55%
         margin-bottom: 28px
-
 
 /* Title Section: Titulo de página */
 .title-section
@@ -780,16 +796,52 @@ header
   color: white
   height: 320px
   padding-top: 72px
-  // overflow: hidden
   img
     height: 52px
     margin: auto
     margin-bottom: 14px
   h1
     font-size: 28px
-    // width: 90%
     margin: auto
-    // margin-bottom: 0
+
+@media (min-width: 667px)
+  .title-section
+    height: 420px
+    img
+      height: 65px
+      margin-bottom: 21px
+    h1
+      font-size: 34px
+
+@media (min-width: 900px)
+  .title-section
+    height: 490px
+    padding-top: 94px
+    img
+      height: 68px
+      margin-bottom: 22px
+    h1
+      font-size: 36px
+
+@media (min-width: 1200px)
+  .title-section
+    height: 530px
+    padding-top: 98px
+    img
+      height: 72px
+      margin-bottom: 24px
+    h1
+      font-size: 42px
+
+@media (min-width: 1400px)
+  .title-section
+    height: 580px
+    padding-top: 102px
+    img
+      height: 76px
+      margin-bottom: 21px
+    h1
+      font-size: 42px
 
 /* Present Section */
 // Definir color de fondo con clases predefinidas
@@ -840,6 +892,7 @@ header
     display: grid
     position: relative
     .img
+      display: none
     .data
       padding: 16px 28px
       h3
@@ -849,6 +902,171 @@ header
       p
         color: white
         font-size: 13px
+
+@media (min-width: 667px)
+  .present
+    padding-top: 68px
+    h2
+      font-size: 32px
+      line-height: 43px
+      margin-bottom: 32px
+    p.present-text
+      font-size: 17.5px
+      line-height: 27px
+      margin-bottom: 52px
+    .items-empresas
+      height: 868px
+    .items-hogares
+      height: 868px
+    .items
+      .item
+        padding: 50px 82px 53px
+        img
+          height: 72px
+          margin-bottom: 16px
+        h3
+          font-size: 23px
+          margin-bottom: 21px
+        p
+          font-size: 16px
+          line-height: 26px
+    .present-why-servicios
+      height: 550px
+    .present-why
+      .img
+        display: inherit
+        background-repeat: no-repeat
+        background-size: cover
+        background-position: center
+        height: 260px
+      .data
+        padding: 34px 42px
+        h3
+          font-size: 24px
+          margin-bottom: 24px
+        p
+          font-size: 15px
+          line-height: 23px
+
+@media (min-width: 900px)
+  .present
+    padding-top: 75px
+    h2
+      font-size: 38px
+      line-height: 48px
+      margin-bottom: 34px
+    p.present-text
+      font-size: 19px
+      line-height: 29px
+      // margin-bottom: 54px
+      width: 70%
+    .items-empresas
+      height: 345px
+    .items-hogares
+      height: 350px
+    .items
+      grid-template-columns: 1fr 1fr 1fr
+      grid-column-gap: 20px
+      .item
+        text-align: left
+        box-sizing: border-box
+        padding: 48px 42px 54px
+        img
+          height: 65px
+          margin-bottom: 18px
+        h3
+          font-size: 23px
+          line-height: 33px
+          margin-bottom: 19px
+        p
+          line-height: 25px
+    .present-why-servicios
+      height: 380px
+    .present-why
+      grid-template-columns: 0.5fr 0.8fr
+      .img
+        height: auto
+      .data
+        padding: 38px 52px
+        h3
+          font-size: 26px
+          margin-bottom: 28px
+        p
+          font-size: 15.5px
+          line-height: 25px
+
+@media (min-width: 1200px)
+  .present
+    padding-top: 80px
+    h2
+      font-size: 40px
+      line-height: 52px
+      margin-bottom: 38px
+    p.present-text
+      // font-size: 19px
+      line-height: 31px
+      margin-bottom: 54px
+      // width: 70%
+    .items-empresas
+      height: 345px
+    .items-hogares
+      height: 350px
+    .items
+      grid-template-columns: 1fr 1fr 1fr
+      grid-column-gap: 20px
+      .item
+        text-align: left
+        box-sizing: border-box
+        padding: 54px 40px 64px
+        img
+          height: 70px
+          margin-bottom: 20px
+        h3
+          font-size: 25px
+          line-height: 35px
+          margin-bottom: 19px
+        p
+          font-size: 17px
+    .present-why-servicios
+      height: 370px
+    .present-why
+      .img
+      .data
+        // padding:
+        h3
+        //
+        p
+        //
+
+@media (min-width: 1400px)
+  .present
+    padding-top: 84px
+    h2
+    p.present-text
+    .items-empresas
+    .items-hogares
+    .items
+      .item
+        text-align: left
+        box-sizing: border-box
+        padding: 58px 48px 68px
+        img
+          height: 70px
+          margin-bottom: 20px
+        h3
+          font-size: 25px
+          line-height: 35px
+          margin-bottom: 19px
+        p
+          font-size: 17px
+          // line-height: 26px
+    .present-why-servicios
+    .present-why
+      .img
+      .data
+        padding:
+        h3
+        p
 
 /* Metodologia */
 .metodologia
@@ -873,6 +1091,72 @@ header
         p
           font-size: 13px
 
+@media (min-width: 667px)
+  .metodologia
+    h2
+      // text-align: center
+      margin-bottom: 21px
+      margin-top: 136px
+    .items
+      padding-top: 38px
+      padding-bottom: 44px
+      // margin: auto
+      // width: 95%
+      display: grid
+      grid-template-columns: 0.8fr 1fr
+      grid-column-gap: 60px
+      .item
+        display: grid
+        grid-template-columns: 0.2fr 0.8fr
+        margin-bottom: 26px
+        img
+          width: 88%
+        .data
+          padding-left: 16px
+          h4
+            // margin-top: 0
+            font-size: 18px
+            margin-bottom: 13px
+          p
+            font-size: 14px
+            line-height: 21px
+
+@media (min-width: 900px)
+  .metodologia
+    h2
+      margin-bottom: 26px
+    .items
+      padding-bottom: 48px
+      .item
+        margin-bottom: 26px
+        img
+        .data
+          h4
+            font-size: 20px
+            margin-bottom: 13px
+          p
+            font-size: 14px
+            line-height: 21px
+
+@media (min-width: 1200px)
+  .metodologia
+    h2
+      margin-bottom: 30px
+    .items
+      padding-bottom: 54px
+      .item
+        margin-bottom: 31px
+        img
+          width: 80%
+        .data
+          padding-left: 20px
+          h4
+            font-size: 21px
+            margin-bottom: 14px
+          p
+            font-size: 15.5px
+            line-height: 23px
+
 /* CTA Visita */
 .cta-visita
   display: grid
@@ -891,6 +1175,67 @@ header
       transition: all ease-in-out 0.2s
   .item-img
     display: none
+
+@media (min-width: 667px)
+  .cta-visita
+    grid-template-columns: 0.7fr 0.6fr
+    text-align: left
+    .item-data
+      padding: 62px 60px 62px 31px
+      h2
+        font-size: 26px
+        line-height: 36px
+        margin-bottom: 21px
+      p
+        margin-bottom: 30px
+        font-size: 16px
+        line-height: 24px
+      .cta-button-visita
+    .item-img
+      display: inherit
+      background-position: center
+      background-size: cover
+      background-repeat: no-repeat
+
+@media (min-width: 900px)
+  .cta-visita
+    // grid-template-columns: 0.7fr 0.6fr
+    // text-align: left
+    .item-data
+      padding: 80px 70px 80px 50px
+      h2
+        font-size: 30px
+        line-height: 42px
+        margin-bottom: 21px
+      p
+        margin-bottom: 30px
+        font-size: 17px
+        line-height: 24.5px
+    //   .cta-button-visita
+    // .item-img
+    //   display: inherit
+    //   background-position: center
+    //   background-size: cover
+    //   background-repeat: no-repeat
+
+@media (min-width: 1200px)
+  .cta-visita
+    .item-data
+      padding: 100px 100px 100px 90px
+      h2
+        font-size: 32px
+        line-height: 44px
+        margin-bottom: 21px
+      p
+        width: 80%
+        margin-bottom: 30px
+        font-size: 18px
+        line-height: 26px
+
+@media (min-width: 1400px)
+  .cta-visita
+    .item-data
+      padding: 110px 100px 110px 130px
 
 /* Comps */
 // Comp General
@@ -916,6 +1261,79 @@ header
         font-size: 14px
         line-height: 19px
 
+@media (min-width: 667px)
+  .comp
+    padding-top: 68px
+    padding-bottom: 54px
+    h2
+      margin-bottom: 48px
+      width: 90%
+      font-size: 32px
+      line-height: 43px
+    .items
+      column-gap: 25px
+      .item
+        margin-bottom: 28px
+        img
+          height: 68px
+        h4
+          font-size: 18px
+          letter-spacing: 0.3px
+
+@media (min-width: 900px)
+  .comp
+    padding-top: 75px
+    padding-bottom: 54px
+    h2
+      margin-bottom: 60px
+      width: 70%
+      font-size: 38px
+      line-height: 48px
+    .items
+      width: 80%
+      margin: auto
+      column-gap: 30px
+      .item
+        img
+          height: 74px
+          margin-bottom: 6px
+        h4
+          font-size: 21px
+          line-height: 30px
+          letter-spacing: 0.3px
+
+@media (min-width: 1200px)
+  .comp
+    padding-top: 80px
+    padding-bottom: 65px
+    h2
+      margin-bottom: 65px
+      width: 70%
+      // font-size: 40px
+      // line-height: 52px
+    .items
+      width: 80%
+      margin: auto
+      column-gap: 30px
+      .item
+        img
+          height: 80px
+
+@media (min-width: 1400px)
+  .comp
+    padding-top: 84px
+    padding-bottom: 67px
+    h2
+      margin-bottom: 68px
+      // width: 70%
+    .items
+      width: 85%
+      // margin: auto
+      // column-gap: 30px
+      .item
+        img
+          height: 80px
+
 //Comp Single
 .comp_single
   text-align: center
@@ -929,6 +1347,54 @@ header
     margin-bottom: 16px
   p
     font-size: 13px
+
+@media (min-width: 667px)
+  .comp_single
+    // text-align: center
+    padding-top: 68px
+    padding-bottom: 68px
+    img
+      height: 90px
+      margin-bottom: 16px
+    h2
+      // margin-top: 0
+      font-size: 32px
+      margin-bottom: 30px
+    p
+      margin: auto
+      width: 85%
+      font-size: 15px
+      line-height: 23px
+
+@media (min-width: 990px)
+  .comp_single
+    padding-top: 80px
+    padding-bottom: 80px
+    img
+      height: 90px
+      margin-bottom: 22px
+    h2
+      font-size: 34px
+    p
+      margin: auto
+      width: 85%
+      font-size: 16px
+      line-height: 25px
+
+@media (min-width: 1200px)
+  .comp_single
+    padding-top: 98px
+    padding-bottom: 98px
+    img
+      height: 100px
+      margin-bottom: 22px
+    h2
+      font-size: 38px
+    p
+      // margin: auto
+      width: 75%
+      font-size: 18px
+      line-height: 28px
 
 /* Contacto */
 .contact-form
@@ -1056,6 +1522,133 @@ header
         transition: all ease-in-out 0.2s
         &:hover
           background: $darkGreen
+
+@media (min-width: 667px)
+  .contact-form
+    padding-top: 60px
+    padding-bottom: 54px
+    font-size: 14px
+    .the-form
+      margin-top: 38px
+      form
+        .fields-for
+          margin-bottom: 20px
+          p
+            margin-bottom: 8px
+            b
+              font-weight: 600
+          .select-button
+            border: none
+            background: #EEEEEE
+            display: inline-block
+            padding: 10px 19px
+            font-family: 'Route 159', sans-serif
+            margin-right: 6px
+            outline: none
+            cursor: pointer
+            transition: all ease-in-out 0.2s
+            &:hover
+              background: rgba($lightGray, 0.2)
+            p
+              padding: 0
+              margin: 0
+          .selected
+            background: $ultraDarkGreen
+            color: white
+            &:hover
+              background: $ultraDarkGreen
+        .fields-general
+          input
+            font-family: 'Route 159', sans-serif
+            padding: 10px
+            margin-bottom: 11px
+            width: 100%
+            box-sizing: border-box
+            outline: none
+        .fields-empresa
+          input
+            font-family: 'Route 159', sans-serif
+            padding: 10px
+            margin-bottom: 11px
+            width: 100%
+            box-sizing: border-box
+            outline: none
+        .fields-motivo
+          margin-top: 8px
+          margin-bottom: 21px
+          p
+            margin-bottom: 8px
+            b
+              font-weight: 600
+          .select-button-b
+            border: none
+            background: #EEEEEE
+            display: inline-block
+            padding: 10px 19px
+            font-family: 'Route 159', sans-serif
+            margin-right: 6px
+            outline: none
+            cursor: pointer
+            transition: all ease-in-out 0.2s
+            &:hover
+              background: rgba($lightGray, 0.2)
+            p
+              padding: 0
+              margin: 0
+          .selected
+            background: $ultraDarkGreen
+            color: white
+            &:hover
+              background: $ultraDarkGreen
+        .fields-servicios
+          margin-bottom: 16px
+          p
+            margin-bottom: 12px
+            b
+              font-weight: 600
+          .select-button-c
+            border: none
+            background: #EEEEEE
+            display: inline-block
+            padding: 10px 19px
+            font-family: 'Route 159', sans-serif
+            margin-right: 6px
+            margin-bottom: 8px
+            outline: none
+            cursor: pointer
+            transition: all ease-in-out 0.2s
+            &:hover
+              background: rgba($lightGray, 0.2)
+            p
+              padding: 0
+              margin: 0
+          .selected
+            background: $ultraDarkGreen
+            color: white
+            &:hover
+              background: $ultraDarkGreen
+        textarea.mensaje
+          width: 100%
+          height: 140px
+          box-sizing: border-box
+          padding: 10px
+          outline: none
+          font-family: 'Route 159', sans-serif
+        button.send-button
+          font-family: 'Route 159', sans-serif
+          padding: 10px
+          width: 100%
+          box-sizing: border-box
+          outline: none
+          background: $ultraDarkGreen
+          border: none
+          color: white
+          font-weight: 600
+          margin-top: 8px
+          cursor: pointer
+          transition: all ease-in-out 0.2s
+          &:hover
+            background: $darkGreen
 
 .bd-none
   display: none

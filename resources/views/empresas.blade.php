@@ -18,17 +18,17 @@
     <div class="items items-empresas">
       <div class="item">
         <img src="{{ asset('/icons/icono_experiencia.png') }}">
-        <h3 class="card-title">Experiencia y Especialización</h3>
+        <h3 class="card-title">Experiencia y<br> Especialización</h3>
         <p>Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. </p>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_evaluacion.png') }}">
-        <h3 class="card-title">Evaluación en Terreno</h3>
+        <h3 class="card-title">Evaluación en<br> Terreno</h3>
         <p>Un profesional calificado le asesorará completamente para ofrecerle el servicio adecuado para su necesidad.</p>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_seguimiento.png') }}">
-        <h3 class="card-title">Seguimiento y Retroalimentación</h3>
+        <h3 class="card-title">Seguimiento y<br> Retroalimentación</h3>
         <p>Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. </p>
       </div>
     </div>

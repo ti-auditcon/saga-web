@@ -16,7 +16,7 @@
     <p class="present-text">Las ratas, los ratones y otras plagas invaden su hogar en busca de las mismas comodidades del hogar que usted: comida, refugio y agua. Desafortunadamente, son más que un inconveniente. Son una amenaza para su propiedad, su salud y su sentido de seguridad.</p>
 
     <div class="present-why present-why-servicios">
-      <div class="img"></div>
+      <div class="img" style="background-image: url('/img/servicios_desratizacion1.jpg')"></div>
       <div class="data background-gray">
         <h3>¿Porqué es importante?</h3>
         <p>Este texto debería explicar como actua la desratización o control de roedores que ofrece SAGA Service en la desratización.</p>
@@ -28,7 +28,7 @@
 
   {{-- Metodologia --}}
   <section class="metodologia">
-    <h2 class="color-greenUltraDark">¿Qué haremos por Usted?</h2>
+    <h2 class="present-title color-greenUltraDark">¿Qué haremos por Usted?</h2>
 
     <div class="items pd-lr">
       <div class="item">
