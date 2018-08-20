@@ -8,7 +8,6 @@
 
       {{-- css --}}
       <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
-      <link rel="stylesheet" href="/css/master.css">
 
       {{-- Favicons --}}
       <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ asset('/fav/apple-touch-icon-57x57.png') }}" />
