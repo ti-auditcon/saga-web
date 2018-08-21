@@ -6,8 +6,8 @@
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/para_empresas.jpg')}}')">
-    <img src="{{ asset('/icons/saga_icon.png') }}">
-    <h1>Contáctese con Nosotros</h1>
+    <img class="animated fadeIn slow" src="{{ asset('/icons/saga_icon.png') }}">
+    <h1 class="animated fadeIn slow">Contáctese con Nosotros</h1>
   </section>
 
   {{-- Formulario --}}
@@ -83,8 +83,8 @@
   </section>
 
   {{-- Dirección y Mapa --}}
-  <section class="ubicacion">
-    <div class="datos-direccion background-lightGray">
+  <section class="ubicacion background-lightGray">
+    <div class="datos-direccion">
       <div class="item">
         <img src="{{ asset('/icons/contacto_ubicacion.png') }}">
         <p>Av. Rauquén 441<br>Lote No. 4<br>Sarmiento, Curicó</p>

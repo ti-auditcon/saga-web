@@ -6,16 +6,16 @@
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img_desinsectacion.jpg')}}')">
-    <img src="{{ asset('/icons/title_desinsectacion.png') }}">
-    <h1>Desinsectación</h1>
+    <img class="animated fadeIn slow" src="{{ asset('/icons/title_desinsectacion.png') }}">
+    <h1 class="animated fadeIn slow">Desinsectación</h1>
   </section>
 
   {{-- Present --}}
   <section class="present pd-lr background-blue">
-    <h2>Fumigación de insectos</h2>
-    <p class="present-text">Identificamos el o los insectos a controlar y actuamos sobre su superficie de trayectoris, nidos, sectores de alimentación y reproductivos para aplicar una fumigación eficaz que acabe con ellos.</p>
+    <h2 class="animated fadeIn slow">Fumigación de insectos</h2>
+    <p class="present-text animated fadeIn slow">Identificamos el o los insectos a controlar y actuamos sobre su superficie de trayectoris, nidos, sectores de alimentación y reproductivos para aplicar una fumigación eficaz que acabe con ellos.</p>
 
-    <div class="present-why present-why-servicios">
+    <div class="present-why present-why-servicios" data-aos="fade-up">
       <div class="img"></div>
       <div class="data background-gray">
         <h3>¿Porqué es importante?</h3>
@@ -63,8 +63,8 @@
   </section>
 
   {{-- CTA Visita --}}
-  <section class="cta-visita">
-    <div class="item-data background-blue">
+  <section class="cta-visita background-blue">
+    <div class="item-data">
       <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-blue" href="#">Solicite aquí</a>

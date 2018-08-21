@@ -6,16 +6,16 @@
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img_otras-plagas.jpg')}}')">
-    <img src="{{ asset('/icons/title_otras-plagas.png') }}">
-    <h1>Otras Plagas</h1>
+    <img class="animated fadeIn slow" src="{{ asset('/icons/title_otras-plagas.png') }}">
+    <h1 class="animated fadeIn slow">Otras Plagas</h1>
   </section>
 
   {{-- present --}}
   <section class="present pd-lr background-blue">
-    <h2>Control de Miscelaneos</h2>
-    <p class="present-text">Curabitur lectus neque, imperdiet vel quam consequat, tincidunt fringilla nisl. Nam gravida arcu tellus, vel condimentum nunc maximus eget. Vestibulum a justo sed lacus sodales aliquet. Nam congue convallis massa eu molestie.</p>
+    <h2 class="animated fadeIn slow">Control de Miscelaneos</h2>
+    <p class="present-text animated fadeIn slow">Curabitur lectus neque, imperdiet vel quam consequat, tincidunt fringilla nisl. Nam gravida arcu tellus, vel condimentum nunc maximus eget. Vestibulum a justo sed lacus sodales aliquet. Nam congue convallis massa eu molestie.</p>
 
-    <div class="present-why present-why-servicios">
+    <div class="present-why present-why-servicios" data-aos="fade-up">
       <div class="img"></div>
       <div class="data background-gray">
         <h3>¿Porqué es importante?</h3>
@@ -63,8 +63,8 @@
   </section>
 
   {{-- CTA Visita --}}
-  <section class="cta-visita">
-    <div class="item-data background-blue">
+  <section class="cta-visita background-blue">
+    <div class="item-data">
       <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-blue" href="#">Solicite aquí</a>

@@ -6,8 +6,8 @@
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/para_empresas.jpg')}}')">
-    <img src="{{ asset('/icons/saga_icon.png') }}">
-    <h1>¿Porqué elegir SAGA?</h1>
+    <img class="animated fadeIn slow" src="{{ asset('/icons/saga_icon.png') }}">
+    <h1 class="animated fadeIn slow">¿Porqué elegir SAGA?</h1>
   </section>
 
   {{-- Comp --}}
@@ -44,7 +44,7 @@
   </section>
 
   {{-- Comp1 --}}
-  <section class="comp_single pd-lr color-gray">
+  <section class="comp_single pd-lr color-lightGray">
     <img src="{{ asset('/icons/icono_rapidez_big.png') }}">
     <h2>Respuesta Rápida</h2>
     <p class="color-gray">Curabitur lectus neque, imperdiet vel quam consequat, tincidunt fringilla nisl. Nam gravida arcu tellus, vel condimentum nunc maximus eget. Vestibulum a justo sed lacus sodales aliquet. Nam congue convallis massa eu molestie</p>
@@ -65,8 +65,8 @@
   </section>
 
   {{-- CTA Visita --}}
-  <section class="cta-visita">
-    <div class="item-data background-blue">
+  <section class="cta-visita background-blue">
+    <div class="item-data">
       <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-blue" href="#">Solicite aquí</a>

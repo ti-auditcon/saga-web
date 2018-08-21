@@ -6,29 +6,29 @@
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/para_hogares.jpg')}}')">
-    <img src="{{ asset('/icons/icono_hogares.png') }}">
-    <h1>Soluciones para Hogares</h1>
+    <img class="animated fadeIn slow" src="{{ asset('/icons/icono_hogares.png') }}">
+    <h1 class="animated fadeIn slow">Soluciones para Hogares</h1>
   </section>
 
   {{-- Present --}}
   <section class="present pd-lr background-greenUltraDark">
-    <h2>La Salud de su familia es lo<br> más importante</h2>
-    <p class="present-text">Un ambiente sano es un ambiente libre de plagas. Puede confiar en nuestros servicios para hogar.</p>
+    <h2 class="animated fadeIn slow">La Salud de su familia es lo<br> más importante</h2>
+    <p class="present-text animated fadeIn slow">Un ambiente sano es un ambiente libre de plagas. Puede confiar en nuestros servicios para hogar.</p>
 
-    <div class="items items-hogares">
+    <div class="items items-hogares" data-aos="fade-up">
       <div class="item">
         <img src="{{ asset('/icons/icono_experiencia.png') }}">
-        <h3 class="card-title">Equipo experto y confiable</h3>
+        <h3 class="card-title">Equipo experto<br> y confiable</h3>
         <p>Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. </p>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_evaluacion.png') }}">
-        <h3 class="card-title">Evaluación Personalziada</h3>
+        <h3 class="card-title">Evaluación<br> Personalziada</h3>
         <p>Un profesional calificado le asesorará completamente para ofrecerle el servicio adecuado para su necesidad.</p>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_post-venta.png') }}">
-        <h3 class="card-title">Seguimiento Post Venta</h3>
+        <h3 class="card-title">Seguimiento<br> Post Venta</h3>
         <p>Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. </p>
       </div>
     </div>
@@ -72,8 +72,8 @@
   </section>
 
   {{-- CTA Visita --}}
-  <section class="cta-visita">
-    <div class="item-data background-greenUltraDark">
+  <section class="cta-visita background-greenUltraDark">
+    <div class="item-data">
       <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-greenUltraDark" href="#">Solicite aquí</a>

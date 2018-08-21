@@ -6,15 +6,15 @@
 @section('content')
   {{-- Hero --}}
   <section class="hero pd-lr">
-    <h1 class="hero-title">The quick, brown fox jumps over a lazy dog</h1>
-    <p>Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box.</p>
-    <a class="cta-button cta-button-hero button-color-blue color-white" href="#">Saber más</a>
+    <h1 class="hero-title animated fadeIn slow">The quick, brown fox jumps over a lazy dog</h1>
+    <p class="animated fadeIn slow">Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box.</p>
+    <a class="cta-button cta-button-hero button-color-blue color-white animated fadeIn slow" href="#">Saber más</a>
   </section>
 
   {{-- Clientes --}}
   <section class="clientes background-blue pd-lr">
-    <p>Esta es una frase de introducción a las dos categorías de nicho, la idea es dirigir la atención a los recuadros</p>
-    <div class="items">
+    <p data-aos="fade-in">Esta es una frase de introducción a las dos categorías de nicho, la idea es dirigir la atención a los recuadros</p>
+    <div class="items" data-aos="fade-up">
       <a href="{{url('/empresas')}}">
         <div class="item" style="background-image: url('../img/para_empresas.jpg');">
           <img src="{{ asset('/icons/icono_empresas.png') }}">
@@ -34,31 +34,31 @@
   <section class="servicios pd-lr">
     <h2 class="color-blue present-title">Una variedad de soluciones<br> para cada necesidad</h2>
     <div class="items">
-      <div class="item">
+      <div class="item" data-aos="fade-up" data-aos-duration="400">
         <a href="{{url('/servicios/desratizacion')}}">
           <img src="{{ asset('/icons/servicios_desratizacion.png') }}">
           <h5>Desratización</h5>
         </a>
       </div>
-      <div class="item">
+      <div class="item" data-aos="fade-up" data-aos-duration="600">
         <a href="{{url('/servicios/sanitizacion')}}">
           <img src="{{ asset('/icons/servicios_sanitizacion.png') }}">
           <h5>Sanitización</h5>
         </a>
       </div>
-      <div class="item">
+      <div class="item" data-aos="fade-up" data-aos-duration="800">
         <a href="{{url('/servicios/desinsectacion')}}">
           <img src="{{ asset('/icons/servicios_desinsectacion.png') }}">
           <h5>Desinsectación</h5>
         </a>
       </div>
-      <div class="item">
+      <div class="item" data-aos="fade-up" data-aos-duration="1000">
         <a href="{{url('/servicios/otras-plagas')}}">
           <img src="{{ asset('/icons/servicios_otras-plagas.png') }}">
           <h5>Otras Plagas</h5>
         </a>
       </div>
-      <div class="item">
+      <div class="item" data-aos="fade-up" data-aos-duration="1200">
         <a href="{{url('/servicios/ornamentacion')}}">
           <img src="{{ asset('/icons/servicios_ornamental.png') }}">
           <h5>Ornamental</h5>

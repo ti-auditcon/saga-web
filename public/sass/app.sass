@@ -73,6 +73,16 @@ small, .font_small
     font-size: 52px
     line-height: 66px
 
+@media (min-width: 1400px)
+  .hero-title
+    font-size: 54px
+    line-height: 68px
+
+@media (min-width: 1600px)
+  .hero-title
+    font-size: 58px
+    line-height: 71px
+
 .present-title
   font-size: 24px
   line-height: 30px
@@ -92,10 +102,15 @@ small, .font_small
     font-size: 36px
     line-height: 45px
 
-// @media (min-width: 1400px)
-//   .present-title
-//     font-size: 38px
-//     line-height: 47px
+@media (min-width: 1400px)
+  .present-title
+    font-size: 38px
+    line-height: 47px
+
+@media (min-width: 1600px)
+  .present-title
+    font-size: 40px
+    line-height: 50px
 
 .title
   font-size: 18px
@@ -141,6 +156,12 @@ small, .font_small
   -webkit-animation-fill-mode: both
   animation-fill-mode: both
 
+.slow
+  -webkit-animation-duration: 1.5s
+  animation-duration: 1.5s
+  -webkit-animation-fill-mode: both
+  animation-fill-mode: both
+
 @keyframes fadeIn
   from
     opacity: 0
@@ -158,7 +179,6 @@ small, .font_small
     opacity: 0
     -webkit-transform: translate3d(0, -100%, 0)
     transform: translate3d(0, -100%, 0)
-
   to
     opacity: 1
     -webkit-transform: translate3d(0, 0, 0)
@@ -169,7 +189,6 @@ small, .font_small
     opacity: 1
     -webkit-transform: translate3d(0, 100%, 0)
     transform: translate3d(0, 100%, 0)
-
   to
     opacity: 0
     -webkit-transform: translate3d(0, 0, 0)
@@ -242,6 +261,7 @@ small, .font_small
   width: 120px
   margin: auto
   // color: white
+  text-align: center
   text-decoration: none
   padding: 10px 20px
   font-size: 12px
@@ -261,17 +281,16 @@ small, .font_small
 
 /* Header */
 header
-  // background: $mainBlue
   position: absolute
   top: 0
   width: 100%
   z-index: 999
-  display: grid
-  grid-template-columns: 1fr 1fr
-  align-items: center
-  // padding-top: 8px
-  height: 98px
   transition: all ease 0.4s
+  .inner-header
+    height: 98px
+    display: grid
+    grid-template-columns: 1fr 1fr
+    align-items: center
   .header-branding
     img.logo
       width: 115px
@@ -318,7 +337,8 @@ header
 
 @media (min-width: 667px)
   header
-    height: 122px
+    .inner-header
+      height: 118px
     .header-branding
       img.logo
         width: 135px
@@ -333,9 +353,10 @@ header
 
 @media (min-width: 900px)
   header
-    grid-template-columns: 0.2fr 0.8fr
-    box-sizing: border-box
-    height: 142px
+    .inner-header
+      grid-template-columns: 0.2fr 0.8fr
+      box-sizing: border-box
+      height: 142px
     .header-branding
       img.logo
         width: 140px
@@ -375,7 +396,8 @@ header
 
 @media (min-width: 1200px)
   header
-    height: 158px
+    .inner-header
+      height: 158px
     .header-branding
       img.logo
         width: 150px
@@ -393,7 +415,9 @@ header
 
 @media (min-width: 1400px)
   header
-    height: 158px
+    .inner-header
+      margin: auto
+      height: 158px
     .header-branding
       img.logo
         width: 160px
@@ -403,17 +427,32 @@ header
         .hamburger
         ul
           a
-            // letter-spacing: 0.3px
-            // margin-right: 26px
         .button-cta-header
-          // margin-left: 7px
+      .sh
+
+@media (min-width: 1600px)
+  header
+    .inner-header
+      max-width: 1300px
+      height: 168px
+    .header-branding
+      img.logo
+        width: 160px
+    .header-menu
+      button.hamburger
+      .main-menu
+        .hamburger
+        ul
+          a
+        .button-cta-header
       .sh
 
 .darkHeader
   background: $mainBlue
   position: fixed
-  height: 70px
-  padding-top: 4px
+  .inner-header
+    height: 70px
+    padding-top: 4px
   .header-menu
     .main-menu
       .button-cta-header
@@ -422,17 +461,20 @@ header
 
 @media (min-width: 667px)
   .darkHeader
-    height: 80px
+    .inner-header
+      height: 80px
     .header-branding
       width: 125px
 
 @media (min-width: 900px)
   .darkHeader
-    height: 83px
+    .inner-header
+      height: 83px
 
 @media (min-width: 1200px)
   .darkHeader
-    height: 85px
+    .inner-header
+      height: 85px
 
 /* Hero */
 .hero
@@ -511,6 +553,20 @@ header
       margin: auto
       width: 900px
       margin-bottom: 36px
+    .cta-button
+
+@media (min-width: 1600px)
+  .hero
+    // padding: 94px 180px 0 180px
+    h1
+      margin-bottom: 32px
+    //   width: 900px
+    p
+      font-size: 21px
+      line-height: 33px
+      // margin: auto
+      // width: 900px
+      margin-bottom: 38px
     .cta-button
 
 /* Clientes */
@@ -603,8 +659,6 @@ header
       line-height: 34px
       padding: 84px 160px 28px
     .items
-      // grid-template-columns: 1fr 1fr
-      // grid-gap: 18px
       a
       .item
         height: 300px
@@ -618,13 +672,8 @@ header
   .clientes
     height: 470px
     p
-      // font-size: 22px
-      // letter-spacing: 0.35px
-      // line-height: 34px
       padding: 84px 250px 28px
     .items
-      // grid-template-columns: 1fr 1fr
-      // grid-gap: 18px
       a
       .item
         height: 320px
@@ -633,6 +682,20 @@ header
           height: 60px
         h2
           font-size: 30px
+
+@media (min-width: 1600px)
+  .clientes
+    height: 470px
+    p
+      margin-left: auto
+      margin-right: auto
+      max-width: 1200px
+    .items
+      margin: auto
+      max-width: 1300px
+      a
+      .item
+        height: 340px
 
 /* Servicios */
 .servicios
@@ -729,6 +792,14 @@ header
           h5
             font-size: 19px
 
+@media (min-width: 1600px)
+  .servicios
+    h2
+    .items
+      margin: auto
+      margin-top: 84px
+      max-width: 1110px
+
 /* Marcas */
 .marcas
   text-align: center
@@ -800,7 +871,25 @@ header
       margin-bottom: 54px
     .items
       .item
+        margin-left: 20px
+        margin-right: 20px
         margin-bottom: 28px
+
+@media (min-width: 1600px)
+  .marcas
+    padding-top: 50px
+    padding-bottom: 72px
+    h2
+      margin-bottom: 64px
+      margin-left: auto
+      margin-right: auto
+      max-width: 55%
+    .items
+      .item
+        margin-left: 14px
+        margin-right: 14px
+        width: 170px
+        // margin-bottom: 28px
 
 /* Title Section: Titulo de página */
 .title-section
@@ -934,9 +1023,9 @@ header
       line-height: 27px
       margin-bottom: 52px
     .items-empresas
-      height: 868px
+      height: 942px
     .items-hogares
-      height: 868px
+      height: 872px
     .items
       .item
         padding: 50px 82px 53px
@@ -1022,10 +1111,8 @@ header
       line-height: 52px
       margin-bottom: 38px
     p.present-text
-      // font-size: 19px
       line-height: 31px
       margin-bottom: 54px
-      // width: 70%
     .items-empresas
       height: 345px
     .items-hogares
@@ -1051,17 +1138,20 @@ header
     .present-why
       .img
       .data
-        // padding:
         h3
-        //
         p
-        //
 
 @media (min-width: 1400px)
   .present
     padding-top: 84px
     h2
+      margin-left: auto
+      margin-right: auto
+      max-width: 910px
     p.present-text
+      margin-left: auto
+      margin-right: auto
+      max-width: 910px
     .items-empresas
     .items-hogares
     .items
@@ -1078,12 +1168,33 @@ header
           margin-bottom: 19px
         p
           font-size: 17px
-          // line-height: 26px
     .present-why-servicios
     .present-why
       .img
       .data
-        padding:
+        h3
+        p
+
+@media (min-width: 1600px)
+  .present
+    // padding-top: 84px
+    h2
+    p.present-text
+    .items-empresas
+      height: 325px
+    .items-hogares
+      height: 320px
+    .items
+      margin: auto
+      max-width: 1300px
+      .item
+        padding: 58px 60px 68px 44px
+    .present-why-servicios
+      margin: auto
+      max-width: 1300px
+    .present-why
+      .img
+      .data
         h3
         p
 
@@ -1166,9 +1277,9 @@ header
       .item
         margin-bottom: 31px
         img
-          width: 80%
+          width: 75%
         .data
-          padding-left: 20px
+          padding-left: 10px
           h4
             font-size: 21px
             margin-bottom: 14px
@@ -1176,9 +1287,47 @@ header
             font-size: 15.5px
             line-height: 23px
 
+@media (min-width: 1400px)
+  .metodologia
+    h2
+      margin-bottom: 36px
+    .items
+      padding-bottom: 62px
+      .item
+        margin-bottom: 36px
+        img
+          width: 72%
+        .data
+          padding-left: 14px
+
+@media (min-width: 1600px)
+  .metodologia
+    margin-left: auto
+    margin-right: auto
+    max-width: 1300px
+    h2
+      margin-bottom: 36px
+    .items
+      padding-left: 0
+      padding-right: 0
+      padding-bottom: 60px
+      .item
+        margin-bottom: 46px
+        img
+          width: 68%
+        .data
+          padding-left: 14px
+          h4
+            font-size: 22px
+            margin-bottom: 18px
+          p
+            font-size: 16px
+            line-height: 25px
+
 /* CTA Visita */
 .cta-visita
-  display: grid
+  // display: grid
+  display: flex
   text-align: center
   .item-data
     padding: 52px 21px
@@ -1197,10 +1346,13 @@ header
 
 @media (min-width: 667px)
   .cta-visita
-    grid-template-columns: 0.7fr 0.6fr
+    // justify-content:
+    flex-wrap: nowrap
     text-align: left
+    position: relative
     .item-data
-      padding: 62px 60px 62px 31px
+      width: 55%
+      padding: 62px 60px 62px 35px
       h2
         font-size: 26px
         line-height: 36px
@@ -1211,6 +1363,7 @@ header
         line-height: 24px
       .cta-button-visita
     .item-img
+      width: 45%
       display: inherit
       background-position: center
       background-size: cover
@@ -1218,8 +1371,6 @@ header
 
 @media (min-width: 900px)
   .cta-visita
-    // grid-template-columns: 0.7fr 0.6fr
-    // text-align: left
     .item-data
       padding: 80px 70px 80px 50px
       h2
@@ -1230,12 +1381,6 @@ header
         margin-bottom: 30px
         font-size: 17px
         line-height: 24.5px
-    //   .cta-button-visita
-    // .item-img
-    //   display: inherit
-    //   background-position: center
-    //   background-size: cover
-    //   background-repeat: no-repeat
 
 @media (min-width: 1200px)
   .cta-visita
@@ -1254,7 +1399,33 @@ header
 @media (min-width: 1400px)
   .cta-visita
     .item-data
-      padding: 110px 100px 110px 130px
+      padding: 100px 100px 100px 125px
+
+@media (min-width: 1600px)
+  .cta-visita
+    position: relative
+    .item-data
+      width: 100%
+      padding: 0
+      height: 460px
+      max-width: 1280px
+      margin: auto
+      padding-top: 95px
+      padding-bottom: 95px
+      h2
+        font-size: 38px
+        line-height: 52px
+        margin-bottom: 30px
+      p
+        max-width: 600px
+        // font-size: 20px
+        line-height: 29px
+        margin-bottom: 40px
+    .item-img
+      position: absolute
+      right: 0
+      height: 460px
+      width: 47%
 
 /* Comps */
 // Comp General
@@ -1328,8 +1499,6 @@ header
     h2
       margin-bottom: 65px
       width: 70%
-      // font-size: 40px
-      // line-height: 52px
     .items
       width: 80%
       margin: auto
@@ -1344,11 +1513,21 @@ header
     padding-bottom: 67px
     h2
       margin-bottom: 68px
-      // width: 70%
     .items
       width: 85%
-      // margin: auto
-      // column-gap: 30px
+      .item
+        img
+          height: 80px
+
+@media (min-width: 1600px)
+  .comp
+    padding-top: 84px
+    padding-bottom: 67px
+    h2
+      margin-bottom: 72px
+      width: 60%
+    .items
+      max-width: 1000px
       .item
         img
           height: 80px
@@ -1410,10 +1589,23 @@ header
     h2
       font-size: 38px
     p
-      // margin: auto
       width: 75%
       font-size: 18px
       line-height: 28px
+
+@media (min-width: 1600px)
+  .comp_single
+    // padding-top: 98px
+    padding-bottom: 104px
+    img
+      // height: 100px
+      // margin-bottom: 22px
+    h2
+      // font-size: 38px
+    p
+      max-width: 850px
+      // font-size: 18px
+      // line-height: 28px
 
 /* Contacto */
 .contact-form
@@ -1661,12 +1853,10 @@ header
             padding: 12.5px 22px
             font-size: 14px
         .fields-general
-          // margin-bottom: 28px
           input
             font-size: 13.5px
             padding: 15px 12px
         .fields-empresa
-          // margin-bottom: 13px
           input
             font-size: 13.5px
             padding: 15px 12px
@@ -1689,6 +1879,52 @@ header
         button.send-button
           padding: 11px 24px
           margin-top: 14px
+
+@media (min-width: 1400px)
+  .contact-form
+    font-size: 13px
+    padding-top: 70px
+    .the-form
+      form
+        .fields-for
+          margin-bottom: 28px
+          .select-button
+            padding: 12.5px 22px
+            font-size: 14px
+        .fields-general
+          input
+            font-size: 13.5px
+            padding: 15px 12px
+        .fields-empresa
+          input
+            font-size: 13.5px
+            padding: 15px 12px
+        .fields-motivo
+          margin-top: 14px
+          margin-bottom: 30px
+          p
+          .select-button-b
+            padding: 12.5px 22px
+            font-size: 14px
+        .fields-servicios
+          margin-bottom: 28px
+          .select-button-c
+            padding: 12.5px 22px
+            font-size: 14px
+        textarea.mensaje
+          height: 180px
+          font-size: 14px
+          padding: 15px 13px
+        button.send-button
+          padding: 11px 24px
+          margin-top: 14px
+
+@media (min-width: 1600px)
+  .contact-form
+    margin: auto
+    max-width: 1300px
+    padding-left: 0
+    padding-right: 0
 
 .bd-none
   display: none !important
@@ -1745,12 +1981,7 @@ header
       padding: 42px 0 42px 46px
       .item
         img
-          // width: 25px
-          // height: 100%
-          // margin-right: 17px
         p
-          // font-size: 14px
-          // line-height: 20px
     .mapa
 
 @media (min-width: 1200px)
@@ -1763,25 +1994,68 @@ header
       // align-self: center
       padding: 42px 0 42px 85px
       .item
+        margin-bottom: 20px
         img
-          // width: 25px
-          // height: 100%
-          // margin-right: 17px
+          margin-top: 2.5px
+          width: 23px
+        p
+          font-size: 14.5px
+          line-height: 20px
+    .mapa
+      height: 100%
+
+@media (min-width: 1400px)
+  .ubicacion
+    height: 450px
+    .datos-direccion
+      padding: 42px 0 42px 125px
+      .item
+        img
         p
           font-size: 14.5px
           line-height: 21px
     .mapa
       height: 100%
 
+@media (min-width: 1600px)
+  .ubicacion
+    display: flex
+    height: 480px
+    position: relative
+    // height: auto
+    width: 100%
+    .datos-direccion
+      width: 100%
+      padding: 0
+      height: 100%
+      max-width: 1280px
+      margin: auto
+      padding-top: 95px
+      padding-bottom: 95px
+      // position: absolute
+      z-index: 60
+      .item
+        margin-bottom: 28px
+        img
+        p
+          font-size: 14.5px
+          line-height: 21px
+    .mapa
+      position: absolute
+      right: 0
+      height: 100%
+      width: 60%
+      z-index: 90
+
 /* Footer */
 footer
   background: $realGray
   color: white
+  padding-bottom: 24px
   .certificaciones
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     grid-column-gap: 30px
-    // text-align: center
     padding: 30px 0 26px
     border-bottom: solid 1px #67747F
     .item
@@ -1797,11 +2071,13 @@ footer
     .info-contacto
       width: 100%
       margin-bottom: 16px
-      display: grid
-      grid-template-columns: 0.95fr 1fr
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
       text-align: center
       .item
-        margin-bottom: 24px
+        width: 50%
+        margin-bottom: 28px
         img
           margin: 0
           width: 40px
@@ -1816,6 +2092,23 @@ footer
             font-size: 14px
             margin-bottom: 0
             font-weight: 400
+        a.rrss-links
+          img
+            width: 28px
+            margin: 4px 6px
+      .info-rrss
+        width: 100%
+        margin-top: 14px
+        h5
+          font-size: 14px
+          margin-bottom: 10px
+        a.rrss-links
+          display: inline-block
+          img
+            width: 25px
+            margin-left: 7px
+            margin-right: 7px
+            margin-bottom: 32px
     .footer-menus
       width: 49%
       display: inline-block
@@ -1826,38 +2119,28 @@ footer
         font-size: 14px
         margin-bottom: 8px
       ul
-        // padding-right: 40px
         a
           display: block
           color: #C5CACF
           text-decoration: none
           font-size: 14px
           margin-bottom: 2.5px
-      // &:nth-child(3)
-      //   width: 45%
     .rrss-atencion
       text-align: center
       margin-top: 8px
       h5
         font-size: 14px
         margin-bottom: 10px
-      a
-        display: inline-block
-        img
-          width: 25px
-          margin-left: 7px
-          margin-right: 7px
-          margin-bottom: 32px
       p
         color: white
         font-size: 14px
         margin-bottom: 12px
   .copy
-    padding: 42px 0 14px
+    padding: 42px 0 0
     p
       margin-bottom: 0
       text-align: center
-      color: #C5CACF
+      color: rgba(#C5CACF, 0.8)
       font-size: 11px
       a
         color: white
@@ -1868,9 +2151,245 @@ footer
         &:hover, &:focus
           border-bottom: solid 1px transparent
 
+@media (min-width: 667px)
+  footer
+    padding-bottom: 28px
+    .certificaciones
+      .item
+        img
+          width: 25px
+          margin-right: 12px
+        h4
+          font-size: 14px
+    .the-footer
+      padding-top: 40px
+      display: grid
+      grid-template-columns: 1.5fr 1.2fr 1fr 0.8fr
+      .info-contacto
+        text-align: left
+        .item
+          width: 100%
+          margin-bottom: 24px
+          &:nth-child(3)
+            margin-bottom: 14px
+          img
+            display: inline-block
+            margin-right: 12px
+            width: 35px
+          p
+            vertical-align: top
+            display: inline-block
+            width: auto
+            font-size: 16px
+            small
+              font-size: 13px
+              margin-bottom: 3px
+          a.rrss-links
+            img
+              width: 22px
+              margin: 4px 6px
+              &:first-child
+                margin-left: 0
+        .info-rrss
+          h5
+            margin-bottom: 14px
+            font-size: 15px
+          a.rrss-links
+            img
+              width: 23px
+              margin-left: 0
+              margin-right: 12px
+              margin-bottom: 26px
+      .footer-menus
+        text-align: left
+        width: 80%
+        h5
+          margin-bottom: 12px
+          font-size: 15px
+        ul
+          a
+            margin-bottom: 7px
+            line-height: 19px
+      .rrss-atencion
+        text-align: left
+        margin-top: 0
+        p
+          line-height: 20px
+    .copy
+      p
+        font-size: 12px
+        line-height: 19px
+        a
+
+@media (min-width: 900px)
+  footer
+    .certificaciones
+      .item
+        img
+        h4
+    .the-footer
+      grid-template-columns: 1.4fr 1.1fr 1fr 0.9fr
+      .info-contacto
+        .item
+          img
+          p
+            small
+          a.rrss-links
+            img
+              margin: 4.5px 9px
+      .footer-menus
+        h5
+        ul
+          a
+      .rrss-atencion
+        h5
+    .copy
+      p
+        font-size: 13px
+        line-height: 20px
+        letter-spacing: 0.1px
+        a
+
+@media (min-width: 1200px)
+  footer
+    padding-bottom: 38px
+    .certificaciones
+      padding: 40px 0 30px
+      .item
+        img
+        h4
+          vertical-align: middle
+    .the-footer
+      grid-template-columns: 1.4fr 1.1fr 1fr 0.9fr
+      .info-contacto
+        .item
+          margin-bottom: 28px
+          img
+            width: 40px
+            margin-right: 16px
+          p
+            font-size: 18px
+            // margin-bottom: 4px
+            small
+              font-size: 14px
+              display: inline-block
+              margin-bottom: 4px
+          a.rrss-links
+            img
+              width: 23px
+              margin: 4.5px 10px
+      .footer-menus
+        h5
+          font-size: 15.5px
+          margin-bottom: 12.5px
+        ul
+          a
+            font-size: 15px
+      .rrss-atencion
+        h5
+          font-size: 16px
+          margin-bottom: 12.5px
+        a
+          img
+        p
+          font-size: 15px
+          line-height: 22px
+    .copy
+      padding: 32px 0 0
+      p
+        a
+
+@media (min-width: 1400px)
+  footer
+    padding-bottom: 40px
+    .certificaciones
+      .item
+        img
+          width: 28px
+          margin-right: 14px
+        h4
+          font-size: 17px
+    .the-footer
+      padding-top: 45px
+      .info-contacto
+        .item
+          margin-bottom: 29px
+          img
+            margin-right: 19px
+          p
+            font-size: 19px
+            small
+              font-size: 15px
+              margin-bottom: 4.5px
+      .footer-menus
+        h5
+          font-size: 16px
+          margin-bottom: 13px
+        ul
+          a
+            font-size: 15.5px
+            margin-bottom: 8px
+      .rrss-atencion
+        h5
+          font-size: 16px
+          margin-bottom: 13px
+        p
+          font-size: 15.5px
+    .copy
+      p
+        font-size: 13px
+        line-height: 21px
+        a
+
+@media (min-width: 1600px)
+  footer
+    .footer-inner
+      margin: auto
+      max-width: 1300px
+      .certificaciones
+        .item
+          img
+          h4
+      .the-footer
+        .info-contacto
+          .item
+            img
+            p
+              small
+        .footer-menus
+          h5
+          ul
+            a
+        .rrss-atencion
+          h5
+          a
+            img
+          p
+      .copy
+        // padding: 32px 0 0
+        p
+          a
+
 /* Contacto*/
 // Formulario
 
 // Mapa
 .mapa
   height: 400px
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//

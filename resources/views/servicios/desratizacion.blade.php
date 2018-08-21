@@ -6,16 +6,16 @@
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img_desratizacion.jpg')}}')">
-    <img src="{{ asset('/icons/title_desratizacion.png') }}">
-    <h1>Desratizacion</h1>
+    <img class="animated fadeIn slow" src="{{ asset('/icons/title_desratizacion.png') }}">
+    <h1 class="animated fadeIn slow">Desratizacion</h1>
   </section>
 
   {{-- Present --}}
   <section class="present pd-lr background-blue">
-    <h2>Control de Roedores</h2>
-    <p class="present-text">Las ratas, los ratones y otras plagas invaden su hogar en busca de las mismas comodidades del hogar que usted: comida, refugio y agua. Desafortunadamente, son más que un inconveniente. Son una amenaza para su propiedad, su salud y su sentido de seguridad.</p>
+    <h2 class="animated fadeIn slow">Control de Roedores</h2>
+    <p class="present-text animated fadeIn slow">Las ratas, los ratones y otras plagas invaden su hogar en busca de las mismas comodidades del hogar que usted: comida, refugio y agua. Desafortunadamente, son más que un inconveniente. Son una amenaza para su propiedad, su salud y su sentido de seguridad.</p>
 
-    <div class="present-why present-why-servicios">
+    <div class="present-why present-why-servicios" data-aos="fade-up">
       <div class="img" style="background-image: url('/img/servicios_desratizacion1.jpg')"></div>
       <div class="data background-gray">
         <h3>¿Porqué es importante?</h3>
@@ -63,8 +63,8 @@
   </section>
 
   {{-- CTA Visita --}}
-  <section class="cta-visita">
-    <div class="item-data background-blue">
+  <section class="cta-visita background-blue">
+    <div class="item-data">
       <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-blue" href="#">Solicite aquí</a>

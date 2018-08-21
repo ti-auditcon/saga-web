@@ -6,16 +6,16 @@
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/para_empresas.jpg')}}')">
-    <img src="{{ asset('/icons/icono_empresas.png') }}">
-    <h1>Soluciones para Empresas</h1>
+    <img src="{{ asset('/icons/icono_empresas.png') }}" class="animated fadeIn slow">
+    <h1 class="animated fadeIn slow">Soluciones para Empresas</h1>
   </section>
 
   {{-- Present --}}
   <section class="present pd-lr background-blue">
-    <h2>No deje que las plagas<br> tomen el control de su negocio</h2>
-    <p class="present-text">Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. </p>
+    <h2 class="animated fadeIn slow">No deje que las plagas<br> tomen el control de su negocio</h2>
+    <p class="animated fadeIn slow present-text">Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. </p>
 
-    <div class="items items-empresas">
+    <div class="items items-empresas" data-aos="fade-up">
       <div class="item">
         <img src="{{ asset('/icons/icono_experiencia.png') }}">
         <h3 class="card-title">Experiencia y<br> Especialización</h3>
@@ -86,8 +86,8 @@
   </section>
 
   {{-- CTA Visita --}}
-  <section class="cta-visita">
-    <div class="item-data background-blue">
+  <section class="cta-visita background-blue">
+    <div class="item-data">
       <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-blue" href="#">Solicite aquí</a>

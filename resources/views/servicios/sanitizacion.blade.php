@@ -6,16 +6,16 @@
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img_sanitizacion.jpg')}}')">
-    <img src="{{ asset('/icons/title_sanitizacion.png') }}">
-    <h1>Sanitización</h1>
+    <img class="animated fadeIn slow" src="{{ asset('/icons/title_sanitizacion.png') }}">
+    <h1 class="animated fadeIn slow">Sanitización</h1>
   </section>
 
   {{-- Present --}}
   <section class="present pd-lr background-blue">
-    <h2>El enemigo invisible</h2>
-    <p class="present-text">Eliminamos microorganismos como bacterias, hongos, levaduras y virus, que contaminan y producen enfermedades y se pueden encontrar en utensilios, quirófanos, baños, duchas, camarines, saunas, comedores, cocinas y en un sin fin de lugares.</p>
+    <h2 class="animated fadeIn slow">El enemigo invisible</h2>
+    <p class="present-text animated fadeIn slow">Eliminamos microorganismos como bacterias, hongos, levaduras y virus, que contaminan y producen enfermedades y se pueden encontrar en utensilios, quirófanos, baños, duchas, camarines, saunas, comedores, cocinas y en un sin fin de lugares.</p>
 
-    <div class="present-why present-why-servicios">
+    <div class="present-why present-why-servicios" data-aos="fade-up">
       <div class="img"></div>
       <div class="data background-gray">
         <h3>¿Porqué es importante?</h3>
@@ -63,8 +63,8 @@
   </section>
 
   {{-- CTA Visita --}}
-  <section class="cta-visita">
-    <div class="item-data background-blue">
+  <section class="cta-visita background-blue">
+    <div class="item-data">
       <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-blue" href="#">Solicite aquí</a>
