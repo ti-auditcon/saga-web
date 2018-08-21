@@ -12,8 +12,8 @@
 
   {{-- Formulario --}}
   <section class="contact-form pd-lr">
-    <p>Si tiene dudas, consultas o cualquier motivo por el que desea que sepamos de usted puede contactarnos personalmente desde su correo a info@sagaservice.cl</p>
-    <p>También puede enviarnos un mensaje desde este formulario de contacto.</p>
+    <p class="contact-form-intro">Si tiene dudas, consultas o cualquier motivo por el que desea que sepamos de usted puede contactarnos personalmente desde su correo a info@sagaservice.cl<br><br>
+    También puede enviarnos un mensaje desde este formulario de contacto.</p>
 
     <div class="the-form">
       <form class="" action="" method="post">
@@ -91,11 +91,11 @@
       </div>
       <div class="item">
         <img src="{{ asset('/icons/contacto_telefono.png') }}">
-        <p>Llámenos al<br>(075) 2 223 696</p>
+        <p><b>Llámenos al</b><br>(075) 2 223 696</p>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/contacto_horario.png') }}">
-        <p>Horario de Atención<br>Lunes a Viernes<br>09:00 a 18:00 hrs</p>
+        <p><b>Horario de Atención</b><br>Lunes a Viernes<br>08:30 a 13:00 hrs<br>14:30 a 18:30 hrs<br>Sabados<br>08:30 a 12:30 hrs</p>
       </div>
     </div>
     <div class="mapa" id="map">
