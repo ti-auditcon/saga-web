@@ -27,14 +27,14 @@
           <img src="{{ asset('/icons/icono_llamenos.png') }}">
           <p>
             <small>Llámenos al</small><br>
-            (75) 2 223 696
+            <a href="teL:+56752223696">(75) 2 223 696</a>
           </p>
         </div>
         <div class="item">
           <img src="{{ asset('/icons/icono_contactenos.png') }}">
           <p>
             <small>Contáctenos a</small><br>
-            info@sagaservice.cl
+            <a href="mailto:info@sagaservice.cl">info@sagaservice.cl</a>
           </p>
         </div>
         <div class="item">
@@ -47,13 +47,6 @@
           </p>
         </div>
 
-        {{-- Redes Sociales --}}
-        {{-- <div class="info-rrss">
-          <h5>Redes Sociales</h5>
-          <a class="rrss-links" href="#"><img src="{{ asset('/icons/rrss_facebook.png') }}"></a>
-          <a class="rrss-links" href="#"><img src="{{ asset('/icons/rrss_instagram.png') }}"></a>
-          <a class="rrss-links" href="#"><img src="{{ asset('/icons/rrss_linkedin.png') }}"></a>
-        </div> --}}
       </div>
 
       {{-- Menus Corporativos --}}
@@ -84,7 +77,7 @@
       <div class="rrss-atencion">
 
         {{-- Horario de Atención --}}
-        <h5>Horario de Atención</h5>
+        <h5>Horarios</h5>
         <p>
           Lunes a Viernes<br>
           08:30 - 13:00 hrs<br>

@@ -72,4 +72,11 @@ $(function(){
     $(this).toggleClass('selected');
   });
 
+  // Scroll to Info -> Hero Button
+  $('.cta-button-hero').click(function() {
+    $([document.documentElement, document.body]).animate({
+        scrollTop: $('#clientes').offset().top-40
+    }, 1000);
+});
+
 });

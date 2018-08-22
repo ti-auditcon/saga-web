@@ -11,7 +11,7 @@
   </section>
 
   {{-- Present --}}
-  <section class="present pd-lr background-blue">
+  <section class="present pd-lr">
     <h2 class="animated fadeIn slow">No deje que las plagas<br> tomen el control de su negocio</h2>
     <p class="animated fadeIn slow present-text">Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. </p>
 
@@ -38,31 +38,31 @@
   <section class="servicios pd-lr">
     <h2 class="color-blue present-title">Una variedad de soluciones<br> para cada necesidad</h2>
     <div class="items">
-      <div class="item">
+      <div class="item" data-aos="fade-up" data-aos-duration="400">
         <a href="{{url('/servicios/desratizacion')}}">
           <img src="{{ asset('/icons/servicios_desratizacion.png') }}">
           <h5>Desratización</h5>
         </a>
       </div>
-      <div class="item">
+      <div class="item" data-aos="fade-up" data-aos-duration="600">
         <a href="{{url('/servicios/sanitizacion')}}">
           <img src="{{ asset('/icons/servicios_sanitizacion.png') }}">
           <h5>Sanitización</h5>
         </a>
       </div>
-      <div class="item">
+      <div class="item" data-aos="fade-up" data-aos-duration="800">
         <a href="{{url('/servicios/desinsectacion')}}">
           <img src="{{ asset('/icons/servicios_desinsectacion.png') }}">
           <h5>Desinsectación</h5>
         </a>
       </div>
-      <div class="item">
+      <div class="item" data-aos="fade-up" data-aos-duration="1000">
         <a href="{{url('/servicios/otras-plagas')}}">
           <img src="{{ asset('/icons/servicios_otras-plagas.png') }}">
           <h5>Otras Plagas</h5>
         </a>
       </div>
-      <div class="item">
+      <div class="item" data-aos="fade-up" data-aos-duration="1200">
         <a href="{{url('/servicios/ornamentacion')}}">
           <img src="{{ asset('/icons/servicios_ornamental.png') }}">
           <h5>Ornamental</h5>
@@ -90,7 +90,7 @@
     <div class="item-data">
       <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
-      <a class="cta-button cta-button-visita background-white color-blue" href="#">Solicite aquí</a>
+      <a class="cta-button cta-button-visita background-white color-blue" href="{{url('/contacto')}}">Solicite aquí</a>
     </div>
     <div class="item-img" style="background-image: url('{{ asset('/img/cta_hogares.jpg') }}')"></div>
   </section>

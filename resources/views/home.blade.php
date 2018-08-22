@@ -12,7 +12,7 @@
   </section>
 
   {{-- Clientes --}}
-  <section class="clientes background-blue pd-lr">
+  <section class="clientes pd-lr" id="clientes">
     <p data-aos="fade-in">Esta es una frase de introducción a las dos categorías de nicho, la idea es dirigir la atención a los recuadros</p>
     <div class="items" data-aos="fade-up">
       <a href="{{url('/empresas')}}">

@@ -11,7 +11,7 @@
   </section>
 
   {{-- Present --}}
-  <section class="present pd-lr background-blue">
+  <section class="present pd-lr">
     <h2 class="animated fadeIn slow">Fumigación de insectos</h2>
     <p class="present-text animated fadeIn slow">Identificamos el o los insectos a controlar y actuamos sobre su superficie de trayectoris, nidos, sectores de alimentación y reproductivos para aplicar una fumigación eficaz que acabe con ellos.</p>
 
@@ -67,7 +67,7 @@
     <div class="item-data">
       <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
-      <a class="cta-button cta-button-visita background-white color-blue" href="#">Solicite aquí</a>
+      <a class="cta-button cta-button-visita background-white color-blue" href="{{url('/contacto')}}">Solicite aquí</a>
     </div>
     <div class="item-img" style="background-image: url('{{ asset('/img/cta_hogares.jpg') }}')"></div>
   </section>

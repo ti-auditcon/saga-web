@@ -11,7 +11,7 @@
   </section>
 
   {{-- Present --}}
-  <section class="present pd-lr background-blue">
+  <section class="present pd-lr">
     <h2 class="animated fadeIn slow">El enemigo invisible</h2>
     <p class="present-text animated fadeIn slow">Eliminamos microorganismos como bacterias, hongos, levaduras y virus, que contaminan y producen enfermedades y se pueden encontrar en utensilios, quirófanos, baños, duchas, camarines, saunas, comedores, cocinas y en un sin fin de lugares.</p>
 
@@ -67,7 +67,7 @@
     <div class="item-data">
       <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
-      <a class="cta-button cta-button-visita background-white color-blue" href="#">Solicite aquí</a>
+      <a class="cta-button cta-button-visita background-white color-blue" href="{{url('/contacto')}}">Solicite aquí</a>
     </div>
     <div class="item-img" style="background-image: url('{{ asset('/img/cta_hogares.jpg') }}')"></div>
   </section>
