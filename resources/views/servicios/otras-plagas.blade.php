@@ -16,7 +16,7 @@
     <p class="present-text animated fadeIn slow">Curabitur lectus neque, imperdiet vel quam consequat, tincidunt fringilla nisl. Nam gravida arcu tellus, vel condimentum nunc maximus eget. Vestibulum a justo sed lacus sodales aliquet. Nam congue convallis massa eu molestie.</p>
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
-      <div class="img"></div>
+      <div class="img" style="background-image: url('/img/servicios_otras-plagas.jpg')"></div>
       <div class="data background-gray">
         <h3>¿Porqué es importante?</h3>
         <p>Este texto debería explicar como actua SAGA Service en la desratización.</p>

@@ -279,23 +279,18 @@ small, .font_small {
 
 @media (min-width: 667px) {
   .present-title {
-    font-size: 30px;
-    line-height: 38px; } }
-
-@media (min-width: 900px) {
-  .present-title {
     font-size: 32px;
     line-height: 40px; } }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
   .present-title {
     font-size: 36px;
     line-height: 45px; } }
 
-@media (min-width: 1400px) {
+@media (min-width: 1200px) {
   .present-title {
     font-size: 38px;
-    line-height: 47px; } }
+    line-height: 48px; } }
 
 @media (min-width: 1600px) {
   .present-title {
@@ -660,7 +655,10 @@ header {
 
 .darkHeader {
   background: #0459D3;
-  position: fixed; }
+  position: fixed;
+  -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25); }
   .darkHeader .inner-header {
     height: 70px;
     padding-top: 4px; }
@@ -726,43 +724,42 @@ header {
 
 @media (min-width: 667px) {
   .hero {
-    padding: 68px 92px 0 92px; }
+    padding: 54px 92px 0 92px; }
     .hero h1 {
-      margin-bottom: 26px;
+      margin-bottom: 28px;
       font-size: 50px;
       line-height: 60px; }
     .hero p {
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 20px;
+      line-height: 32px;
       letter-spacing: 0.1px;
-      margin-bottom: 32px; } }
+      margin-bottom: 34px; } }
 
 @media (min-width: 900px) {
   .hero {
-    padding: 94px 140px 0 140px; }
+    padding: 80px 140px 0 140px; }
     .hero h1 {
       margin-bottom: 28px;
       line-height: 62px; }
     .hero p {
-      font-size: 20px;
-      line-height: 32px;
-      margin-bottom: 34px;
-      padding-left: 40px;
-      padding-right: 40px; } }
+      font-size: 21px;
+      line-height: 33px;
+      padding-left: 42px;
+      padding-right: 42px; } }
 
 @media (min-width: 1200px) {
   .hero {
     padding: 104px 180px 0 180px; }
     .hero h1 {
-      margin-bottom: 28px;
+      margin-bottom: 30px;
       line-height: 67px;
       font-size: 54px; }
     .hero p {
-      font-size: 19px;
-      line-height: 31px;
+      font-size: 21px;
+      line-height: 34px;
       margin-bottom: 36px;
-      padding-left: 50px;
-      padding-right: 50px; } }
+      padding-left: 60px;
+      padding-right: 60px; } }
 
 @media (min-width: 1400px) {
   .hero {
@@ -954,6 +951,7 @@ header {
 
 @media (min-width: 667px) {
   .servicios h2 {
+    margin-top: 64px;
     margin-bottom: 62px; }
   .servicios .items {
     -ms-flex-wrap: nowrap;
@@ -1039,17 +1037,17 @@ header {
 @media (min-width: 667px) {
   .marcas {
     padding-top: 28px;
-    padding-bottom: 50px; }
+    padding-bottom: 62px; }
     .marcas h2 {
-      margin-bottom: 38px; }
+      margin-bottom: 40px; }
     .marcas .items {
       -webkit-box-pack: center;
       -ms-flex-pack: center;
       justify-content: center; }
       .marcas .items .item {
-        width: 150px;
+        width: 132px;
         margin: 0 10px 0 10px;
-        margin-bottom: 21px; } }
+        margin-bottom: 14px; } }
 
 @media (min-width: 900px) {
   .marcas {
@@ -1065,22 +1063,22 @@ header {
       width: 90%;
       margin: auto; }
       .marcas .items .item {
-        margin-bottom: 21px; } }
+        margin-bottom: 21px;
+        width: 148px; } }
 
 @media (min-width: 1200px) {
   .marcas {
-    padding-bottom: 58px; }
+    padding-bottom: 50px; }
     .marcas h2 {
       width: 70%; }
     .marcas .items {
       margin-left: auto;
       margin-right: auto;
-      max-width: 800px; }
+      max-width: 1100px; }
       .marcas .items .item {
         margin-left: 14px;
         margin-right: 14px;
-        margin-bottom: 28px;
-        width: 160px; } }
+        width: 154px; } }
 
 @media (min-width: 1400px) {
   .marcas {
@@ -1090,8 +1088,7 @@ header {
       margin-bottom: 54px; }
     .marcas .items .item {
       margin-left: 20px;
-      margin-right: 20px;
-      margin-bottom: 28px; } }
+      margin-right: 20px; } }
 
 @media (min-width: 1600px) {
   .marcas {
@@ -1102,10 +1099,12 @@ header {
       margin-left: auto;
       margin-right: auto;
       max-width: 55%; }
-    .marcas .items .item {
-      margin-left: 14px;
-      margin-right: 14px;
-      width: 170px; } }
+    .marcas .items {
+      max-width: 1000px; }
+      .marcas .items .item {
+        margin-left: 14px;
+        margin-right: 14px;
+        width: 150px; } }
 
 /* Title Section: Titulo de página */
 .title-section {
@@ -1135,20 +1134,20 @@ header {
   .title-section {
     height: 420px; }
     .title-section img {
-      height: 65px;
+      height: 67px;
       margin-bottom: 21px; }
     .title-section h1 {
-      font-size: 34px; } }
+      font-size: 36px; } }
 
 @media (min-width: 900px) {
   .title-section {
     height: 490px;
     padding-top: 94px; }
     .title-section img {
-      height: 68px;
+      height: 72px;
       margin-bottom: 22px; }
     .title-section h1 {
-      font-size: 36px; } }
+      font-size: 40px; } }
 
 @media (min-width: 1200px) {
   .title-section {
@@ -1219,7 +1218,8 @@ header {
     display: grid;
     position: relative; }
     .present .present-why .img {
-      display: none; }
+      display: none;
+      background-color: #67747F; }
     .present .present-why .data {
       padding: 16px 28px; }
       .present .present-why .data h3 {
@@ -1236,8 +1236,8 @@ header {
     .present::before {
       height: 94%; }
     .present h2 {
-      font-size: 32px;
-      line-height: 43px;
+      font-size: 33px;
+      line-height: 44px;
       margin-bottom: 32px; }
     .present p.present-text {
       font-size: 17.5px;
@@ -1667,7 +1667,7 @@ header {
       margin-bottom: 60px;
       width: 70%;
       font-size: 38px;
-      line-height: 48px; }
+      line-height: 49px; }
     .comp .items {
       width: 90%;
       margin: auto;
@@ -1687,7 +1687,8 @@ header {
     padding-bottom: 65px; }
     .comp h2 {
       margin-bottom: 65px;
-      width: 70%; }
+      width: 70%;
+      line-height: 52px; }
     .comp .items {
       width: 80%;
       margin: auto;
@@ -1701,7 +1702,8 @@ header {
     padding-top: 84px;
     padding-bottom: 67px; }
     .comp h2 {
-      margin-bottom: 68px; }
+      margin-bottom: 68px;
+      line-height: 53px; }
     .comp .items {
       width: 85%; }
       .comp .items .item img {
@@ -1791,37 +1793,14 @@ header {
   .contact-form .the-form {
     margin-top: 28px; }
     .contact-form .the-form form .fields-for {
-      margin-bottom: 20px; }
+      margin-bottom: 24px; }
       .contact-form .the-form form .fields-for p {
         margin-bottom: 8px; }
         .contact-form .the-form form .fields-for p b {
           font-weight: 600; }
-      .contact-form .the-form form .fields-for .select-button {
-        border: none;
-        background: #EEEEEE;
-        display: inline-block;
-        padding: 10px 19px;
-        font-family: 'Route 159', sans-serif;
-        margin-right: 6px;
-        outline: none;
-        cursor: pointer;
-        -webkit-transition: all ease-in-out 0.2s;
-        -o-transition: all ease-in-out 0.2s;
-        transition: all ease-in-out 0.2s;
-        border-radius: 2px; }
-        .contact-form .the-form form .fields-for .select-button:hover {
-          background: rgba(103, 116, 127, 0.2); }
-        .contact-form .the-form form .fields-for .select-button p {
-          padding: 0;
-          margin: 0; }
-      .contact-form .the-form form .fields-for .selected {
-        background: #50B308;
-        color: white; }
-        .contact-form .the-form form .fields-for .selected:hover {
-          background: #50B308; }
     .contact-form .the-form form .fields-general input {
       font-family: 'Route 159', sans-serif;
-      padding: 10px;
+      padding: 12px 11px;
       margin-bottom: 11px;
       width: 100%;
       -webkit-box-sizing: border-box;
@@ -1837,7 +1816,7 @@ header {
         border: solid 1px rgba(103, 116, 127, 0.5); }
     .contact-form .the-form form .fields-empresa input {
       font-family: 'Route 159', sans-serif;
-      padding: 10px;
+      padding: 12px 11px;
       margin-bottom: 11px;
       width: 100%;
       -webkit-box-sizing: border-box;
@@ -1851,37 +1830,14 @@ header {
         background: transparent;
         border: solid 1px rgba(103, 116, 127, 0.5); }
     .contact-form .the-form form .fields-motivo {
-      margin-top: 8px;
-      margin-bottom: 21px; }
+      margin-top: 17px;
+      margin-bottom: 27px; }
       .contact-form .the-form form .fields-motivo p {
         margin-bottom: 8px; }
         .contact-form .the-form form .fields-motivo p b {
           font-weight: 600; }
-      .contact-form .the-form form .fields-motivo .select-button-b {
-        border: none;
-        background: #EEEEEE;
-        display: inline-block;
-        padding: 10px 19px;
-        font-family: 'Route 159', sans-serif;
-        margin-right: 6px;
-        outline: none;
-        cursor: pointer;
-        -webkit-transition: all ease-in-out 0.2s;
-        -o-transition: all ease-in-out 0.2s;
-        transition: all ease-in-out 0.2s;
-        border-radius: 2px; }
-        .contact-form .the-form form .fields-motivo .select-button-b:hover {
-          background: rgba(103, 116, 127, 0.2); }
-        .contact-form .the-form form .fields-motivo .select-button-b p {
-          padding: 0;
-          margin: 0; }
-      .contact-form .the-form form .fields-motivo .selected {
-        background: #50B308;
-        color: white; }
-        .contact-form .the-form form .fields-motivo .selected:hover {
-          background: #50B308; }
     .contact-form .the-form form .fields-servicios {
-      margin-bottom: 16px; }
+      margin-bottom: 23px; }
       .contact-form .the-form form .fields-servicios p {
         margin-bottom: 12px; }
         .contact-form .the-form form .fields-servicios p b {
@@ -1889,24 +1845,32 @@ header {
       .contact-form .the-form form .fields-servicios .select-button-c {
         border: none;
         background: #EEEEEE;
-        display: inline-block;
-        padding: 10px 19px;
+        display: block;
+        width: 100%;
+        padding: 13.5px 19px;
         font-family: 'Route 159', sans-serif;
         margin-right: 6px;
-        margin-bottom: 8px;
+        margin-bottom: 12px;
         outline: none;
         cursor: pointer;
-        -webkit-transition: all ease-in-out 0.2s;
-        -o-transition: all ease-in-out 0.2s;
-        transition: all ease-in-out 0.2s;
-        border-radius: 2px; }
+        -webkit-transition: all ease-in-out 0.3s;
+        -o-transition: all ease-in-out 0.3s;
+        transition: all ease-in-out 0.3s;
+        border-radius: 2px;
+        -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+        -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25); }
         .contact-form .the-form form .fields-servicios .select-button-c:hover {
-          background: rgba(103, 116, 127, 0.2); }
+          background: rgba(103, 116, 127, 0.2);
+          -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0);
+          -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0); }
         .contact-form .the-form form .fields-servicios .select-button-c p {
           padding: 0;
           margin: 0; }
       .contact-form .the-form form .fields-servicios .selected {
         background: #50B308;
+        border-color: #50B308;
         color: white; }
         .contact-form .the-form form .fields-servicios .selected:hover {
           background: #50B308; }
@@ -1915,7 +1879,7 @@ header {
       height: 140px;
       -webkit-box-sizing: border-box;
       box-sizing: border-box;
-      padding: 10px;
+      padding: 14px 11px;
       outline: none;
       font-family: 'Route 159', sans-serif;
       border: solid 1px transparent;
@@ -1937,13 +1901,36 @@ header {
       border: none;
       color: white;
       font-weight: 600;
-      margin-top: 8px;
+      margin-top: 12px;
       cursor: pointer;
       -webkit-transition: all ease-in-out 0.2s;
       -o-transition: all ease-in-out 0.2s;
       transition: all ease-in-out 0.2s; }
       .contact-form .the-form form button.send-button:hover {
         background: #58C408; }
+    .contact-form .the-form form .select-checkbox {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: solid 1px black;
+      vertical-align: middle;
+      margin-right: 6px;
+      outline: none;
+      cursor: pointer;
+      -webkit-transition: all ease-in-out 0.2s;
+      -o-transition: all ease-in-out 0.2s;
+      transition: all ease-in-out 0.2s; }
+      .contact-form .the-form form .select-checkbox:checked {
+        background: #50B308;
+        border: solid 1px #50B308; }
+    .contact-form .the-form form .checkbox-label {
+      vertical-align: middle;
+      margin-right: 16px;
+      font-size: 13px;
+      cursor: pointer; }
 
 @media (min-width: 667px) {
   .contact-form {
@@ -1952,14 +1939,8 @@ header {
     font-size: 12px; }
     .contact-form .the-form {
       margin-top: 38px; }
-      .contact-form .the-form form .fields-for {
-        margin-bottom: 21px; }
-        .contact-form .the-form form .fields-for p {
-          margin-bottom: 10px; }
-        .contact-form .the-form form .fields-for .select-button {
-          padding: 12px 21px;
-          margin-right: 8px;
-          font-size: 13px; }
+      .contact-form .the-form form .fields-for p {
+        margin-bottom: 10px; }
       .contact-form .the-form form .fields-general {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -1975,25 +1956,22 @@ header {
           margin-bottom: 12px;
           font-size: 13px; }
       .contact-form .the-form form .fields-motivo {
-        margin-top: 8px;
+        margin-top: 15px;
         margin-bottom: 25px; }
         .contact-form .the-form form .fields-motivo p {
           margin-bottom: 10px; }
-        .contact-form .the-form form .fields-motivo .select-button-b {
-          padding: 12px 21px;
-          margin-right: 8px;
-          font-size: 13px; }
-      .contact-form .the-form form .fields-servicios {
-        margin-bottom: 16px; }
-        .contact-form .the-form form .fields-servicios .select-button-c {
-          padding: 12px 21px;
-          margin-right: 8px;
-          font-size: 13px; }
+      .contact-form .the-form form .fields-servicios .select-button-c {
+        padding: 12px 21px;
+        margin-right: 8px;
+        font-size: 13px;
+        display: inline-block;
+        width: auto; }
       .contact-form .the-form form textarea.mensaje {
         height: 160px;
         font-size: 13px; }
       .contact-form .the-form form button.send-button {
-        padding: 11px 24px;
+        padding: 11px 30px;
+        border-radius: 2px;
         width: auto;
         font-size: 13px; } }
 
@@ -2002,11 +1980,7 @@ header {
     padding-bottom: 70px;
     font-size: 12.5px; }
     .contact-form .the-form form .fields-for {
-      margin-bottom: 23px; }
-      .contact-form .the-form form .fields-for .select-button {
-        padding: 12.5px 21px;
-        margin-right: 8px;
-        font-size: 14px; }
+      margin-bottom: 26px; }
     .contact-form .the-form form .fields-general {
       grid-column-gap: 13px; }
       .contact-form .the-form form .fields-general input {
@@ -2020,16 +1994,12 @@ header {
         font-size: 14px;
         padding: 15px 12px; }
     .contact-form .the-form form .fields-motivo {
-      margin-top: 8px;
-      margin-bottom: 26px; }
+      margin-top: 13px;
+      margin-bottom: 32px; }
       .contact-form .the-form form .fields-motivo p {
         margin-bottom: 10px; }
-      .contact-form .the-form form .fields-motivo .select-button-b {
-        padding: 12.5px 21px;
-        margin-right: 8px;
-        font-size: 14px; }
     .contact-form .the-form form .fields-servicios {
-      margin-bottom: 19px; }
+      margin-bottom: 24px; }
       .contact-form .the-form form .fields-servicios .select-button-c {
         padding: 12.5px 21px;
         margin-right: 8px;
@@ -2039,9 +2009,15 @@ header {
       font-size: 15px;
       padding: 15px 12px; }
     .contact-form .the-form form button.send-button {
-      margin-top: 10px;
-      padding: 11px 24px;
+      margin-top: 14px;
       width: auto;
+      font-size: 14px; }
+    .contact-form .the-form form .select-checkbox {
+      width: 23px;
+      height: 23px;
+      margin-right: 6px; }
+    .contact-form .the-form form .checkbox-label {
+      margin-right: 26px;
       font-size: 14px; } }
 
 @media (min-width: 1200px) {
@@ -2049,10 +2025,7 @@ header {
     font-size: 13px;
     padding-top: 30px; }
     .contact-form .the-form form .fields-for {
-      margin-bottom: 28px; }
-      .contact-form .the-form form .fields-for .select-button {
-        padding: 13px 22px;
-        font-size: 15px; }
+      margin-bottom: 30px; }
     .contact-form .the-form form .fields-general input {
       font-size: 15px;
       padding: 15px 15.5px; }
@@ -2060,11 +2033,8 @@ header {
       font-size: 15px;
       padding: 15px 15.5px; }
     .contact-form .the-form form .fields-motivo {
-      margin-top: 14px;
-      margin-bottom: 30px; }
-      .contact-form .the-form form .fields-motivo .select-button-b {
-        padding: 13px 22px;
-        font-size: 15px; }
+      margin-top: 15px;
+      margin-bottom: 32px; }
     .contact-form .the-form form .fields-servicios {
       margin-bottom: 28px; }
       .contact-form .the-form form .fields-servicios .select-button-c {
@@ -2075,14 +2045,19 @@ header {
       font-size: 16px;
       padding: 16px 15.5px; }
     .contact-form .the-form form button.send-button {
-      padding: 13px 25px;
-      margin-top: 15px; } }
+      padding: 12px 32px;
+      margin-top: 15px; }
+    .contact-form .the-form form .select-checkbox {
+      width: 24px;
+      height: 24px;
+      margin-right: 7.5px; }
+    .contact-form .the-form form .checkbox-label {
+      margin-right: 28px;
+      font-size: 15px; } }
 
 @media (min-width: 1400px) {
   .contact-form {
     font-size: 13px; }
-    .contact-form .the-form form .fields-for .select-button {
-      padding: 12.5px 22px; }
     .contact-form .the-form form .fields-servicios {
       margin-bottom: 28px; }
     .contact-form .the-form form textarea.mensaje {

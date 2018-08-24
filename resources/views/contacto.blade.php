@@ -21,12 +21,16 @@
           {{-- For: Selección: Empresa / Hogar --}}
           <div class="fields-for">
             <p><b>Consultar para:</b></p>
-            <button type="button" class="select-button button-empresa">
+            <input type="checkbox" class="select-checkbox select-checkbox-empresa" id="checkbox-empresa">
+            <label class="checkbox-label" for="checkbox-empresa">Empresa</label>
+            <input type="checkbox" class="select-checkbox select-checkbox-hogares" id="checkbox-hogares">
+            <label class="checkbox-label" for="checkbox-hogares">Hogares</label>
+            {{-- <button type="button" class="select-button button-empresa">
               Empresa
             </button>
             <button type="button" class="select-button button-hogares">
               Hogar
-            </button>
+            </button> --}}
           </div>
 
           {{-- Datos Generales: Nombre, Apellido, Correo, Numero --}}
@@ -46,12 +50,16 @@
           {{-- Seleccionar Motivo --}}
           <div class="fields-motivo">
             <p><b>Motivo:</b></p>
-            <button type="button" class="select-button-b">
+            <input type="checkbox" class="select-checkbox select-checkbox-consultas" id="checkbox-consultas">
+            <label class="checkbox-label" for="checkbox-consultas">Consultas</label>
+            <input type="checkbox" class="select-checkbox select-checkbox-visita" id="checkbox-visitas">
+            <label class="checkbox-label" for="checkbox-visitas">Solicitar una Visita</label>
+            {{-- <button type="button" class="select-button-b">
               Consultas Generales
             </button>
             <button type="button" class="select-button-b">
               Solicitar una Visita
-            </button>
+            </button> --}}
           </div>
 
           {{-- Seleccionar Servicios --}}

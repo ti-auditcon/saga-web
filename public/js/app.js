@@ -47,28 +47,26 @@ $(function(){
   });
 
   // Contact fields
-  $('.fields-for .select-button').click(function(){
-    $('.select-button').removeClass('selected');
-    $(this).addClass('selected');
-  });
 
-  $('.button-empresa').click(function(){
+  $('.select-checkbox-empresa').click(function(){
+    $('.select-checkbox-hogares').prop('checked', false);
     $('.fields-empresa').removeClass('bd-none');
     $('.fields-general [name="input-direccion"]').addClass('bd-none');
   });
-
-  $('.button-hogares').click(function(){
+  $('.select-checkbox-hogares').click(function(){
+    $('.select-checkbox-empresa').prop('checked', false);
     $('.fields-empresa').addClass('bd-none');
     $('.fields-general [name="input-direccion"]').removeClass('bd-none');
   });
 
-  $('.fields-motivo .select-button-b').click(function(){
-    $('.select-button-b').removeClass('selected');
-    $(this).addClass('selected');
+  $('.select-checkbox-consultas').click(function(){
+    $('.select-checkbox-visita').prop('checked', false);
+  });
+  $('.select-checkbox-visita').click(function(){
+    $('.select-checkbox-consultas').prop('checked', false);
   });
 
   $('.fields-servicios .select-button-c').click(function(){
-    // $('.select-button-c').removeClass('selected');
     $(this).toggleClass('selected');
   });
 

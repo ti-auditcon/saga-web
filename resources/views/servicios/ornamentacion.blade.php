@@ -12,11 +12,11 @@
 
   {{-- Present --}}
   <section class="present pd-lr">
-    <h2 class="animated fadeIn slow">Un buen manejo de su jardín previene la presencia de plagas</h2>
+    <h2 class="animated fadeIn slow">Un buen manejo de su jardín<br> previene la presencia de plagas</h2>
     <p class="present-text animated fadeIn slow">Curabitur lectus neque, imperdiet vel quam consequat, tincidunt fringilla nisl. Nam gravida arcu tellus, vel condimentum nunc maximus eget. Vestibulum a justo sed lacus sodales aliquet. Nam congue convallis massa eu molestie.</p>
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
-      <div class="img"></div>
+      <div class="img" style="background-image: url('/img/servicios_ornamentacion.jpg')"></div>
       <div class="data background-gray">
         <h3>¿Porqué es importante?</h3>
         <p>Este texto debería explicar como actua la desratización o control de roedores que ofrece SAGA Service en la desratización.</p>

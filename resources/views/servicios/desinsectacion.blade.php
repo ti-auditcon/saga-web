@@ -16,7 +16,7 @@
     <p class="present-text animated fadeIn slow">Identificamos el o los insectos a controlar y actuamos sobre su superficie de trayectoris, nidos, sectores de alimentación y reproductivos para aplicar una fumigación eficaz que acabe con ellos.</p>
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
-      <div class="img"></div>
+      <div class="img" style="background-image: url('/img/servicios_desinsectacion.jpg')"></div>
       <div class="data background-gray">
         <h3>¿Porqué es importante?</h3>
         <p>Este texto debería explicar como actua la desinsectación que ofrece SAGA Service en la desratización.</p>

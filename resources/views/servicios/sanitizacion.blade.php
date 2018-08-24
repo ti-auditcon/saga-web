@@ -16,7 +16,7 @@
     <p class="present-text animated fadeIn slow">Eliminamos microorganismos como bacterias, hongos, levaduras y virus, que contaminan y producen enfermedades y se pueden encontrar en utensilios, quirófanos, baños, duchas, camarines, saunas, comedores, cocinas y en un sin fin de lugares.</p>
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
-      <div class="img"></div>
+      <div class="img" style="background-image: url('/img/servicios_sanitizacion.jpg')"></div>
       <div class="data background-gray">
         <h3>¿Porqué es importante?</h3>
         <p>Este texto debería explicar como actua la sanitización que ofrece SAGA Service en la desratización.</p>
