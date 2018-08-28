@@ -1,4 +1,4 @@
-ultra-slow@extends('layouts.app')
+@extends('layouts.app')
 @section('page-title')
 <title>Ornamentación - SAGA Service</title>
 @endsection
