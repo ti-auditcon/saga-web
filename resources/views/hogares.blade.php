@@ -36,7 +36,7 @@
 
   {{-- Servicios --}}
   <section class="servicios pd-lr">
-    <h2 class="color-blue present-title">Una variedad de soluciones<br> para cada necesidad</h2>
+    <h2 class="color-blue present-title" data-aos="fade-in" data-aos-duration="400">Una variedad de soluciones<br> para cada necesidad</h2>
     <div class="items">
       <div class="item" data-aos="fade-up" data-aos-duration="400">
         <a href="{{url('/servicios/desratizacion')}}">
@@ -73,7 +73,7 @@
 
   {{-- CTA Visita --}}
   <section class="cta-visita background-greenUltraDark">
-    <div class="item-data">
+    <div class="item-data" data-aos="fade-in" data-aos-duration="800">
       <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-greenUltraDark" href="{{url('/contacto')}}">Solicite aquí</a>

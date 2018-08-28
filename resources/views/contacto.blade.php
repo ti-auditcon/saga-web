@@ -15,7 +15,7 @@
     {{-- <p class="contact-form-intro">Si tiene dudas, consultas o cualquier motivo por el que desea que sepamos de usted puede contactarnos personalmente desde su correo a info@sagaservice.cl<br><br>
     También puede enviarnos un mensaje desde este formulario de contacto.</p> --}}
 
-    <div class="the-form">
+    <div class="the-form animated fadeIn slow">
       <form class="" action="" method="post">
 
           {{-- For: Selección: Empresa / Hogar --}}

@@ -7,8 +7,8 @@
       @yield('page-title')
 
       {{-- css --}}
-      <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
-      <link rel="stylesheet" href="{{ asset('/css/aos.css') }}">
+      <link rel="stylesheet" href="{{ asset('/css/app.min.css') }}">
+      <link rel="stylesheet" href="{{ asset('/css/aos.min.css') }}">
 
       {{-- Favicons --}}
       <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ asset('/fav/apple-touch-icon-57x57.png') }}" />
@@ -42,8 +42,8 @@
 
       @include('layouts.footer')
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="{{ asset('js/aos.js') }}"></script>
-      <script src="{{ asset('js/app.js') }}"></script>
+      <script src="{{ asset('js/aos.min.js') }}"></script>
+      <script src="{{ asset('js/app.min.js') }}" defer></script>
       @yield('specialScripts')
     </body>
 </html>

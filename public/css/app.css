@@ -344,8 +344,14 @@ small, .font_small {
   animation-fill-mode: both; }
 
 .slow {
-  -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+  -webkit-animation-duration: 1.8s;
+  animation-duration: 1.8s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; }
+
+.ultra-slow {
+  -webkit-animation-duration: 2.5s;
+  animation-duration: 2.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
@@ -1596,11 +1602,11 @@ header {
     .cta-visita .item-data {
       width: 100%;
       padding: 0;
-      height: 460px;
+      height: 480px;
       max-width: 1280px;
       margin: auto;
-      padding-top: 95px;
-      padding-bottom: 95px; }
+      padding-top: 105px;
+      padding-bottom: 105px; }
       .cta-visita .item-data h2 {
         font-size: 38px;
         line-height: 52px;
@@ -1612,7 +1618,7 @@ header {
     .cta-visita .item-img {
       position: absolute;
       right: 0;
-      height: 460px;
+      height: 480px;
       width: 47%; } }
 
 /* Comps */
@@ -2495,3 +2501,5 @@ footer {
 /* Contacto*/
 .mapa {
   height: 400px; }
+
+/*# sourceMappingURL=app.css.map */
