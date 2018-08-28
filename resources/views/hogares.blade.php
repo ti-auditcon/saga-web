@@ -6,8 +6,8 @@
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/para_hogares.jpg')}}')">
-    <img class="animated fadeIn slow" src="{{ asset('/icons/icono_hogares.png') }}">
-    <h1 class="animated fadeIn slow">Soluciones para Hogares</h1>
+    <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/icono_hogares.png') }}">
+    <h1 class="animated fadeIn ultra-slow">Soluciones para Hogares</h1>
   </section>
 
   {{-- Present --}}

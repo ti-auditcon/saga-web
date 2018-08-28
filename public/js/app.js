@@ -1,5 +1,12 @@
 $(function(){
 
+  $('.close').click(function() {
+      var destination = $(this).data("link");
+   $("body").fadeOut(200,function(){
+         window.location.replace(destination);
+      });
+  });
+
   // Mostrar/Ocultar Menus
   $('.button-open').click(function(){
     $('nav.main-menu').addClass('fadeIn');

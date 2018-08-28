@@ -1,4 +1,4 @@
-@extends('layouts.app')
+ultra-slow@extends('layouts.app')
 @section('page-title')
 <title>Ornamentación - SAGA Service</title>
 @endsection
@@ -6,8 +6,8 @@
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img_ornamentacion.jpg')}}')">
-    <img class="animated fadeIn slow" src="{{ asset('/icons/title_ornamentacion.png') }}">
-    <h1 class="animated fadeIn slow">Ornamentación</h1>
+    <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/title_ornamentacion.png') }}">
+    <h1 class="animated fadeIn ultra-slow">Ornamentación</h1>
   </section>
 
   {{-- Present --}}

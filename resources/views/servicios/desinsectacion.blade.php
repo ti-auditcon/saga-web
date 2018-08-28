@@ -6,8 +6,8 @@
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img_desinsectacion.jpg')}}')">
-    <img class="animated fadeIn slow" src="{{ asset('/icons/title_desinsectacion.png') }}">
-    <h1 class="animated fadeIn slow">Desinsectación</h1>
+    <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/title_desinsectacion.png') }}">
+    <h1 class="animated fadeIn ultra-slow">Desinsectación</h1>
   </section>
 
   {{-- Present --}}

@@ -6,8 +6,8 @@
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/para_empresas.jpg')}}')">
-    <img class="animated fadeIn slow" src="{{ asset('/icons/saga_icon.png') }}">
-    <h1 class="animated fadeIn slow">¿Porqué elegir SAGA?</h1>
+    <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/saga_icon.png') }}">
+    <h1 class="animated fadeIn ultra-slow">¿Porqué elegir SAGA?</h1>
   </section>
 
   {{-- Comp --}}
