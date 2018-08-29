@@ -1405,9 +1405,15 @@ header {
     .metodologia .items .item {
       display: grid;
       grid-template-columns: 0.2fr 0.8fr;
+      -ms-flex-line-pack: start;
+      align-content: start;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      align-items: start;
       margin-bottom: 18px; }
       .metodologia .items .item img {
-        width: 88%; }
+        width: 90%;
+        height: auto; }
       .metodologia .items .item .data {
         padding-left: 16px; }
         .metodologia .items .item .data h4 {
