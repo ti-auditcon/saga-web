@@ -83,7 +83,7 @@
           </div>
 
           {{-- Mensaje --}}
-          <textarea class="mensaje" placeholder="Su mensaje"></textarea>
+          <textarea class="mensaje" placeholder="Describa su solicitud"></textarea>
           <button type="submit" class="send-button">Enviar</button>
 
       </form>
@@ -104,7 +104,9 @@
         <img src="{{ asset('/icons/contacto_telefono.png') }}">
         <div class="item-inner">
           <h3>Llámenos al</h3>
-          <p>(075) 2 223 696</p>
+          <p>(75) 2 590 148<br>
+            +56 9 656 58 526
+          </p>
         </div>
       </div>
       <div class="item">

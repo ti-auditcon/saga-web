@@ -27,7 +27,7 @@
           <img src="{{ asset('/icons/icono_llamenos.png') }}">
           <p>
             <small>Llámenos al</small><br>
-            <a href="teL:+56752223696">(75) 2 223 696</a>
+            <a href="teL:+56752223696">(75) 2 590 148</a>
           </p>
         </div>
         <div class="item">
@@ -69,7 +69,7 @@
           <a href="{{url('/servicios/sanitizacion')}}">Sanitización</a>
           <a href="{{url('/servicios/desinsectacion')}}">Desinsectación</a>
           <a href="{{url('/servicios/otras-plagas')}}">Otras Plagas</a>
-          <a href="{{url('/servicios/ornamentacion')}}">Ornamentación</a>
+          <a href="{{url('/servicios/ornamentacion')}}">Ornamentación Jardines</a>
         </ul>
       </div>
 

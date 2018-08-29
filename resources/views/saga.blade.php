@@ -12,7 +12,7 @@
 
   {{-- Comp --}}
   <section class="comp pd-lr background-blue color-white">
-    <h2 data-aos="fade-in" data-aos-duration="800">Nuestro compromiso está en hacer bien nuestro trabajo</h2>
+    <h2 data-aos="fade-in" data-aos-duration="800">Nuestro compromiso es realizar bien nuestro trabajo</h2>
     <div class="items" data-aos="fade-in" data-aos-duration="800">
       <div class="item">
         <img src="{{ asset('/icons/icono_calidad.png') }}">

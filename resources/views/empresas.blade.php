@@ -65,7 +65,7 @@
       <div class="item" data-aos="fade-up" data-aos-duration="1200">
         <a href="{{url('/servicios/ornamentacion')}}">
           <img src="{{ asset('/icons/servicios_ornamental.png') }}">
-          <h5>Ornamental</h5>
+          <h5>Ornamentación Jardines</h5>
         </a>
       </div>
     </div>

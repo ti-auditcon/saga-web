@@ -13,7 +13,7 @@
   {{-- Present --}}
   <section class="present pd-lr">
     <h2 class="animated fadeIn slow">El enemigo invisible</h2>
-    <p class="present-text animated fadeIn slow">Eliminamos microorganismos como bacterias, hongos, levaduras y virus, que contaminan y producen enfermedades y se pueden encontrar en utensilios, quirófanos, baños, duchas, camarines, saunas, comedores, cocinas y en un sin fin de lugares.</p>
+    <p class="present-text animated fadeIn slow">Eliminamos microorganismos como bacterias, hongos, levaduras y virus, que contaminan y producen enfermedades infecto-contagiosas que se encuentran en utensilios, servicios higiénicos, duchas, camarines, saunas, comedores, cocinas y loockers.</p>
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
       <div class="img" style="background-image: url('/img/servicios_sanitizacion.jpg')"></div>
@@ -34,29 +34,29 @@
       <div class="item">
         <img src="{{ asset('/icons/icono_visita.png') }}">
         <div class="data">
-          <h4>Paso 1: Visita</h4>
+          <h4>Paso 1: Contacto y fecha de visita</h4>
           <p>Nos dirigimos a donde el problema se encuentra. Junto a ud, acordamos la fecha más indicada para poder realizar una inspección del lugar</p>
         </div>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_inspeccion.png') }}">
         <div class="data">
-          <h4>Paso 2: Inspección</h4>
-          <p>Inspeccionaremos el lugar de arriba a abajo, por dentro y por fuera, para detectar problemas de plagas actuales o potenciales</p>
+          <h4>Paso 2: Inspección del Lugar</h4>
+          <p>Inspeccionaremos el lugar con el fin de elaborar un diagnóstico para detectar problemas de plagas actuales o potenciales</p>
         </div>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_propuesta.png') }}">
         <div class="data">
-          <h4>Paso 3: Propuesta</h4>
-          <p>Una vez inspeccionado le ofreceremos la mejor solución para acabar con la plaga y los resguardos necesarios para que no regrese.</p>
+          <h4>Paso 3: Diagnóstico y Propuesta</h4>
+          <p>Una vez diagnosticado su problema le ofreceremos la mejor solución para eliminar la(s) plaga(s) y el presupuesto respectivo.</p>
         </div>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_accion.png') }}">
         <div class="data">
-          <h4>Paso 4: Acción</h4>
-          <p>Con implementos y tecnología especializada nuestro equipo eliminará la plaga del lugar.</p>
+          <h4>Paso 4: Control</h4>
+          <p>Implementación de plan de control y seguimiento especializado con nuestro equipo profesional.</p>
         </div>
       </div>
     </div>
