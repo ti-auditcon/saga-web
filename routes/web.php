@@ -29,6 +29,9 @@ Route::get('/contacto', function () {
 Route::get('/enviado', function () {
     return view('enviado');
 });
+
+Route::post('/enviado', 'MailController@sendmail');
+
 Route::get('/servicios/desratizacion', function () {
     return view('servicios.desratizacion');
 });

@@ -16,14 +16,15 @@
     También puede enviarnos un mensaje desde este formulario de contacto.</p> --}}
 
     <div class="the-form animated fadeIn slow">
-      <form class="" action="" method="post">
+      {!! Form::open(['action' => 'MailController@sendmail','class'=>'row','method'=>'POST','id'=>'captcha-form']) !!}
+
 
           {{-- For: Selección: Empresa / Hogar --}}
           <div class="fields-for">
             <p><b>Consultar para:</b></p>
-            <input type="checkbox" class="select-checkbox select-checkbox-empresa" id="checkbox-empresa">
+            <input type="checkbox" class="select-checkbox select-checkbox-empresa" id="checkbox-empresa" value = "Empresa" name="consulta" >
             <label class="checkbox-label" for="checkbox-empresa">Empresa</label>
-            <input type="checkbox" class="select-checkbox select-checkbox-hogares" id="checkbox-hogares">
+            <input type="checkbox" class="select-checkbox select-checkbox-hogares" id="checkbox-hogares" value = "Hogar" name="consulta" >
             <label class="checkbox-label" for="checkbox-hogares">Hogares</label>
             {{-- <button type="button" class="select-button button-empresa">
               Empresa
@@ -35,24 +36,24 @@
 
           {{-- Datos Generales: Nombre, Apellido, Correo, Numero --}}
           <div class="fields-general">
-            <input type="text" name="input-nombre" placeholder="Nombre">
-            <input type="text" name="input-correo" placeholder="Correo">
-            <input type="text" name="input-numero" placeholder="Número de Contacto">
-            <input type="text" name="input-direccion" placeholder="Dirección" class="animated fast fadeIn">
+            <input type="text" name="nombre" placeholder="Nombre">
+            <input type="text" name="email" placeholder="Correo">
+            <input type="text" name="telefono" placeholder="Número de Contacto">
+            <input type="text" name="direccion" placeholder="Dirección" class="animated fast fadeIn">
           </div>
 
           {{-- Opcional: Data Empresa --}}
           <div class="fields-empresa bd-none animated fast fadeIn" id="campos-datosEmpresa">
-            <input type="text" name="input-nombreEmpresa" placeholder="Nombre de la Empresa">
-            <input type="text" name="input-direccionEmpresa" placeholder="Dirección de la Empresa">
+            <input type="text" name="nombreEmpresa" placeholder="Nombre de la Empresa">
+            <input type="text" name="direccionEmpresa" placeholder="Dirección de la Empresa">
           </div>
 
           {{-- Seleccionar Motivo --}}
           <div class="fields-motivo">
             <p><b>Motivo:</b></p>
-            <input type="checkbox" class="select-checkbox select-checkbox-consultas" id="checkbox-consultas">
+            <input type="checkbox" class="select-checkbox select-checkbox-consultas" id="checkbox-consultas" name="motivo" value="consulta">
             <label class="checkbox-label" for="checkbox-consultas">Consultas</label>
-            <input type="checkbox" class="select-checkbox select-checkbox-visita" id="checkbox-visitas">
+            <input type="checkbox" class="select-checkbox select-checkbox-visita" id="checkbox-visitas" name="motivo" value="visita">
             <label class="checkbox-label" for="checkbox-visitas">Solicitar una Visita</label>
             {{-- <button type="button" class="select-button-b">
               Consultas Generales
@@ -65,28 +66,33 @@
           {{-- Seleccionar Servicios --}}
           <div class="fields-servicios">
             <p><b>Seleccione uno o más servicios:</b></p>
-            <button type="button" class="select-button-c">
+            <button type="button" class="select-button-c" >
+              <input type="checkbox" hidden name="servicios[]" value="Desratización"  />
               Desratización
             </button>
             <button type="button" class="select-button-c">
+              <input type="checkbox" hidden name="servicios[]" value="Sanitización"  />
               Sanitización
             </button>
             <button type="button" class="select-button-c">
+              <input type="checkbox" hidden name="servicios[]" value="Desinsectación"  />
               Desinsectación
             </button>
             <button type="button" class="select-button-c">
+              <input type="checkbox" hidden name="servicios[]" value="Otras Plagas"  />
               Otras Plagas
             </button>
             <button type="button" class="select-button-c">
+              <input type="checkbox" hidden name="servicios[]" value="Ornamental"  />
               Ornamental
             </button>
           </div>
 
           {{-- Mensaje --}}
-          <textarea class="mensaje" placeholder="Describa su solicitud"></textarea>
+          <textarea class="mensaje" placeholder="Describa su solicitud" name="mensaje"></textarea>
           <button type="submit" class="send-button">Enviar</button>
 
-      </form>
+      {{Form::close()}}
     </div>
   </section>
 

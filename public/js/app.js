@@ -1,5 +1,7 @@
 $(function(){
 
+  $('.fields-servicios .select-button-c').children('input').prop('checked', false);
+
   $('.close').click(function() {
       var destination = $(this).data("link");
    $("body").fadeOut(200,function(){
@@ -75,6 +77,9 @@ $(function(){
 
   $('.fields-servicios .select-button-c').click(function(){
     $(this).toggleClass('selected');
+    console.log('fdsdfs');
+    var cb  = $(this).children('input');
+    cb.prop('checked', !cb.prop("checked"));
   });
 
   // Scroll to Info -> Hero Button
