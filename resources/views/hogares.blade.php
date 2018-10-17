@@ -5,31 +5,31 @@
 
 @section('content')
   {{-- Title Section --}}
-  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/para_hogares.jpg')}}')">
+  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/hogares-hero.jpg')}}')">
     <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/icono_hogares.png') }}">
     <h1 class="animated fadeIn ultra-slow">Soluciones para Hogares</h1>
   </section>
 
   {{-- Present --}}
   <section class="present present-hogares pd-lr">
-    <h2 class="animated fadeIn slow">La Salud de su familia es lo<br> más importante</h2>
-    <p class="present-text animated fadeIn slow">Un ambiente sano es un ambiente libre de plagas. Puede confiar en nuestra experiencia y liderazgo</p>
+    <h2 class="animated fadeIn slow">El bienestar de su familia es lo<br> más importante</h2>
+    <p class="present-text animated fadeIn slow">Un ambiente sano es un lugar libre de plagas. Confie en nuestra experiencia y liderazgo.</p>
 
     <div class="items items-hogares" data-aos="fade-up">
       <div class="item">
         <img src="{{ asset('/icons/icono_experiencia.png') }}">
         <h3 class="card-title">Equipo experto<br> y confiable</h3>
-        <p>Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. </p>
+        <p>Personal capacitado en control de plagas, en constante formación para garantizar resultados eficientes.</p>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_evaluacion.png') }}">
-        <h3 class="card-title">Evaluación<br> Personalziada</h3>
-        <p>Un profesional calificado le asesorará completamente para ofrecerle el servicio adecuado para su necesidad.</p>
+        <h3 class="card-title">Evaluación<br> Personalizada</h3>
+        <p>Nuestro grupo profesional  lo asesorará y entregará el servicio adecuado a su necesidad.</p>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_post-venta.png') }}">
         <h3 class="card-title">Seguimiento<br> Post Venta</h3>
-        <p>Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. </p>
+        <p>Nuestro compromiso es mantener contacto permatente con el cliente post servicio.</p>
       </div>
     </div>
   </section>
@@ -65,7 +65,7 @@
       <div class="item" data-aos="fade-up" data-aos-duration="1200">
         <a href="{{url('/servicios/ornamentacion')}}">
           <img src="{{ asset('/icons/servicios_ornamental.png') }}">
-          <h5>Ornamentación Jardines</h5>
+          <h5>Jardinería</h5>
         </a>
       </div>
     </div>

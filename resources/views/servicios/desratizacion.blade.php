@@ -5,7 +5,7 @@
 
 @section('content')
   {{-- Title Section --}}
-  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img_desratizacion.jpg')}}')">
+  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img-desratizacion.jpg')}}'); background-position: bottom;">
     <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/title_desratizacion.png') }}">
     <h1 class="animated fadeIn ultra-slow">Desratizacion</h1>
   </section>
@@ -13,15 +13,17 @@
   {{-- Present --}}
   <section class="present pd-lr">
     <h2 class="animated fadeIn slow">Control de Roedores</h2>
-    <p class="present-text animated fadeIn slow">Las ratas, los ratones y otras plagas invaden su hogar en busca de las mismas comodidades del hogar que usted: comida, refugio y agua. Desafortunadamente, son más que un inconveniente. Son una amenaza para su propiedad, su salud y su sentido de seguridad.</p>
+    <p class="present-text animated fadeIn slow">Los diferentes tipos de roedores domésticos invaden su hogar o empresa en busca de comida, agua y refugio. Son una amenaza constante para su salud, propiedad y seguridad.</p>
+    {{-- <p class="present-text animated fadeIn slow">Las ratas, los ratones y otras plagas invaden su hogar en busca de las mismas comodidades del hogar que usted: comida, refugio y agua. Desafortunadamente, son más que un inconveniente. Son una amenaza para su propiedad, su salud y su sentido de seguridad.</p> --}}
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
       <div class="img" style="background-image: url('/img/servicios_desratizacion1.jpg')"></div>
       <div class="data background-gray">
-        <h3>¿Porqué es importante?</h3>
-        <p>Este texto debería explicar como actua la desratización o control de roedores que ofrece SAGA Service en la desratización.</p>
-        <p>Pellentesque semper maximus sem ac ultrices. Curabitur pulvinar massa in tincidunt pulvinar. Praesent hendrerit cursus est, et pellentesque nunc commodo a. Sed consequat leo quis ante viverra venenatis. Nam mattis ligula non ipsum lobortis vulputate.</p>
-        <p>Vivamus id sem ac tortor feugiat volutpat. Vestibulum at sodales nibh. Vestibulum felis diam, consectetur id hendrerit at, sodales ac justo.</p>
+        <h3>¿Cómo lo hacemos?</h3>
+        <p>Mediante la implementación de medidas culturales y cebaderas de control específicas, eliminamos esta plaga en busca de su protección sanitaria y económica</p>
+        <h3>¿Porqué es Importante?</h3>
+        <p>Conocidos por transmitir enfermedades infecto-contagiosas que pueden afectar su salud, es necesario realizar seguimientos periódicos con mayor énfasis en invierno y verano, ya que son las temporadas donde más se reproducen.</p>
+        <p>Son persistentes y producen daños en el aislamiento de la casa, paredes e instalaciones eléctricas, pudiendo incluso provocar incendios por roer los cables.</p>
       </div>
     </div>
   </section>
@@ -69,6 +71,6 @@
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-blue" href="{{url('/contacto')}}">Solicite aquí</a>
     </div>
-    <div class="item-img" style="background-image: url('{{ asset('/img/cta_hogares.jpg') }}')"></div>
+    <div class="item-img" style="background-image: url('{{ asset('/img/cta-desratizacion.jpg') }}')"></div>
   </section>
 @endsection

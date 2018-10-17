@@ -516,7 +516,7 @@ header
   box-sizing: border-box
   height: 100vh
   text-align: center
-  background: url('../img/back-hero-index.jpg')
+  background: url('../img/back-hero-index30.jpg')
   background-position: center
   background-repeat: no-repeat
   background-size: cover
@@ -995,6 +995,7 @@ header
   .title-section
     height: 490px
     padding-top: 94px
+    background-position: top
     img
       height: 72px
       margin-bottom: 22px
@@ -1015,6 +1016,7 @@ header
   .title-section
     height: 580px
     padding-top: 102px
+    background-position: center
     img
       height: 76px
       margin-bottom: 21px
@@ -1211,7 +1213,7 @@ header
         p
           font-size: 17px
     .present-why-servicios
-      height: 370px
+      height: 420px
     .present-why
       .img
       .data
@@ -1536,6 +1538,11 @@ header
     margin-top: 0
     margin-bottom: 42px
     width: 90%
+  // .equipo-wrapper
+  //   width: 80%
+  //   margin: auto
+  //   img
+  //     width: 80%
   .items
     display: grid
     grid-template-columns: 1fr 1fr 1fr
@@ -2127,7 +2134,7 @@ header
 @media (min-width: 1600px)
   .ubicacion
     display: flex
-    height: 510px
+    height: 530px
     position: relative
     width: 100%
     .datos-direccion
@@ -2162,21 +2169,24 @@ footer
   padding-bottom: 24px
   .certificaciones
     display: grid
-    grid-template-columns: 1fr 1fr 1fr
-    grid-column-gap: 30px
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 5px
+    grid-row-gap: 6px
+    align-items: center
+    align-content: center
     padding: 30px 0 26px
     border-bottom: solid 1px #67747F
     .item
-      // text-align: center
       img
         width: 20px
         vertical-align: middle
-        // margin-right: 6px
-        // margin: auto
+        margin-right: 6px
         margin-bottom: 10px
-        // display: block
+        display: inline-block
       h4
         margin: 0
+        display: inline-block
+        font-size: 13px
         // display: block
   .the-footer
     padding-top: 34px
@@ -2285,17 +2295,20 @@ footer
   footer
     padding-bottom: 28px
     .certificaciones
+      grid-template-columns: 1fr 1fr 1fr 1fr
+      grid-column-gap: 30px
+      grid-row-gap: 0
       .item
         text-align: left
         img
           margin: 0
           // margin-right: 6px
-          display: inline-block
+          // display: inline-block
           width: 25px
           margin-right: 12px
         h4
           font-size: 14px
-          display: inline-block
+          // display: inline-block
     .the-footer
       padding-top: 40px
       display: grid
@@ -2516,6 +2529,49 @@ footer
 
 /* Contacto*/
 // Formulario
+
+/* Formulario Enviado */
+.enviado
+  text-align: center
+  padding-top: 21px
+  padding-bottom: 44px
+  h2
+    color: $darkGreen
+    font-size: 28px
+    line-height: 34px
+    margin-bottom: 21px
+  p
+    font-size: 15px
+
+@media (min-width: 600px)
+  .enviado
+    margin: auto
+    max-width: 600px
+    padding: 24px 21px 41px
+    h2
+      font-size: 34px
+      line-height: 39px
+      margin-bottom: 32px
+    p
+      font-size: 16px
+
+@media (min-width: 900px)
+  .enviado
+    padding: 24px 21px 48px
+    max-width: 700px
+    h2
+      font-size: 38px
+      line-height: 42px
+      margin-bottom: 39px
+
+@media (min-width: 1400px)
+  .enviado
+    padding: 30px 21px 56px
+    max-width: 700px
+    h2
+      font-size: 42px
+      // line-height: 42px
+      margin-bottom: 48px
 
 // Mapa
 .mapa

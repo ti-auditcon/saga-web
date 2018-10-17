@@ -5,6 +5,9 @@
     {{-- Certificaciones --}}
     <section class="certificaciones">
       <div class="item">
+        <h4 style="color: #81DF20;">Certificaciones &<br>Membresias</h4>
+      </div>
+      <div class="item">
         <img src="{{ asset('/icons/icono_certificado.png') }}">
         <h4>ISO 9001</h4>
       </div>
@@ -14,7 +17,7 @@
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_certificado.png') }}">
-        <h4>NCh 2909</h4>
+        <h4>Miembro ACHICPLA</h4>
       </div>
     </section>
 
@@ -69,7 +72,7 @@
           <a href="{{url('/servicios/sanitizacion')}}">Sanitización</a>
           <a href="{{url('/servicios/desinsectacion')}}">Desinsectación</a>
           <a href="{{url('/servicios/otras-plagas')}}">Otras Plagas</a>
-          <a href="{{url('/servicios/ornamentacion')}}">Ornamentación Jardines</a>
+          <a href="{{url('/servicios/ornamentacion')}}">Jardinería</a>
         </ul>
       </div>
 

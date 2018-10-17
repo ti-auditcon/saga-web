@@ -5,7 +5,7 @@
 
 @section('content')
   {{-- Title Section --}}
-  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/para_empresas.jpg')}}')">
+  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img-porque-saga.jpg')}}')">
     <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/saga_icon.png') }}">
     <h1 class="animated fadeIn ultra-slow">¿Porqué elegir SAGA?</h1>
   </section>
@@ -13,6 +13,9 @@
   {{-- Comp --}}
   <section class="comp pd-lr background-blue color-white">
     <h2 data-aos="fade-in" data-aos-duration="800">Nuestro compromiso es realizar bien nuestro trabajo</h2>
+    {{-- <div class="equipo-wrapper">
+      <img src="../img/equipo.jpg" alt="Equipo Saga">
+    </div> --}}
     <div class="items" data-aos="fade-in" data-aos-duration="800">
       <div class="item">
         <img src="{{ asset('/icons/icono_calidad.png') }}">
@@ -33,26 +36,34 @@
   <section class="comp_single pd-lr color-blue">
     <img src="{{ asset('/icons/icono_calidad_big.png') }}" data-aos="fade-in" data-aos-duration="800">
     <h2 data-aos="fade-in" data-aos-duration="800">Enfoque en la Calidad</h2>
-    <p class="color-blue" data-aos="fade-in" data-aos-duration="800">Curabitur lectus neque, imperdiet vel quam consequat, tincidunt fringilla nisl. Nam gravida arcu tellus, vel condimentum nunc maximus eget. Vestibulum a justo sed lacus sodales aliquet. Nam congue convallis massa eu molestie</p>
+    <p class="color-blue" data-aos="fade-in" data-aos-duration="800">
+      La calidad de nuestros servicios esta dada por el profesionalismo del equipo técnico, el uso de productos de alta eficacia y tecnología aplicada de última generación, garantizando nuestra labor en terreno.
+    </p>
   </section>
 
   {{-- Comp2 --}}
   <section class="comp_single pd-lr background-greenUltraDark color-white">
     <img src="{{ asset('/icons/icono_satisfaccion_big.png') }}" data-aos="fade-in" data-aos-duration="800">
     <h2 data-aos="fade-in" data-aos-duration="800">Garantía de Satisfacción</h2>
-    <p class="color-white" data-aos="fade-in" data-aos-duration="800">Curabitur lectus neque, imperdiet vel quam consequat, tincidunt fringilla nisl. Nam gravida arcu tellus, vel condimentum nunc maximus eget. Vestibulum a justo sed lacus sodales aliquet. Nam congue convallis massa eu molestie</p>
+    <p class="color-white" data-aos="fade-in" data-aos-duration="800">
+      Curabitur lectus neque, imperdiet vel quam consequat, tincidunt fringilla nisl. Nam gravida arcu tellus, vel condimentum nunc maximus eget. Vestibulum a justo sed lacus sodales aliquet. Nam congue convallis massa eu molestie
+    </p>
   </section>
 
   {{-- Comp1 --}}
   <section class="comp_single pd-lr color-lightGray">
     <img src="{{ asset('/icons/icono_rapidez_big.png') }}" data-aos="fade-in" data-aos-duration="800">
     <h2 data-aos="fade-in" data-aos-duration="800">Respuesta Rápida</h2>
-    <p class="color-gray" data-aos="fade-in" data-aos-duration="800">Curabitur lectus neque, imperdiet vel quam consequat, tincidunt fringilla nisl. Nam gravida arcu tellus, vel condimentum nunc maximus eget. Vestibulum a justo sed lacus sodales aliquet. Nam congue convallis massa eu molestie</p>
+    <p class="color-gray" data-aos="fade-in" data-aos-duration="800">
+      Curabitur lectus neque, imperdiet vel quam consequat, tincidunt fringilla nisl. Nam gravida arcu tellus, vel condimentum nunc maximus eget. Vestibulum a justo sed lacus sodales aliquet. Nam congue convallis massa eu molestie
+    </p>
   </section>
 
   {{-- Marcas --}}
   <section class="marcas pd-lr background-lightGray">
-    <h2 class="present-title" data-aos="fade-in" data-aos-duration="400">Grandes marcas respaldan nuestro profesionalismo</h2>
+    <h2 class="present-title" data-aos="fade-in" data-aos-duration="400">
+      Grandes marcas respaldan nuestro profesionalismo
+    </h2>
     <div class="items" data-aos="fade-in" data-aos-duration="800">
       <img class="item" src="{{ asset('/icons/marcas_chv.png') }}">
       <img class="item" src="{{ asset('/icons/marcas_arauco.png') }}">
@@ -71,6 +82,6 @@
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-blue" href="{{url('/contacto')}}">Solicite aquí</a>
     </div>
-    <div class="item-img" style="background-image: url('{{ asset('/img/cta_hogares.jpg') }}')"></div>
+    <div class="item-img" style="background-image: url('{{ asset('/img/cta_en-accion.jpg') }}')"></div>
   </section>
 @endsection

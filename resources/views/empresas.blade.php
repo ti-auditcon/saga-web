@@ -5,7 +5,7 @@
 
 @section('content')
   {{-- Title Section --}}
-  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/para_empresas.jpg')}}')">
+  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/empresas-hero.jpg')}}')">
     <img src="{{ asset('/icons/icono_empresas.png') }}" class="animated fadeIn ultra-slow">
     <h1 class="animated fadeIn ultra-slow">Soluciones para Empresas</h1>
   </section>
@@ -13,23 +13,24 @@
   {{-- Present --}}
   <section class="present pd-lr">
     <h2 class="animated fadeIn slow">No deje que las plagas<br> tomen el control de su negocio</h2>
-    <p class="animated fadeIn slow present-text">Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. </p>
+    <p class="animated fadeIn slow present-text">Nuestro compromiso es eliminar plagas que afecten su empresa de una forma amigable con el medio ambiente y el entorno en donde opera su negocio</p>
 
     <div class="items items-empresas" data-aos="fade-up">
       <div class="item">
         <img src="{{ asset('/icons/icono_experiencia.png') }}">
-        <h3 class="card-title">Experiencia y<br> Especialización</h3>
-        <p>Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. </p>
+        <h3 class="card-title">Experiencia y<br>Especialización</h3>
+        <p>Personal capacitado en control de plagas, en constante formación para garantizar resultados eficientes.</p>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_evaluacion.png') }}">
-        <h3 class="card-title">Evaluación en<br> Terreno</h3>
-        <p>Un profesional calificado le asesorará completamente para ofrecerle el servicio adecuado para su necesidad.</p>
+        <h3 class="card-title">Evaluación en<br>Terreno</h3>
+        <p>Nuestro grupo profesional lo visitará y entregará el servicio adecuado a su necesidad.</p>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_seguimiento.png') }}">
         <h3 class="card-title">Seguimiento y<br> Retroalimentación</h3>
-        <p>Cozy sphinx waves quart jug of bad milk. A very bad quack might jinx zippy fowls. Few quips galvanized the mock jury box. </p>
+        {{-- <p>Nuestro compromiso es mantener soluciones saludables y tecnicas actualizadas con los clientes</p> --}}
+        <p>Nuestro compromiso es mantener a nuestros clientes informados a través de monitoreo constante de nuestros servicios.</p>
       </div>
     </div>
   </section>
@@ -65,7 +66,7 @@
       <div class="item" data-aos="fade-up" data-aos-duration="1200">
         <a href="{{url('/servicios/ornamentacion')}}">
           <img src="{{ asset('/icons/servicios_ornamental.png') }}">
-          <h5>Ornamentación Jardines</h5>
+          <h5>Jardinería</h5>
         </a>
       </div>
     </div>
@@ -92,6 +93,6 @@
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-blue" href="{{url('/contacto')}}">Solicite aquí</a>
     </div>
-    <div class="item-img" style="background-image: url('{{ asset('/img/cta_hogares.jpg') }}')"></div>
+    <div class="item-img" style="background-image: url('{{ asset('/img/cta-empresas.jpg') }}')"></div>
   </section>
 @endsection

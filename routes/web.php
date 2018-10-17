@@ -26,6 +26,9 @@ Route::get('/saga', function () {
 Route::get('/contacto', function () {
     return view('contacto');
 });
+Route::get('/enviado', function () {
+    return view('enviado');
+});
 Route::get('/servicios/desratizacion', function () {
     return view('servicios.desratizacion');
 });

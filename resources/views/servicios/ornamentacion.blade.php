@@ -1,27 +1,26 @@
 @extends('layouts.app')
 @section('page-title')
-<title>Ornamentación - SAGA Service</title>
+<title>Jardinería - SAGA Service</title>
 @endsection
 
 @section('content')
   {{-- Title Section --}}
   <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img_ornamentacion.jpg')}}')">
     <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/title_ornamentacion.png') }}">
-    <h1 class="animated fadeIn ultra-slow">Ornamentación Jardines</h1>
+    <h1 class="animated fadeIn ultra-slow">Jardinería</h1>
   </section>
 
   {{-- Present --}}
   <section class="present pd-lr">
     <h2 class="animated fadeIn slow">Un buen manejo de su jardín<br> previene la presencia de plagas</h2>
-    <p class="present-text animated fadeIn slow">Curabitur lectus neque, imperdiet vel quam consequat, tincidunt fringilla nisl. Nam gravida arcu tellus, vel condimentum nunc maximus eget. Vestibulum a justo sed lacus sodales aliquet. Nam congue convallis massa eu molestie.</p>
+    <p class="present-text animated fadeIn slow">Correcto mantenimiento, protección y conservación de jardines.</p>
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
-      <div class="img" style="background-image: url('/img/servicios_ornamentacion.jpg')"></div>
+      <div class="img" style="background-image: url('/img/jardineria-thumb.jpg')"></div>
       <div class="data background-gray">
-        <h3>¿Porqué es importante?</h3>
-        <p>Este texto debería explicar como actua la desratización o control de roedores que ofrece SAGA Service en la desratización.</p>
-        <p>Pellentesque semper maximus sem ac ultrices. Curabitur pulvinar massa in tincidunt pulvinar. Praesent hendrerit cursus est, et pellentesque nunc commodo a. Sed consequat leo quis ante viverra venenatis. Nam mattis ligula non ipsum lobortis vulputate.</p>
-        <p>Vivamus id sem ac tortor feugiat volutpat. Vestibulum at sodales nibh. Vestibulum felis diam, consectetur id hendrerit at, sodales ac justo.</p>
+        <h3>¿En qué consiste?</h3>
+        <p>El servicio de jardineria de SAGA Service cierra el ciclo integral de servicios de control de plagas. Consiste en la mantención y conservación de jardines logrando un ambiente controlado, higiénico y estético.</p>
+        <p>De esta manera su jardín no solo estará libre de plagas, sino que también contribuirá a ofrecer una mejor imágen de su empresa u hogar.</p>
       </div>
     </div>
   </section>

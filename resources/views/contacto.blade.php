@@ -5,7 +5,7 @@
 
 @section('content')
   {{-- Title Section --}}
-  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/para_empresas.jpg')}}')">
+  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img-contacto.jpg')}}')">
     <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/saga_icon.png') }}">
     <h1 class="animated fadeIn ultra-slow">Contáctese con Nosotros</h1>
   </section>
@@ -123,13 +123,21 @@
         </div>
       </div>
     </div>
-    <div class="mapa" id="map">
-
+    <div class="mapa">
+      {{-- <div class="mapouter"> --}}
+        {{-- <div class="gmap_canvas"> --}}
+          <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Rauqu%C3%A9n%20441&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+          </iframe>
+        {{-- </div> --}}
+        <style>
+        /* .mapouter{text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;} */
+        </style>
+      {{-- </div> --}}
     </div>
   </section>
 @endsection
 
-@section('specialScripts')
+{{-- @section('specialScripts')
   <script>
     // Initialize and add the map
     function initMap() {
@@ -150,4 +158,4 @@
   <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_hhejFMvhP3S4rt0jwlcE3YHACYV0b0&callback=initMap">
   </script>
-@endsection
+@endsection --}}
