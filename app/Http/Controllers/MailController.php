@@ -13,7 +13,7 @@ class MailController extends Controller
     public function sendmail(Request $request)
     {
 
-      Mail::to("jose.jorquera@agroptimo.com")->send(new ContactMail($request->input()));
+      Mail::to("info@sagaservice.cl")->send(new ContactMail($request->input()));
 
       if (Mail::failures()) {
         //dd('algo paso');
