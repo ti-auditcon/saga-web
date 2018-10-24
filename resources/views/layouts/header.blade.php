@@ -27,7 +27,7 @@
           {{-- <a class="animated fadeIn close" data-link="{{url('/empresas')}}">Empresas</a> --}}
           <a class="animated fadeIn" href="{{url('/empresas')}}">Empresas</a>
           <a class="animated fadeIn" href="{{url('/hogares')}}">Hogares</a>
-          <a class="animated fadeIn" href="{{url('/saga')}}">¿Porqué SAGA?</a>
+          <a class="animated fadeIn" href="{{url('/saga')}}">¿Por qué SAGA?</a>
           {{-- <a class="animated fadeIn" href="{{url('/contacto')}}">Contacto</a> --}}
         </ul>
         <a class="button-cta-header animated fadeIn" href="{{url('/contacto')}}">Solicitar Visita</a>
