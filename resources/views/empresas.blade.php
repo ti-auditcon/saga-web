@@ -13,24 +13,24 @@
   {{-- Present --}}
   <section class="present pd-lr">
     <h2 class="animated fadeIn slow">No deje que las plagas<br> tomen el control de su negocio</h2>
-    <p class="animated fadeIn slow present-text">Nuestro compromiso es eliminar plagas que afecten su empresa de una forma amigable con el medio ambiente y el entorno en donde opera su negocio</p>
+    <p class="animated fadeIn slow present-text">Entendemos lo importante de trabajar en un espacio limpio y controlado de plagas. Saga Service, miembro ACHICPLA. Te asesoramos y certificamos tu negocio.</p>
 
     <div class="items items-empresas" data-aos="fade-up">
-      <div class="item">
+      <div class="item item-1">
         <img src="{{ asset('/icons/icono_experiencia.png') }}">
         <h3 class="card-title">Experiencia y<br>Especialización</h3>
-        <p>Personal capacitado en control de plagas, en constante formación para garantizar resultados eficientes.</p>
+        <p>Equipo técnico especialistas en el control de plagas. Nuestra constante capacitación a nuestro grupo humano, garantiza resultados eficientes.</p>
       </div>
-      <div class="item">
+      <div class="item item-2">
         <img src="{{ asset('/icons/icono_evaluacion.png') }}">
         <h3 class="card-title">Evaluación en<br>Terreno</h3>
-        <p>Nuestro grupo profesional lo visitará y entregará el servicio adecuado a su necesidad.</p>
+        <p>Visita técnica para evaluar y asesorar en terreno sus necesidades.</p>
       </div>
-      <div class="item">
+      <div class="item item-3">
         <img src="{{ asset('/icons/icono_seguimiento.png') }}">
         <h3 class="card-title">Seguimiento y<br> Retroalimentación</h3>
         {{-- <p>Nuestro compromiso es mantener soluciones saludables y tecnicas actualizadas con los clientes</p> --}}
-        <p>Nuestro compromiso es mantener a nuestros clientes informados a través de monitoreo constante de nuestros servicios.</p>
+        <p>Nuestro compromiso es mantener a nuestros clientes informados, a través de monitoreo constante de nuestros servicios en terreno.</p>
       </div>
     </div>
   </section>

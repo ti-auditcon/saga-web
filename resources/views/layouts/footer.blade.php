@@ -30,7 +30,8 @@
           <img src="{{ asset('/icons/icono_llamenos.png') }}">
           <p>
             <small>Llámenos al</small><br>
-            <a href="teL:+56752223696">(75) 2 590 148</a>
+            <a href="teL:+56752223696">(75) 2 590 148</a><br>
+            <a href="teL:+56965658526">(9) 656 58 526</a>
           </p>
         </div>
         <div class="item">

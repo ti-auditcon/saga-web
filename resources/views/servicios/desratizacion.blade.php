@@ -20,10 +20,10 @@
       <div class="img" style="background-image: url('/img/servicios_desratizacion1.jpg')"></div>
       <div class="data background-gray">
         <h3>¿Cómo lo hacemos?</h3>
-        <p>Mediante la implementación de medidas culturales y cebaderas de control específicas, eliminamos esta plaga en busca de su protección sanitaria y económica</p>
-        <h3>¿Porqué es Importante?</h3>
-        <p>Conocidos por transmitir enfermedades infecto-contagiosas que pueden afectar su salud, es necesario realizar seguimientos periódicos con mayor énfasis en invierno y verano, ya que son las temporadas donde más se reproducen.</p>
-        <p>Son persistentes y producen daños en el aislamiento de la casa, paredes e instalaciones eléctricas, pudiendo incluso provocar incendios por roer los cables.</p>
+        <p>Mediante la implementación de medidas culturales y cebaderas de control específico, controlamos de manera altamente efectiva la población de roedores, en busca de su protección sanitaria y económica. El realizar seguimientos periódicos, con mayor énfasis en las estaciones de invierno y verano nos garantiza un mayor control debido a su alta natalidad.</p>
+        <h3>¿Podríamos cuantificar estos daños económicamente?</h3>
+        <p>Conocidos por transmitir enfermedades infecto – contagiosas, identificamos tres tipos de roedores comensales, que al día de hoy nos causan una gran cantidad de daños a nivel mundial. Éstos roedores son las especies Rattus norvergicus (rata de alcantarilla), Rattus rattus (rata negra) y Mus musculus (ratón doméstico). Los principales daños que nos producen son la destrucción y contaminación de productos alimenticios.</p>
+        {{-- <p>Son persistentes y producen daños en el aislamiento de la casa, paredes e instalaciones eléctricas, pudiendo incluso provocar incendios por roer los cables.</p> --}}
       </div>
     </div>
   </section>
