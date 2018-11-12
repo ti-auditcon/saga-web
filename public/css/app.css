@@ -594,7 +594,9 @@ header {
   header .inner-header {
     height: 130px; }
   header .header-branding img.logo {
-    width: 150px; } }
+    width: 135px; }
+  header .header-menu .main-menu .button-cta-header {
+    border-radius: 2px; } }
 
 @media (min-width: 900px) {
   header .inner-header {
@@ -624,14 +626,18 @@ header {
         display: inline-block;
         font-size: 15px;
         margin-right: 32px;
+        vertical-align: middle;
         margin-bottom: 0;
+        padding-bottom: 0;
         width: auto; }
       header .header-menu .main-menu .button-cta-header {
         background: #50B308;
         color: white;
+        vertical-align: middle;
         width: auto;
         display: inline-block;
-        padding: 10px 18px;
+        padding: 9px 20px;
+        height: auto;
         margin-left: 5px;
         -webkit-transition: all ease-in-out 0.2s;
         -o-transition: all ease-in-out 0.2s;
@@ -645,7 +651,7 @@ header {
   header .inner-header {
     height: 158px; }
   header .header-branding img.logo {
-    width: 160px; }
+    width: 150px; }
   header .header-menu .main-menu a {
     letter-spacing: 0.5px;
     margin-right: 40px; }
@@ -668,7 +674,7 @@ header {
     max-width: 1300px;
     height: 168px; }
   header .header-branding img.logo {
-    width: 170px; } }
+    width: 160px; } }
 
 .darkHeader {
   background: #0459D3;
@@ -730,9 +736,9 @@ header {
     -webkit-transition: all ease-in-out 0.2s;
     -o-transition: all ease-in-out 0.2s;
     transition: all ease-in-out 0.2s;
-    -webkit-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.3); }
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3); }
     .hero .cta-button:hover {
       background: #0449AD;
       -webkit-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0);
@@ -744,23 +750,23 @@ header {
     padding: 54px 92px 0 92px; }
     .hero h1 {
       margin-bottom: 28px;
-      font-size: 50px;
-      line-height: 60px; }
+      font-size: 46px;
+      line-height: 55px; }
     .hero p {
-      font-size: 20px;
-      line-height: 32px;
+      font-size: 18px;
+      line-height: 26px;
       letter-spacing: 0.1px;
       margin-bottom: 34px; } }
 
 @media (min-width: 900px) {
   .hero {
-    padding: 80px 140px 0 140px; }
+    padding: 80px 120px 0 120px; }
     .hero h1 {
       margin-bottom: 28px;
       line-height: 62px; }
     .hero p {
-      font-size: 21px;
-      line-height: 33px;
+      font-size: 20px;
+      line-height: 28px;
       padding-left: 42px;
       padding-right: 42px; } }
 
@@ -769,11 +775,11 @@ header {
     padding: 104px 180px 0 180px; }
     .hero h1 {
       margin-bottom: 30px;
-      line-height: 67px;
-      font-size: 54px; }
+      line-height: 64px;
+      font-size: 48px; }
     .hero p {
-      font-size: 21px;
-      line-height: 34px;
+      font-size: 18px;
+      line-height: 28px;
       margin-bottom: 36px;
       padding-left: 60px;
       padding-right: 60px; } }
@@ -792,12 +798,12 @@ header {
 
 @media (min-width: 1600px) {
   .hero h1 {
-    margin-bottom: 32px;
+    margin-bottom: 34px;
     line-height: 72px;
     font-size: 57px; }
   .hero p {
-    font-size: 21px;
-    line-height: 33px;
+    font-size: 20px;
+    line-height: 32px;
     margin-bottom: 38px; } }
 
 /* Clientes */
@@ -1308,11 +1314,13 @@ header {
       display: none;
       background-color: #67747F; }
     .present .present-why .data {
+      border-radius: 5px;
       padding: 16px 28px; }
       .present .present-why .data h3 {
-        margin-top: 16px;
+        margin-top: 22px;
         font-size: 20px;
-        margin-bottom: 18px; }
+        line-height: 27px;
+        margin-bottom: 14px; }
       .present .present-why .data p {
         color: white;
         font-size: 13px; }
@@ -1341,22 +1349,25 @@ header {
       .present .items .item p {
         font-size: 16px;
         line-height: 26px; }
-    .present .present-why-servicios {
-      height: 550px; }
     .present .present-why .img {
       display: inherit;
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
-      height: 260px; }
+      height: 260px;
+      border-radius: 6px 6px 0 0; }
     .present .present-why .data {
-      padding: 34px 42px; }
+      padding: 34px 42px;
+      border-radius: 0 0 6px 6px; }
       .present .present-why .data h3 {
         font-size: 24px;
-        margin-bottom: 24px; }
+        margin-top: 20px;
+        line-height: 32px;
+        margin-bottom: 22px; }
       .present .present-why .data p {
         font-size: 15px;
-        line-height: 23px; } }
+        line-height: 23px;
+        margin-bottom: 30px; } }
 
 @media (min-width: 900px) {
   .present {
@@ -1388,17 +1399,14 @@ header {
           margin-bottom: 19px; }
         .present .items .item p {
           line-height: 25px; }
-    .present .present-why-servicios {
-      height: 380px; }
     .present .present-why {
       grid-template-columns: 0.5fr 0.8fr; }
       .present .present-why .img {
-        height: auto; }
+        height: auto;
+        border-radius: 6px 0 0 6px; }
       .present .present-why .data {
-        padding: 38px 52px; }
-        .present .present-why .data h3 {
-          font-size: 26px;
-          margin-bottom: 28px; }
+        padding: 38px 52px;
+        border-radius: 0 6px 6px 0; }
         .present .present-why .data p {
           font-size: 15.5px;
           line-height: 25px; } }
@@ -1430,8 +1438,12 @@ header {
           margin-bottom: 19px; }
         .present .items .item p {
           font-size: 17px; }
-    .present .present-why-servicios {
-      height: 420px; } }
+    .present .present-why .data h3 {
+      margin-top: 25px;
+      margin-bottom: 15px; }
+    .present .present-why .data p {
+      line-height: 23px;
+      margin-bottom: 30px; } }
 
 @media (min-width: 1400px) {
   .present {
@@ -1475,7 +1487,7 @@ header {
 
 /* Metodologia */
 .metodologia {
-  margin-top: 54px; }
+  margin-top: 60px; }
   .metodologia h2 {
     text-align: center; }
   .metodologia .items {
@@ -1505,7 +1517,7 @@ header {
 
 @media (min-width: 667px) {
   .metodologia h2 {
-    margin-top: 136px;
+    margin-top: 90px;
     margin-bottom: 22px; }
   .metodologia .items {
     padding-top: 38px;
@@ -1548,7 +1560,8 @@ header {
   .metodologia {
     padding-bottom: 14px; }
     .metodologia h2 {
-      margin-bottom: 38px; }
+      margin-bottom: 38px;
+      margin-top: 100px; }
     .metodologia .items {
       padding-bottom: 54px; }
       .metodologia .items .item {
@@ -1566,6 +1579,7 @@ header {
 
 @media (min-width: 1400px) {
   .metodologia h2 {
+    margin-top: 110px;
     margin-bottom: 40px; }
   .metodologia .items {
     padding-bottom: 62px; }
@@ -1620,13 +1634,13 @@ header {
       -webkit-transition: all ease-in-out 0.2s;
       -o-transition: all ease-in-out 0.2s;
       transition: all ease-in-out 0.2s;
-      -webkit-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.3);
-      -moz-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.3);
-      box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0.3); }
+      -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
+      -moz-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
+      box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3); }
       .cta-visita .item-data .cta-button-visita:hover {
-        -webkit-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0);
-        -moz-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0);
-        box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0); }
+        -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0);
+        -moz-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0);
+        box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0); }
   .cta-visita .item-img {
     display: none; }
 
@@ -1968,9 +1982,15 @@ header {
       .contact-form .the-form form .fields-servicios .selected {
         background: #50B308;
         border-color: #50B308;
-        color: white; }
+        color: white;
+        -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0);
+        -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0);
+        box-shadow: 0px 1px 6px rgba(0, 0, 0, 0); }
         .contact-form .the-form form .fields-servicios .selected:hover {
-          background: #50B308; }
+          background: #50B308;
+          -webkit-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0);
+          -moz-box-shadow: 0px 1px 6px rgba(0, 0, 0, 0);
+          box-shadow: 0px 1px 6px rgba(0, 0, 0, 0); }
     .contact-form .the-form form textarea.mensaje {
       width: 100%;
       height: 140px;
