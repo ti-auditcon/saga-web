@@ -1073,6 +1073,11 @@ header
       margin-bottom: 18px
       border-radius: 4px
       text-align: center
+      cursor: pointer
+      -webkit-box-shadow: 0px 7px 36px 0px rgba(0,0,0,0.4)
+      -moz-box-shadow: 0px 7px 36px 0px rgba(0,0,0,0.4)
+      box-shadow: 0px 7px 36px 0px rgba(0,0,0,0.4)
+      transition: all ease 0.3s
       img
         height: 64px
         margin-bottom: 11px
@@ -1085,6 +1090,10 @@ header
         color: white
         font-size: 14px
         margin-bottom: 0
+      &:hover, &:focus
+        -webkit-box-shadow: 0px 7px 36px 0px rgba(0,0,0,0)
+        -moz-box-shadow: 0px 7px 36px 0px rgba(0,0,0,0)
+        box-shadow: 0px 7px 36px 0px rgba(0,0,0,0)
     .item-1
       background-image: url('../img/back_none.jpg')
       background-size: cover
@@ -1099,14 +1108,14 @@ header
     .item-2
       background-image: url('../img/back_none.jpg')
       background-size: cover
-      background-position: center
+      background-position: -130px
       -moz-transition: all ease 0.3s
       -webkit-transition: all ease 0.3s
       -ms-transition: all ease 0.3s
       -o-transition: all ease 0.3s
       transition: all ease 0.3s
       &:hover
-        background-image: url('../img/present_point1.jpg')
+        background-image: url('../img/present_point2.jpg')
     .item-3
       background-image: url('../img/back_none.jpg')
       background-size: cover
@@ -1117,18 +1126,18 @@ header
       -o-transition: all ease 0.3s
       transition: all ease 0.3s
       &:hover
-        background-image: url('../img/present_point1.jpg')
+        background-image: url('../img/present_point3.jpg')
     .item-4
       background-image: url('../img/back_none.jpg')
       background-size: cover
-      background-position: center
+      background-position: left
       -moz-transition: all ease 0.3s
       -webkit-transition: all ease 0.3s
       -ms-transition: all ease 0.3s
       -o-transition: all ease 0.3s
       transition: all ease 0.3s
       &:hover
-        background-image: url('../img/present_point1.jpg')
+        background-image: url('../img/present_point4.jpg')
     .item-5
       background-image: url('../img/back_none.jpg')
       background-size: cover
@@ -1139,7 +1148,7 @@ header
       -o-transition: all ease 0.3s
       transition: all ease 0.3s
       &:hover
-        background-image: url('../img/present_point1.jpg')
+        background-image: url('../img/present_point5.jpg')
     .item-6
       background-image: url('../img/back_none.jpg')
       background-size: cover
@@ -1150,7 +1159,7 @@ header
       -o-transition: all ease 0.3s
       transition: all ease 0.3s
       &:hover
-        background-image: url('../img/present_point1.jpg')
+        background-image: url('../img/present_point6.jpg')
   .present-why
     display: grid
     position: relative
@@ -1737,8 +1746,8 @@ header
 //Comp Single
 .comp_single
   text-align: center
-  padding-top: 46px
-  padding-bottom: 28px
+  padding-top: 65px
+  padding-bottom: 42px
   background-position: center
   background-repeat: no-repeat
   background-size: cover
@@ -1754,8 +1763,8 @@ header
 @media (min-width: 667px)
   .comp_single
     // text-align: center
-    padding-top: 68px
-    padding-bottom: 68px
+    padding-top: 88px
+    padding-bottom: 85px
     img
       height: 90px
       margin-bottom: 16px
@@ -1771,8 +1780,8 @@ header
 
 @media (min-width: 900px)
   .comp_single
-    padding-top: 80px
-    padding-bottom: 80px
+    padding-top: 100px
+    padding-bottom: 94px
     img
       height: 90px
       margin-bottom: 22px
@@ -1786,8 +1795,8 @@ header
 
 @media (min-width: 1200px)
   .comp_single
-    padding-top: 108px
-    padding-bottom: 108px
+    padding-top: 128px
+    padding-bottom: 124px
     img
       height: 100px
       margin-bottom: 22px
@@ -1801,7 +1810,7 @@ header
 @media (min-width: 1600px)
   .comp_single
     // padding-top: 98px
-    padding-bottom: 104px
+    // padding-bottom: 104px
     img
       // height: 100px
       // margin-bottom: 22px
@@ -2809,6 +2818,36 @@ footer
 // Mapa
 .mapa
   height: 400px
+
+// Lightbox Chocolat
+.chocolat-wrapper
+  z-index: 1000 !important
+
+.chocolat-overlay
+  background-color: #67747f !important
+// .lightbox-gallery
+//   position: fixed
+//   top: 0
+//   left: 0
+//   width: 100%
+//   height: 100%
+//   background: rgba(black, 0.7)
+//   text-align: center
+//   .gallery
+//     width: 80%
+//     height: 80%
+//     position: absolute
+//     top: 0
+//     left: 0
+//     right: 0
+//     bottom: 0
+//     margin: auto
+
+// .lightbox-gallery
+//   display: none
+
+// .hidden
+//   display: none
 
 //
 //

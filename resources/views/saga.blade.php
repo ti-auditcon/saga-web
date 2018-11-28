@@ -56,7 +56,7 @@
   </section>
 
   {{-- Comp2 --}}
-  <section class="comp_single pd-lr background-greenUltraDark color-white comp-back-satisfaccion" style="background-image: url('../img/saga_calidad.png')">
+  <section class="comp_single pd-lr background-greenUltraDark color-white comp-back-satisfaccion" style="background-image: url('../img/saga_satisfaccion.png'); background-position: top;">
     <img src="{{ asset('/icons/icono_satisfaccion_big.png') }}" data-aos="fade-in" data-aos-duration="800">
     <h2 data-aos="fade-in" data-aos-duration="800">Garantía de Satisfacción</h2>
     <p class="color-white" data-aos="fade-in" data-aos-duration="800">
@@ -65,7 +65,7 @@
   </section>
 
   {{-- Comp3 --}}
-  <section class="comp_single pd-lr color-lightGray comp-back-rapidez" style="background-image: url('../img/saga_calidad.png')">
+  <section class="comp_single pd-lr color-lightGray comp-back-rapidez" style="background-image: url('../img/saga_rapidez.png'); background-position: center;">
     <img src="{{ asset('/icons/icono_rapidez_big.png') }}" data-aos="fade-in" data-aos-duration="800">
     <h2 data-aos="fade-in" data-aos-duration="800">Respuesta Rápida</h2>
     <p class="color-gray" data-aos="fade-in" data-aos-duration="800">

@@ -12,7 +12,7 @@
 
   {{-- Present --}}
   <section class="present present-hogares pd-lr">
-    <h2 class="animated fadeIn slow">Sabemos que el Bienestar de tu familia es lo más importante. Protégela</h2>
+    <h2 class="animated fadeIn slow">Sabemos que el Bienestar de su familia<br> es lo más importante. Protéjala</h2>
     <p class="present-text animated fadeIn slow">Un ambiente sano y libre de plagas. Confíe en nuestra experiencia y liderazgo. Tú familia, tú hogar.</p>
 
     <div class="items items-hogares" data-aos="fade-up">
@@ -44,12 +44,12 @@
           <h5>Desratización</h5>
         </a>
       </div>
-      <div class="item" data-aos="fade-up" data-aos-duration="600">
+      {{-- <div class="item" data-aos="fade-up" data-aos-duration="600">
         <a href="{{url('/servicios/sanitizacion')}}">
           <img src="{{ asset('/icons/servicios_sanitizacion.png') }}">
           <h5>Sanitización</h5>
         </a>
-      </div>
+      </div> --}}
       <div class="item" data-aos="fade-up" data-aos-duration="800">
         <a href="{{url('/servicios/desinsectacion')}}">
           <img src="{{ asset('/icons/servicios_desinsectacion.png') }}">

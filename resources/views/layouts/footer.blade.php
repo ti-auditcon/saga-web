@@ -83,13 +83,10 @@
         {{-- Horario de Atención --}}
         <h5>Horarios</h5>
         <p>
-          Lunes a Viernes<br>
-          08:30 - 13:00 hrs<br>
-          14:30 - 18:30 hrs
+          Lunes a Viernes<br>08:30 - 13:00 hrs<br>14:30 - 18:30 hrs
         </p>
         <p>
-          Sábado <br>
-          08:30 - 12:30 hrs
+          Sábados<br>08:30 - 12:30 hrs
         </p>
 
       </div>

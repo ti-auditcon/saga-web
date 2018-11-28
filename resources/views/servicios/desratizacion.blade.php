@@ -67,7 +67,7 @@
   {{-- CTA Visita --}}
   <section class="cta-visita background-blue">
     <div class="item-data" data-aos="fade-in" data-aos-duration="800">
-      <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
+      <h2>¿Víctima de roedores?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-blue" href="{{url('/contacto')}}">Solicite aquí</a>
     </div>

@@ -87,6 +87,39 @@ $(function(){
     $([document.documentElement, document.body]).animate({
         scrollTop: $('#clientes').offset().top-40
     }, 1000);
-});
+  });
 
+  // Lightbox
+  $('.chocolat-experiencia').Chocolat(
+    {
+      images: [
+        {src:'/lightbox/1.jpg'},
+        {src:'/lightbox/2.jpg'},
+        {src:'/lightbox/3.jpg'},
+        {src:'/lightbox/4.jpg'},
+        {src:'/lightbox/5.jpg'},
+        {src:'/lightbox/6.jpg'}],
+      // lastImage: 0,
+      duration: 600,
+      imageSize: 'contain'
+    }
+  );
+  $('.chocolat-evaluacion').Chocolat(
+    {
+      images: [
+        {src:'/lightbox/3.jpg'},
+        {src:'/lightbox/4.jpg'}],
+      duration: 600,
+      imageSize: 'contain'
+    }
+  );
+  $('.chocolat-seguimiento').Chocolat(
+    {
+      images: [
+        {src:'/lightbox/5.jpg'},
+        {src:'/lightbox/6.jpg'}],
+      duration: 600,
+      imageSize: 'contain'
+    }
+  );
 });

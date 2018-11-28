@@ -15,22 +15,28 @@
     <h2 class="animated fadeIn slow">No deje que las plagas<br> tomen el control de su negocio</h2>
     <p class="animated fadeIn slow present-text">Entendemos lo importante de trabajar en un espacio limpio y controlado de plagas. Saga Service, miembro ACHICPLA. Te asesoramos y certificamos tu negocio.</p>
 
-    <div class="items items-empresas" data-aos="fade-up">
-      <div class="item item-1">
-        <img src="{{ asset('/icons/icono_experiencia.png') }}">
-        <h3 class="card-title">Experiencia y<br>Especialización</h3>
-        <p>Equipo técnico especialistas en el control de plagas. Nuestra constante capacitación a nuestro grupo humano, garantiza resultados eficientes.</p>
+    <div class="items items-empresas chocolat-cover" data-aos="fade-up">
+      {{-- <a class="chocolat-image" href="{{ asset('/lightbox/1.jpg') }}">EnlaceEnlaceEnlaceEnlaceEnlaceEnlace</a> --}}
+      <div class="item item-1 chocolat-experiencia">
+        <div class="chocolat-image">
+          <img src="{{ asset('/icons/icono_experiencia.png') }}">
+          <h3 class="card-title">Experiencia y<br>Especialización</h3>
+          <p>Equipo técnico especialistas en el control de plagas. Nuestra constante capacitación a nuestro grupo humano, garantiza resultados eficientes.</p>
+        </div>
       </div>
-      <div class="item item-2">
-        <img src="{{ asset('/icons/icono_evaluacion.png') }}">
-        <h3 class="card-title">Evaluación en<br>Terreno</h3>
-        <p>Visita técnica para evaluar y asesorar en terreno sus necesidades.</p>
+      <div class="item item-2 chocolat-evaluacion">
+        <div class="chocolat-image">
+          <img src="{{ asset('/icons/icono_evaluacion.png') }}">
+          <h3 class="card-title">Evaluación en<br>Terreno</h3>
+          <p>Visita técnica para evaluar y asesorar en terreno sus necesidades.</p>
+        </div>
       </div>
-      <div class="item item-3">
-        <img src="{{ asset('/icons/icono_seguimiento.png') }}">
-        <h3 class="card-title">Seguimiento y<br> Retroalimentación</h3>
-        {{-- <p>Nuestro compromiso es mantener soluciones saludables y tecnicas actualizadas con los clientes</p> --}}
-        <p>Nuestro compromiso es mantener a nuestros clientes informados, a través de monitoreo constante de nuestros servicios en terreno.</p>
+      <div class="item item-3 chocolat-seguimiento">
+        <div class="chocolat-image">
+          <img src="{{ asset('/icons/icono_seguimiento.png') }}">
+          <h3 class="card-title">Seguimiento y<br> Retroalimentación</h3>
+          <p>Nuestro compromiso es mantener a nuestros clientes informados, a través de monitoreo constante de nuestros servicios en terreno.</p>
+        </div>
       </div>
     </div>
   </section>
