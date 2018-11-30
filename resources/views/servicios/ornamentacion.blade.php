@@ -68,6 +68,6 @@
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-blue" href="{{url('/contacto')}}">Solicite aquí</a>
     </div>
-    <div class="item-img" style="background-image: url('{{ asset('/img/cta_hogares.jpg') }}')"></div>
+    <div class="item-img" style="background-image: url('{{ asset('/img/cta_ornamentacion.jpg') }}')"></div>
   </section>
 @endsection

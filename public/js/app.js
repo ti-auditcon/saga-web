@@ -90,6 +90,7 @@ $(function(){
   });
 
   // Lightbox
+  // ::Empresas
   $('.chocolat-experiencia').Chocolat(
     {
       images: [
@@ -107,13 +108,45 @@ $(function(){
   $('.chocolat-evaluacion').Chocolat(
     {
       images: [
-        {src:'/lightbox/3.jpg'},
-        {src:'/lightbox/4.jpg'}],
+        {src:'/lightbox/12.jpg'},
+        {src:'/lightbox/16.jpg'},
+        {src:'/lightbox/17.jpg'}],
       duration: 600,
       imageSize: 'contain'
     }
   );
   $('.chocolat-seguimiento').Chocolat(
+    {
+      images: [
+        {src:'/lightbox/11.jpg'},
+        {src:'/lightbox/11.jpg'}],
+      duration: 600,
+      imageSize: 'contain'
+    }
+  );
+  // ::Hogares
+  $('.chocolat-equipo').Chocolat(
+    {
+      images: [
+        {src:'/lightbox/7.jpg'},
+        {src:'/lightbox/8.jpg'},
+        // {src:'/lightbox/13.jpg'},
+        {src:'/lightbox/10.jpg'},
+        {src:'/lightbox/14.jpg'}],
+      duration: 600,
+      imageSize: 'contain'
+    }
+  );
+  $('.chocolat-personalizada').Chocolat(
+    {
+      images: [
+        {src:'/lightbox/13.jpg'},
+        {src:'/lightbox/13.jpg'}],
+      duration: 600,
+      imageSize: 'contain'
+    }
+  );
+  $('.chocolat-postventa').Chocolat(
     {
       images: [
         {src:'/lightbox/5.jpg'},

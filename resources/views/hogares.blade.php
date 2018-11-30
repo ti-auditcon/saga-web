@@ -15,21 +15,27 @@
     <h2 class="animated fadeIn slow">Sabemos que el Bienestar de su familia<br> es lo más importante. Protéjala</h2>
     <p class="present-text animated fadeIn slow">Un ambiente sano y libre de plagas. Confíe en nuestra experiencia y liderazgo. Tú familia, tú hogar.</p>
 
-    <div class="items items-hogares" data-aos="fade-up">
-      <div class="item item-4">
-        <img src="{{ asset('/icons/icono_experiencia.png') }}">
-        <h3 class="card-title">Equipo experto<br> y confiable</h3>
-        <p>Equipo técnico especialistas en el control de plagas. Nuestra constante capacitación a nuestro grupo humano, garantiza resultados eficientes.</p>
+    <div class="items items-hogares chocolat-cover" data-aos="fade-up">
+      <div class="item item-4 chocolat-equipo">
+        <div class="chocolat-image">
+          <img src="{{ asset('/icons/icono_experiencia.png') }}">
+          <h3 class="card-title">Equipo experto<br> y confiable</h3>
+          <p>Equipo técnico especialistas en el control de plagas. Nuestra constante capacitación a nuestro grupo humano, garantiza resultados eficientes.</p>
+        </div>
       </div>
-      <div class="item item-5">
-        <img src="{{ asset('/icons/icono_evaluacion.png') }}">
-        <h3 class="card-title">Evaluación<br> Personalizada</h3>
-        <p>Visita técnica para evaluar y asesorar en terreno sus necesidades.</p>
+      <div class="item item-5 chocolat-personalizada">
+        <div class="chocolat-image">
+          <img src="{{ asset('/icons/icono_evaluacion.png') }}">
+          <h3 class="card-title">Evaluación<br> Personalizada</h3>
+          <p>Visita técnica para evaluar y asesorar en terreno sus necesidades.</p>
+        </div>
       </div>
-      <div class="item item-6">
-        <img src="{{ asset('/icons/icono_post-venta.png') }}">
-        <h3 class="card-title">Seguimiento<br> Post Venta</h3>
-        <p>Nuestro compromiso es mantenernos en contacto para responder a tus necesidades.</p>
+      <div class="item item-6 chocolat-postventa">
+        <div class="chocolat-image">
+          <img src="{{ asset('/icons/icono_post-venta.png') }}">
+          <h3 class="card-title">Seguimiento<br> Post Venta</h3>
+          <p>Nuestro compromiso es mantenernos en contacto para responder a tus necesidades.</p>
+        </div>
       </div>
     </div>
   </section>
