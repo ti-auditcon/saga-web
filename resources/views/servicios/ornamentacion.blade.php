@@ -16,7 +16,7 @@
     <p class="present-text animated fadeIn slow">Correcto mantenimiento, protección y conservación de jardines.</p>
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
-      <div class="img" style="background-image: url('/img/jardineria-thumb1.jpg')"></div>
+      <div class="img" style="background-image: url('/img/servicios_otras-plagas.jpg')"></div>
       <div class="data background-gray">
         <h3>¿En qué consiste?</h3>
         <p>El servicio de jardineria de SAGA Service cierra el ciclo integral de servicios de control de plagas. Consiste en la mantención y conservación de jardines logrando un ambiente controlado, higiénico y estético.</p>
