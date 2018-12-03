@@ -59,7 +59,7 @@
         <ul>
           <a href="/">Inicio</a>
           <a href="{{url('/empresas')}}">Servicios para Empresas</a>
-          <a href="{{url('/hogares')}}">Servicios para Hogar</a>
+          <a href="{{url('/hogares')}}">Servicios para Hogares</a>
           <a href="{{url('/saga')}}">¿Porque SAGA?</a>
           <a href="{{url('/contacto')}}">Contacto</a>
         </ul>

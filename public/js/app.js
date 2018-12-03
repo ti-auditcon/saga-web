@@ -108,9 +108,9 @@ $(function(){
   $('.chocolat-evaluacion').Chocolat(
     {
       images: [
-        {src:'/lightbox/12.jpg'},
+        {src:'/lightbox/28.jpg'},
         {src:'/lightbox/16.jpg'},
-        {src:'/lightbox/17.jpg'}],
+        {src:'/lightbox/29.jpg'}],
       duration: 600,
       imageSize: 'contain'
     }
@@ -119,7 +119,9 @@ $(function(){
     {
       images: [
         {src:'/lightbox/11.jpg'},
-        {src:'/lightbox/11.jpg'}],
+        {src:'/lightbox/24.jpg'},
+        {src:'/lightbox/30.jpg'},
+        {src:'/lightbox/23.jpg'}],
       duration: 600,
       imageSize: 'contain'
     }
@@ -129,9 +131,11 @@ $(function(){
     {
       images: [
         {src:'/lightbox/7.jpg'},
-        {src:'/lightbox/8.jpg'},
-        // {src:'/lightbox/13.jpg'},
+        {src:'/lightbox/25.jpg'},
         {src:'/lightbox/10.jpg'},
+        {src:'/lightbox/8.jpg'},
+        {src:'/lightbox/26.jpg'},
+        {src:'/lightbox/27.jpg'},
         {src:'/lightbox/14.jpg'}],
       duration: 600,
       imageSize: 'contain'
@@ -140,8 +144,9 @@ $(function(){
   $('.chocolat-personalizada').Chocolat(
     {
       images: [
-        {src:'/lightbox/13.jpg'},
-        {src:'/lightbox/13.jpg'}],
+        {src:'/lightbox/18.jpg'},
+        {src:'/lightbox/19.jpg'},
+        {src:'/lightbox/20.jpg'}],
       duration: 600,
       imageSize: 'contain'
     }
@@ -149,8 +154,10 @@ $(function(){
   $('.chocolat-postventa').Chocolat(
     {
       images: [
-        {src:'/lightbox/5.jpg'},
-        {src:'/lightbox/6.jpg'}],
+        {src:'/lightbox/21.jpg'},
+        {src:'/lightbox/22.jpg'},
+        {src:'/lightbox/23.jpg'},
+        {src:'/lightbox/24.jpg'}],
       duration: 600,
       imageSize: 'contain'
     }

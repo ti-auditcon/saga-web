@@ -689,11 +689,12 @@ header {
   .darkHeader .header-menu .main-menu .button-cta-header {
     background: white;
     color: #0459D3;
-    -webkit-transition: all ease-in-out 0.2s;
-    -o-transition: all ease-in-out 0.2s;
-    transition: all ease-in-out 0.2s; }
+    -webkit-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s; }
     .darkHeader .header-menu .main-menu .button-cta-header:hover {
-      background: white; }
+      background: #58C408;
+      color: white; }
 
 @media (min-width: 667px) {
   .darkHeader .inner-header {
@@ -1349,7 +1350,7 @@ header {
       -o-transition: all ease 0.3s;
       transition: all ease 0.3s; }
       .present .items .item-6:hover {
-        background-image: url("../img/present_point6.jpg"); }
+        background-image: url("../img/present_point5.jpg"); }
   .present .present-why {
     display: grid;
     position: relative; }
