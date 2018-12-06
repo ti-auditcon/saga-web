@@ -98,8 +98,7 @@ $(function(){
         {src:'/lightbox/2.jpg'},
         {src:'/lightbox/3.jpg'},
         {src:'/lightbox/4.jpg'},
-        {src:'/lightbox/5.jpg'},
-        {src:'/lightbox/6.jpg'}],
+        {src:'/lightbox/5.jpg'}],
       // lastImage: 0,
       duration: 600,
       imageSize: 'contain'
@@ -119,9 +118,8 @@ $(function(){
     {
       images: [
         {src:'/lightbox/11.jpg'},
-        {src:'/lightbox/24.jpg'},
-        {src:'/lightbox/30.jpg'},
-        {src:'/lightbox/23.jpg'}],
+        // {src:'/lightbox/24.jpg'},
+        {src:'/lightbox/30.jpg'}],
       duration: 600,
       imageSize: 'contain'
     }
@@ -134,7 +132,6 @@ $(function(){
         {src:'/lightbox/25.jpg'},
         {src:'/lightbox/10.jpg'},
         {src:'/lightbox/8.jpg'},
-        {src:'/lightbox/26.jpg'},
         {src:'/lightbox/27.jpg'},
         {src:'/lightbox/14.jpg'}],
       duration: 600,
@@ -154,10 +151,7 @@ $(function(){
   $('.chocolat-postventa').Chocolat(
     {
       images: [
-        {src:'/lightbox/21.jpg'},
-        {src:'/lightbox/22.jpg'},
-        {src:'/lightbox/23.jpg'},
-        {src:'/lightbox/24.jpg'}],
+        {src:'/img/back_none.jpg'}],
       duration: 600,
       imageSize: 'contain'
     }
