@@ -151,7 +151,10 @@ $(function(){
   $('.chocolat-postventa').Chocolat(
     {
       images: [
-        {src:'/img/back_none.jpg'}],
+        {src:'/lightbox/31.jpg'},
+        {src:'/lightbox/32.jpg'},
+        {src:'/lightbox/33.jpg'},
+        {src:'/lightbox/34.jpg'}],
       duration: 600,
       imageSize: 'contain'
     }
