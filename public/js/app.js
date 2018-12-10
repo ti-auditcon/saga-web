@@ -107,9 +107,11 @@ $(function(){
   $('.chocolat-evaluacion').Chocolat(
     {
       images: [
-        {src:'/lightbox/28.jpg'},
         {src:'/lightbox/16.jpg'},
-        {src:'/lightbox/29.jpg'}],
+        {src:'/lightbox/36.jpg'},
+        {src:'/lightbox/28.jpg'},
+        {src:'/lightbox/37.jpg'},
+        {src:'/lightbox/35.jpg'}],
       duration: 600,
       imageSize: 'contain'
     }
@@ -118,8 +120,9 @@ $(function(){
     {
       images: [
         {src:'/lightbox/11.jpg'},
-        // {src:'/lightbox/24.jpg'},
-        {src:'/lightbox/30.jpg'}],
+        {src:'/lightbox/30.jpg'},
+        // {src:'/lightbox/00.jpg'},
+        {src:'/lightbox/38.jpg'}],
       duration: 600,
       imageSize: 'contain'
     }
