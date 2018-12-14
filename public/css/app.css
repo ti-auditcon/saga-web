@@ -727,6 +727,23 @@ header {
   align-content: center;
   position: relative;
   overflow: hidden; }
+  .hero .bx-wrapper {
+    background: transparent;
+    border: none;
+    outline: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    min-width: 100%;
+    min-height: 100%;
+    margin: auto;
+    position: absolute;
+    -webkit-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    transition: all ease 0.3s; }
+  .hero .slider-img {
+    width: 100%;
+    height: 100vh;
+    background-size: cover; }
   .hero #heroVideo {
     min-width: 100%;
     min-height: 100%;
@@ -779,8 +796,6 @@ header {
     padding: 54px 92px 0 92px;
     background: transparent;
     background-position: center; }
-    .hero #heroVideo {
-      display: inherit; }
     .hero h1 {
       margin-bottom: 28px;
       font-size: 46px;
@@ -801,7 +816,11 @@ header {
       font-size: 20px;
       line-height: 28px;
       padding-left: 42px;
-      padding-right: 42px; } }
+      padding-right: 42px; }
+    .hero #heroVideo {
+      display: inherit; }
+    .hero .bx-wrapper {
+      display: none; } }
 
 @media (min-width: 1200px) {
   .hero {

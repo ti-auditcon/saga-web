@@ -540,6 +540,31 @@ header
   align-content: center
   position: relative
   overflow: hidden
+  .bx-wrapper
+    background: transparent
+    border: none
+    outline: none
+    box-shadow: none
+    min-width: 100%
+    min-height: 100%
+    margin: auto
+    position: absolute
+    transition: all ease 0.3s
+  // .slider
+  //   position: absolute
+  //   min-width: 100%
+  //   min-height: 100%
+  //   bottom: 0
+  //   top: -20px
+  //   left: 0
+  //   right: 0
+  //   margin: auto
+  .slider
+  .slider-img
+    width: 100%
+    height: 100vh
+    background-size: cover
+    // background-position: center
   #heroVideo
     min-width: 100%
     min-height: 100%
@@ -589,8 +614,6 @@ header
     padding: 54px 92px 0 92px
     background: transparent
     background-position: center
-    #heroVideo
-      display: inherit
     h1
       margin-bottom: 28px
       font-size: 46px
@@ -615,6 +638,10 @@ header
       padding-left: 42px
       padding-right: 42px
     .cta-button
+    #heroVideo
+      display: inherit
+    .bx-wrapper
+      display: none
 
 @media (min-width: 1200px)
   .hero

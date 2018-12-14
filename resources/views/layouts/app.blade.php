@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="{{ asset('/css/app.min.css') }}">
       <link rel="stylesheet" href="{{ asset('/css/aos.min.css') }}">
       <link rel="stylesheet" href="{{ asset('/css/chocolat.css') }}" type="text/css" media="screen" charset="utf-8">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
 
       {{-- Favicons --}}
       <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ asset('/fav/apple-touch-icon-57x57.png') }}" />
@@ -45,6 +46,7 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="{{ asset('js/aos.min.js') }}"></script>
       <script src="{{ asset('js/jquery.chocolat.js') }}"></script>
+      <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
       <script src="{{ asset('js/app.js') }}" defer></script>
       @yield('specialScripts')
     </body>

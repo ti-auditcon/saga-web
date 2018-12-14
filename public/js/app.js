@@ -165,4 +165,10 @@ $(function(){
       imageSize: 'contain'
     }
   );
+
+
+  $('.slider').bxSlider({
+    controls: false,
+    auto: true
+  });
 });
