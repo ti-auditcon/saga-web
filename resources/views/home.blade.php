@@ -8,7 +8,7 @@
   <section class="hero pd-lr">
     <video autoplay muted loop id="heroVideo" poster="{{ asset('/img/back-hero-index30.jpg')}}">
       {{-- <source class="sourceVideo" src="{{ asset('/img/hero_low.mp4')}}" type="video/mp4"> --}}
-      <source class="sourceVideo" src="{{ asset('/img/hero.mp4')}}" type="video/mp4">
+      <source class="sourceVideo" src="{{ asset('/img/hero_x.mp4')}}" type="video/mp4">
     </video>
     <h1 class="hero-title animated fadeIn ultra-slow">Controla tus plagas de manera limpia, segura y profesional</h1>
     <p class="animated fadeIn ultra-slow">Más de 20 años de experiencia nos avalan. La cercanía con nuestros clientes y trabajos garantizados nos identifican como líderes en el control fitosanitario de empresas y hogares en el centro-sur de Chile</p>
