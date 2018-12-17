@@ -45,31 +45,25 @@
     <h2 class="color-blue present-title" data-aos="fade-in" data-aos-duration="400">Una variedad de soluciones<br> para cada necesidad</h2>
     <div class="items">
       <div class="item" data-aos="fade-up" data-aos-duration="400">
-        <a href="{{url('/servicios/desratizacion')}}">
+        <a href="{{url('/servicios/hogares/desratizacion')}}">
           <img src="{{ asset('/icons/servicios_desratizacion.png') }}">
           <h5>Desratización</h5>
         </a>
       </div>
-      {{-- <div class="item" data-aos="fade-up" data-aos-duration="600">
-        <a href="{{url('/servicios/sanitizacion')}}">
-          <img src="{{ asset('/icons/servicios_sanitizacion.png') }}">
-          <h5>Sanitización</h5>
-        </a>
-      </div> --}}
       <div class="item" data-aos="fade-up" data-aos-duration="800">
-        <a href="{{url('/servicios/desinsectacion')}}">
+        <a href="{{url('/servicios/hogares/desinsectacion')}}">
           <img src="{{ asset('/icons/servicios_desinsectacion.png') }}">
           <h5>Desinsectación</h5>
         </a>
       </div>
       <div class="item" data-aos="fade-up" data-aos-duration="1000">
-        <a href="{{url('/servicios/otras-plagas')}}">
+        <a href="{{url('/servicios/hogares/otras-plagas')}}">
           <img src="{{ asset('/icons/servicios_otras-plagas.png') }}">
           <h5>Otras Plagas</h5>
         </a>
       </div>
       <div class="item" data-aos="fade-up" data-aos-duration="1200">
-        <a href="{{url('/servicios/ornamentacion')}}">
+        <a href="{{url('/servicios/hogares/ornamentacion')}}">
           <img src="{{ asset('/icons/servicios_ornamental.png') }}">
           <h5>Jardinería</h5>
         </a>
@@ -84,6 +78,6 @@
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
       <a class="cta-button cta-button-visita background-white color-greenUltraDark" href="{{url('/contacto')}}">Solicite aquí</a>
     </div>
-    <div class="item-img" style="background-image: url('{{ asset('/img/cta_hogares.jpg') }}')"></div>
+    <div class="item-img" style="background-image: url('{{ asset('/img/cta_hogares2.jpg') }}')"></div>
   </section>
 @endsection

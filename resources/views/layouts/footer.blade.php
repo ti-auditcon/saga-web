@@ -69,11 +69,11 @@
       <div class="footer-menus">
         <h5>Servicios</h5>
         <ul>
-          <a href="{{url('/servicios/desratizacion')}}">Desratización</a>
-          <a href="{{url('/servicios/sanitizacion')}}">Sanitización</a>
-          <a href="{{url('/servicios/desinsectacion')}}">Desinsectación</a>
-          <a href="{{url('/servicios/otras-plagas')}}">Otras Plagas</a>
-          <a href="{{url('/servicios/ornamentacion')}}">Jardinería</a>
+          <a href="{{url('/servicios/empresas/desratizacion')}}">Desratización</a>
+          <a href="{{url('/servicios/empresas/sanitizacion')}}">Sanitización</a>
+          <a href="{{url('/servicios/empresas/desinsectacion')}}">Desinsectación</a>
+          <a href="{{url('/servicios/empresas/otras-plagas')}}">Otras Plagas</a>
+          <a href="{{url('/servicios/empresas/ornamentacion')}}">Jardinería</a>
         </ul>
       </div>
 

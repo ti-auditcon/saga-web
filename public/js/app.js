@@ -89,6 +89,22 @@ $(function(){
     }, 1000);
   });
 
+  // Selectors
+  $('#click-empresas').click(function(){
+    $('.items-empresas').removeClass('hidden').fadeOut(0).fadeIn(400);
+    $('.button-empresas').addClass('clicked');
+    $('.items-hogares').addClass('hidden');
+    $('.button-hogares').removeClass('clicked');
+    return false;
+  });
+  $('#click-hogares').click(function(){
+    $('.items-hogares').removeClass('hidden').fadeOut(0).fadeIn(400);
+    $('.button-hogares').addClass('clicked');
+    $('.items-empresas').addClass('hidden');
+    $('.button-empresas').removeClass('clicked');
+    return false;
+  });
+
   // Lightbox
   // ::Empresas
   $('.chocolat-experiencia').Chocolat(
@@ -148,7 +164,11 @@ $(function(){
       images: [
         // {src:'/lightbox/18.jpg'},
         {src:'/lightbox/20.jpg'},
-        {src:'/lightbox/38.jpg'}],
+        {src:'/lightbox/38.jpg'},
+        {src:'/lightbox/46.jpg'},
+        {src:'/lightbox/47.jpg'},
+        {src:'/lightbox/48.jpg'},
+        {src:'/lightbox/49.jpg'}],
       duration: 600,
       imageSize: 'contain'
     }
@@ -169,6 +189,9 @@ $(function(){
 
   $('.slider').bxSlider({
     controls: false,
-    auto: true
+    auto: true,
+    pause: 3000,
+    autoStart: true,
+
   });
 });

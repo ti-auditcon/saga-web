@@ -1,26 +1,26 @@
 @extends('layouts.app')
 @section('page-title')
-<title>Otras Plagas: Control de palomas y murciélagos - SAGA Service</title>
+<title>Jardinería - SAGA Service</title>
 @endsection
 
 @section('content')
   {{-- Title Section --}}
-  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img_otras-plagas.jpg')}}')">
-    <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/title_otras-plagas.png') }}">
-    <h1 class="animated fadeIn ultra-slow">Otras Plagas</h1>
+  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img_ornamentacion.jpg')}}')">
+    <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/title_ornamentacion.png') }}">
+    <h1 class="animated fadeIn ultra-slow">Jardinería</h1>
   </section>
 
-  {{-- present --}}
-  <section class="present pd-lr">
-    <h2 class="animated fadeIn slow">Control de Miscelaneos</h2>
-    <p class="present-text animated fadeIn slow">Control de palomas y murciélagos, de acuerdo a normas, leyes y requerimientos sanitarios</p>
+  {{-- Present --}}
+  <section class="present present-hogares pd-lr">
+    <h2 class="animated fadeIn slow">Un buen manejo de su jardín<br> previene la presencia de plagas</h2>
+    <p class="present-text animated fadeIn slow">Correcto mantenimiento, protección y conservación de jardines.</p>
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
-      <div class="img" style="background-image: url('/img/servicios_otras-plagas.jpg')"></div>
+      <div class="img" style="background-image: url('/img/ornamentacion.JPG')"></div>
       <div class="data background-gray">
-        <h3>¿Porqué es importante?</h3>
-        <p>Las palomas y los murciélagos transmiten enfermedades, sin embargo forman parte importante de la cadena biológica y del ecosistema (los murciélagos, por ejemplo, son buenos controladores de plagas), por lo que es necesario aplicar métodos de erradicación del lugar sobrepoblado de estos, sin eliminarlos.</p>
-        <p>Controlamos estos vectores para evitar la trasmisión de enfermedades infecciosas así como el daño estructural y ambiental.</p>
+        <h3>¿En qué consiste?</h3>
+        <p>El servicio de jardineria de SAGA Service cierra el ciclo integral de servicios de control de plagas. Consiste en la mantención y conservación de jardines logrando un ambiente controlado, higiénico y estético.</p>
+        <p>De esta manera su jardín no solo estará libre de plagas, sino que también contribuirá a ofrecer una mejor imágen de su empresa u hogar.</p>
       </div>
     </div>
   </section>
@@ -62,12 +62,12 @@
   </section>
 
   {{-- CTA Visita --}}
-  <section class="cta-visita background-blue">
+  <section class="cta-visita background-greenUltraDark">
     <div class="item-data" data-aos="fade-in" data-aos-duration="800">
-      <h2>¿Víctima de alguna Plaga?<br> Solicite una visita</h2>
+      <h2>¿Plagas en su jardín?<br> Solicite una visita</h2>
       <p>Un profesional calificado hará un diagnóstico y le ofrecerá la mejor solución de acuerdo a sus necesidades.</p>
-      <a class="cta-button cta-button-visita background-white color-blue" href="{{url('/contacto')}}">Solicite aquí</a>
+      <a class="cta-button cta-button-visita background-white color-greenUltraDark" href="{{url('/contacto')}}">Solicite aquí</a>
     </div>
-    <div class="item-img" style="background-image: url('{{ asset('/img/cta-otras-plagas.jpg') }}')"></div>
+    <div class="item-img" style="background-image: url('{{ asset('/img/cta_ornamentacion.jpg') }}')"></div>
   </section>
 @endsection

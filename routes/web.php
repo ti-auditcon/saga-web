@@ -32,18 +32,36 @@ Route::get('/enviado', function () {
 
 Route::post('/enviado', 'MailController@sendmail');
 
-Route::get('/servicios/desratizacion', function () {
-    return view('servicios.desratizacion');
+// Servicios Empresas
+Route::get('/servicios/empresas/desratizacion', function () {
+    return view('servicios.desratizacion-empresas');
 });
-Route::get('/servicios/sanitizacion', function () {
-    return view('servicios.sanitizacion');
+Route::get('/servicios/empresas/sanitizacion', function () {
+    return view('servicios.sanitizacion-empresas');
 });
-Route::get('/servicios/desinsectacion', function () {
-    return view('servicios.desinsectacion');
+Route::get('/servicios/empresas/desinsectacion', function () {
+    return view('servicios.desinsectacion-empresas');
 });
-Route::get('/servicios/otras-plagas', function () {
-    return view('servicios.otras-plagas');
+Route::get('/servicios/empresas/otras-plagas', function () {
+    return view('servicios.otras-plagas-empresas');
 });
-Route::get('/servicios/ornamentacion', function () {
-    return view('servicios.ornamentacion');
+Route::get('/servicios/empresas/ornamentacion', function () {
+    return view('servicios.ornamentacion-empresas');
+});
+
+//Servicios Hogares
+Route::get('/servicios/hogares/desratizacion', function () {
+    return view('servicios.desratizacion-hogares');
+});
+Route::get('/servicios/hogares/sanitizacion', function () {
+    return view('servicios.sanitizacion-hogares');
+});
+Route::get('/servicios/hogares/desinsectacion', function () {
+    return view('servicios.desinsectacion-hogares');
+});
+Route::get('/servicios/hogares/otras-plagas', function () {
+    return view('servicios.otras-plagas-hogares');
+});
+Route::get('/servicios/hogares/ornamentacion', function () {
+    return view('servicios.ornamentacion-hogares');
 });
