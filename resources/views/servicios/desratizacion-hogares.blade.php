@@ -64,6 +64,8 @@
     </div>
   </section>
 
+      @include('servicios',['page' => 'hogares'])
+
   {{-- CTA Visita --}}
   <section class="cta-visita background-greenUltraDark">
     <div class="item-data" data-aos="fade-in" data-aos-duration="800">

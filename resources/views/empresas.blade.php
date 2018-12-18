@@ -42,7 +42,7 @@
   </section>
 
   {{-- Servicios --}}
-  <section class="servicios pd-lr">
+  {{-- <section class="servicios pd-lr">
     <h2 class="color-blue present-title" data-aos="fade-in" data-aos-duration="400">Una variedad de soluciones<br> para cada necesidad</h2>
     <div class="items">
       <div class="item" data-aos="fade-up" data-aos-duration="400">
@@ -76,7 +76,9 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> --}}
+
+   @include('servicios',['page' => 'empresas'])
 
   {{-- Marcas --}}
   <section class="marcas pd-lr background-lightGray">
