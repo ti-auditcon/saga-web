@@ -20,21 +20,21 @@
         <div class="chocolat-image">
           <img src="{{ asset('/icons/icono_experiencia.png') }}">
           <h3 class="card-title">Equipo experto<br> y confiable</h3>
-          <p>Equipo técnico especialistas en el control de plagas. Nuestra constante capacitación a nuestro grupo humano, garantiza resultados eficientes.</p>
+          <p>Equipo técnico especialistas en el control de plagas. Nuestra constante capacitación a nuestro grupo humano, garantiza resultados eficientes.</p><br><p><strong>Revisa aquí +</strong> </p>
         </div>
       </div>
       <div class="item item-5 chocolat-personalizada">
         <div class="chocolat-image">
           <img src="{{ asset('/icons/icono_evaluacion.png') }}">
           <h3 class="card-title">Evaluación<br> Personalizada</h3>
-          <p>Visita técnica para evaluar y asesorar en terreno sus necesidades.</p>
+          <p>Visita técnica para evaluar y asesorar en terreno sus necesidades.</p><br><p><strong>Revisa aquí +</strong> </p>
         </div>
       </div>
       <div class="item item-6 chocolat-postventa">
         <div class="chocolat-image">
           <img src="{{ asset('/icons/icono_post-venta.png') }}">
           <h3 class="card-title">Seguimiento<br> Post Venta</h3>
-          <p>Nuestro compromiso es mantenernos en contacto para responder a tus necesidades.</p>
+          <p>Nuestro compromiso es mantenernos en contacto para responder a tus necesidades.</p><br><p><strong>Revisa aquí +</strong> </p>
         </div>
       </div>
     </div>
