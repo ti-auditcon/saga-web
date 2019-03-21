@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('page-title')
-<title>SAGA Service - PEST CONTROL</title>
+<title>SAGA Service - Control de Plagas</title>
 @endsection
 
 @section('content')
