@@ -90,7 +90,7 @@
 
           {{-- Mensaje --}}
           <textarea class="mensaje" placeholder="Describa su solicitud" name="mensaje"></textarea>
-          <button  class="send-button" onClick="this.form.submit(); this.disabled=true; this.value='Enviando…'; ">Enviar</button>
+          <button class="send-button" onClick="this.form.submit(); this.disabled=true; this.value='Enviando…'; " id="boton-enviar">Enviar</button>
 
       {{Form::close()}}
     </div>

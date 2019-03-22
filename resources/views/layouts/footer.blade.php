@@ -30,24 +30,24 @@
           <img src="{{ asset('/icons/icono_llamenos.png') }}">
           <p>
             <small>Llámenos al</small><br>
-            <a href="teL:+56752223696">(75) 2 590 148</a><br>
-            <a href="teL:+56965658526">(9) 656 58 526</a>
+            <a href="teL:+56752223696" id="boton-numero-fijo">(75) 2 590 148</a><br>
+            <a href="teL:+56965658526" id="boton-numero-celular">(9) 656 58 526</a>
           </p>
         </div>
         <div class="item">
           <img src="{{ asset('/icons/icono_contactenos.png') }}">
           <p>
             <small>Contáctenos a</small><br>
-            <a href="mailto:info@sagaservice.cl">info@sagaservice.cl</a>
+            <a href="mailto:info@sagaservice.cl" id="boton-email">info@sagaservice.cl</a>
           </p>
         </div>
         <div class="item">
           <img src="{{ asset('/icons/icon_rrss.png') }}">
           <p>
             <small>Nuestras Redes</small><br>
-            <a class="rrss-links" href="#"><img src="{{ asset('/icons/rrss_facebook.png') }}"></a>
-            <a class="rrss-links" href="#"><img src="{{ asset('/icons/rrss_instagram.png') }}"></a>
-            <a class="rrss-links" href="#"><img src="{{ asset('/icons/rrss_linkedin.png') }}"></a>
+            <a class="rrss-links" href="#" id="boton-rrss-facebook"><img src="{{ asset('/icons/rrss_facebook.png') }}"></a>
+            <a class="rrss-links" href="#" id="boton-rrss-instagram"><img src="{{ asset('/icons/rrss_instagram.png') }}"></a>
+            <a class="rrss-links" href="#" id="boton-rrss-linkedin"><img src="{{ asset('/icons/rrss_linkedin.png') }}"></a>
           </p>
         </div>
 

@@ -47,8 +47,8 @@
     <h2 class="color-blue present-title title-generic" data-aos="fade-in" data-aos-duration="400">Una variedad de soluciones<br> para cada necesidad</h2>
 
     <div class="selectors">
-      <a href="#" class="button-empresas clicked" id="click-empresas">Empresas</a>
-      <a href="#" class="button-hogares" id="click-hogares">Hogares</a>
+      <a href="#" class="button-empresas clicked" id="click-empresas boton-select-empresas">Empresas</a>
+      <a href="#" class="button-hogares" id="click-hogares boton-select-hogares">Hogares</a>
     </div>
 
     <div class="items items-empresas">
