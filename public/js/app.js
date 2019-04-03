@@ -90,19 +90,21 @@ $(function(){
   });
 
   // Selectors
-  $('#click-empresas').click(function(){
+  $('#boton-select-empresas').click(function(){
+    // e.preventDefault();
     $('.items-empresas').removeClass('hidden').fadeOut(0).fadeIn(400);
     $('.button-empresas').addClass('clicked');
     $('.items-hogares').addClass('hidden');
     $('.button-hogares').removeClass('clicked');
-    return false;
+
   });
-  $('#click-hogares').click(function(){
+  $('#boton-select-hogares').click(function(){
+    // e.preventDefault();
     $('.items-hogares').removeClass('hidden').fadeOut(0).fadeIn(400);
     $('.button-hogares').addClass('clicked');
     $('.items-empresas').addClass('hidden');
     $('.button-empresas').removeClass('clicked');
-    return false;
+
   });
 
   // Lightbox

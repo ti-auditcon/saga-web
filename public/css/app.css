@@ -512,7 +512,9 @@ header {
   transition: all ease 0.4s; }
   header .inner-header {
     height: 98px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -601,6 +603,7 @@ header {
 
 @media (min-width: 900px) {
   header .inner-header {
+    -ms-grid-columns: 0.2fr 0.8fr;
     grid-template-columns: 0.2fr 0.8fr;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
@@ -722,6 +725,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   color: white;
+  display: -ms-grid;
   display: grid;
   -ms-flex-line-pack: center;
   align-content: center;
@@ -880,6 +884,7 @@ header {
     font-size: 16px;
     padding: 52px 0 24px; }
   .clientes .items {
+    display: -ms-grid;
     display: grid; }
     .clientes .items a {
       text-decoration: none; }
@@ -889,6 +894,7 @@ header {
       background-repeat: no-repeat;
       background-position: center;
       background-size: cover;
+      display: -ms-grid;
       display: grid;
       -ms-flex-line-pack: center;
       align-content: center;
@@ -923,6 +929,7 @@ header {
     line-height: 30px;
     padding: 64px 60px 24px; }
   .clientes .items {
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 18px; }
     .clientes .items .item img {
@@ -999,6 +1006,7 @@ header {
       padding: 8px 18px;
       font-size: 13px;
       color: white;
+      cursor: pointer;
       text-decoration: none;
       background: #58C408;
       -webkit-transition: all ease 0.3s;
@@ -1232,6 +1240,7 @@ header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
@@ -1319,6 +1328,7 @@ header {
     margin-bottom: 40px;
     font-size: 14px; }
   .present .items {
+    display: -ms-grid;
     display: grid; }
     .present .items .item {
       background: #465663;
@@ -1416,6 +1426,7 @@ header {
       .present .items .item-6:hover {
         background-image: url("../img/present_point5.jpg"); }
   .present .present-why {
+    display: -ms-grid;
     display: grid;
     position: relative; }
     .present .present-why .img {
@@ -1491,6 +1502,7 @@ header {
       line-height: 29px;
       width: 70%; }
     .present .items {
+      -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 20px; }
       .present .items .item {
@@ -1508,6 +1520,7 @@ header {
         .present .items .item p {
           line-height: 25px; }
     .present .present-why {
+      -ms-grid-columns: 0.5fr 0.8fr;
       grid-template-columns: 0.5fr 0.8fr; }
       .present .present-why .img {
         height: auto;
@@ -1530,6 +1543,7 @@ header {
       line-height: 31px;
       margin-bottom: 54px; }
     .present .items {
+      -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
       grid-column-gap: 20px; }
       .present .items .item {
@@ -1604,7 +1618,9 @@ header {
     margin: auto;
     width: 95%; }
     .metodologia .items .item {
+      display: -ms-grid;
       display: grid;
+      -ms-grid-columns: 0.2fr 0.8fr;
       grid-template-columns: 0.2fr 0.8fr;
       -ms-flex-line-pack: start;
       align-content: start;
@@ -1632,11 +1648,15 @@ header {
   .metodologia .items {
     padding-top: 38px;
     margin-bottom: -30px;
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 0.8fr 1fr;
     grid-template-columns: 0.8fr 1fr;
     grid-column-gap: 60px; }
     .metodologia .items .item {
+      display: -ms-grid;
       display: grid;
+      -ms-grid-columns: 0.2fr 0.8fr;
       grid-template-columns: 0.2fr 0.8fr;
       margin-bottom: 26px; }
       .metodologia .items .item img {
@@ -1844,7 +1864,9 @@ header {
     margin-bottom: 42px;
     width: 90%; }
   .comp .items {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     -webkit-column-gap: 12px;
     column-gap: 12px; }
@@ -2167,14 +2189,18 @@ header {
       .contact-form .the-form form .fields-for p {
         margin-bottom: 10px; }
       .contact-form .the-form form .fields-general {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 8px; }
         .contact-form .the-form form .fields-general input {
           margin-bottom: 12px;
           font-size: 13px; }
       .contact-form .the-form form .fields-empresa {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-column-gap: 8px; }
         .contact-form .the-form form .fields-empresa input {
@@ -2331,11 +2357,14 @@ header {
 
 @media (min-width: 667px) {
   .ubicacion {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 0.4fr 0.6fr;
     grid-template-columns: 0.4fr 0.6fr;
     background: #67747F; }
     .ubicacion .datos-direccion {
       -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
       align-self: center;
       padding: 60px 33px 58px; }
       .ubicacion .datos-direccion .item {
@@ -2355,6 +2384,7 @@ header {
 
 @media (min-width: 900px) {
   .ubicacion {
+    -ms-grid-columns: 0.35fr 0.65fr;
     grid-template-columns: 0.35fr 0.65fr; }
     .ubicacion .datos-direccion {
       padding: 74px 46px 74px; }
@@ -2366,6 +2396,7 @@ header {
 
 @media (min-width: 1200px) {
   .ubicacion {
+    -ms-grid-columns: 0.35fr 0.65fr;
     grid-template-columns: 0.35fr 0.65fr; }
     .ubicacion .datos-direccion {
       padding: 78px 0 78px 85px; }
@@ -2426,7 +2457,9 @@ footer {
   color: white;
   padding-bottom: 24px; }
   footer .certificaciones {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5px;
     grid-row-gap: 6px;
@@ -2563,6 +2596,7 @@ footer {
   footer {
     padding-bottom: 28px; }
     footer .certificaciones {
+      -ms-grid-columns: 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr;
       grid-column-gap: 30px;
       grid-row-gap: 0; }
@@ -2576,7 +2610,9 @@ footer {
           font-size: 14px; }
     footer .the-footer {
       padding-top: 40px;
+      display: -ms-grid;
       display: grid;
+      -ms-grid-columns: 1.5fr 1.2fr 1fr 0.8fr;
       grid-template-columns: 1.5fr 1.2fr 1fr 0.8fr; }
       footer .the-footer .info-contacto {
         text-align: left; }
@@ -2632,6 +2668,7 @@ footer {
 
 @media (min-width: 900px) {
   footer .the-footer {
+    -ms-grid-columns: 1.4fr 1.1fr 1fr 0.9fr;
     grid-template-columns: 1.4fr 1.1fr 1fr 0.9fr; }
     footer .the-footer .info-contacto .item img {
       width: 35px; }
@@ -2658,6 +2695,7 @@ footer {
         font-size: 15px;
         vertical-align: middle; }
     footer .the-footer {
+      -ms-grid-columns: 1.4fr 1.1fr 1fr 0.9fr;
       grid-template-columns: 1.4fr 1.1fr 1fr 0.9fr; }
       footer .the-footer .info-contacto .item {
         margin-bottom: 28px; }
