@@ -41,7 +41,7 @@
             <a href="mailto:info@sagaservice.cl" id="boton-email">info@sagaservice.cl</a>
           </p>
         </div>
-        <div class="item">
+        {{-- <div class="item">
           <img src="{{ asset('/icons/icon_rrss.png') }}">
           <p>
             <small>Nuestras Redes</small><br>
@@ -49,7 +49,7 @@
             <a class="rrss-links" href="#" id="boton-rrss-instagram"><img src="{{ asset('/icons/rrss_instagram.png') }}"></a>
             <a class="rrss-links" href="#" id="boton-rrss-linkedin"><img src="{{ asset('/icons/rrss_linkedin.png') }}"></a>
           </p>
-        </div>
+        </div> --}}
 
       </div>
 
