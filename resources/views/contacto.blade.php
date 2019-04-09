@@ -28,9 +28,9 @@
           {{-- For: Selección: Empresa / Hogar --}}
           <div class="fields-for">
             <p><b>Consultar para:</b></p>
-            <input type="checkbox" class="select-checkbox select-checkbox-empresa" id="checkbox-empresa" value = "Empresa" name="consulta" >
+            <input type="checkbox" class="select-checkbox select-checkbox-empresa" id="checkbox-empresa" value="Empresa" name="consulta" checked="checked">
             <label class="checkbox-label" for="checkbox-empresa">Empresa</label>
-            <input type="checkbox" class="select-checkbox select-checkbox-hogares" id="checkbox-hogares" value = "Hogar" name="consulta" >
+            <input type="checkbox" class="select-checkbox select-checkbox-hogares" id="checkbox-hogares" value="Hogar" name="consulta" >
             <label class="checkbox-label" for="checkbox-hogares">Hogares</label>
           </div>
 
@@ -51,7 +51,7 @@
           {{-- Seleccionar Motivo --}}
           <div class="fields-motivo">
             <p><b>Motivo:</b></p>
-            <input type="checkbox" class="select-checkbox select-checkbox-consultas" id="checkbox-consultas" name="motivoConsulta" value="consulta">
+            <input type="checkbox" class="select-checkbox select-checkbox-consultas" id="checkbox-consultas" name="motivoConsulta" value="consulta" checked="checked">
             <label class="checkbox-label" for="checkbox-consultas">Consultas</label>
             <input type="checkbox" class="select-checkbox select-checkbox-visita" id="checkbox-visitas" name="motivoVisita" value="visita">
             <label class="checkbox-label" for="checkbox-visitas">Solicitar una Visita</label>
@@ -60,7 +60,7 @@
           {{-- Seleccionar Servicios --}}
           <div class="fields-servicios">
             <p><b>Seleccione uno o más servicios:</b></p>
-            <button type="button" class="select-button-c" >
+            <button type="button" class="select-button-c selected" >
               <input class="servicios" hidden name="servicios[]" value="Desratización"  />
               Desratización
             </button>

@@ -203,49 +203,6 @@ $(function(){
   var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
   var campo_error = '';
 
-  $('.input-nombre').focusout(function(){
-    if($('.input-nombre').val() == "") {
-      $('.validar-campos').removeClass('d-none');
-      $("span.elementito").html("Ingrese un Nombre");
-    } else if ($('.input-nombre').val() != "") {
-      $('.validar-campos').addClass('d-none');
-    }
-  });
-  $('.input-correo').focusout(function(){
-    if($('.input-correo').val() == "" || !testEmail.test($('.input-correo').val())) {
-      $('.validar-campos').removeClass('d-none');
-      $("span.elementito").html("Ingrese un correo válido");
-    } else if ($('.input-correo').val() != "") {
-      $('.validar-campos').addClass('d-none');
-    }
-  });
-  $('.input-telefono').focusout(function(){
-    if($('.input-telefono').val() == "") {
-      $('.validar-campos').removeClass('d-none');
-      $("span.elementito").html("Ingrese un teléfono");
-    } else if ($('.input-telefono').val() != "") {
-      $('.validar-campos').addClass('d-none');
-    }
-  });
-  $('.input-direccion').focusout(function(){
-    if($('.input-direccion').val() == "") {
-      $('.validar-campos').removeClass('d-none');
-      $("span.elementito").html("Ingrese una dirección");
-    } else if ($('.input-direccion').val() != "") {
-      $('.validar-campos').addClass('d-none');
-    }
-  });
-  $('.mensaje').focusout(function(){
-    if($('.mensaje').val() == "") {
-      $('.validar-campos').removeClass('d-none');
-      $("span.elementito").html("Ingrese un Mensaje");
-    } else if ($('.mensaje').val() != "") {
-      $('.validar-campos').addClass('d-none');
-    }
-  });
-
-
-
   // Validacion de Envio: Formulario
   $.ajaxSetup({
     headers: {
@@ -298,6 +255,7 @@ $(function(){
       if (nombre.length > 0 && correo.length > 0 && testEmail.test(correo) && telefono.length > 0 && direccion.length > 0 && mensaje.length > 0){
 
         $('.mensaje-formulario .mensaje-cargando').toggleClass('d-none');
+        $("#boton-enviar").attr("disabled", true);
 
         $.post( form_action, {
           nombre: nombre,
@@ -325,16 +283,90 @@ $(function(){
             }
           }
         ).fail(function(data){
+          $('.mensaje-formulario .mensaje-cargando').toggleClass('d-none');
           $('.mensaje-formulario .mensaje-error').toggleClass('d-none');
           console.log('email fail '+data);
         });
 
       } else {
 
-        // $('.validar-campos-short').removeClass('d-none');
+        if (nombre.length <= 0) {
+          $('.validar-campos-short').removeClass('d-none');
+          $('.input-nombre').addClass('error');
+
+          $('.input-nombre').focusout(function(){
+            if($('.input-nombre').val() != "") {
+              $('.validar-campos-short').addClass('d-none');
+              $('.input-nombre').removeClass('error');
+            }
+          });
+        }
+
+        if (correo.length <= 0) {
+          $('.validar-campos-short').removeClass('d-none');
+          $('.input-correo').addClass('error');
+
+          $('.input-correo').focusout(function(){
+            if($('.input-correo').val() != "") {
+              $('.validar-campos-short').addClass('d-none');
+              $('.input-correo').removeClass('error');
+            }
+          });
+        }
+
+        if (telefono.length <= 0) {
+          $('.validar-campos-short').removeClass('d-none');
+          $('.input-telefono').addClass('error');
+
+          $('.input-telefono').focusout(function(){
+            if($('.input-telefono').val() != "") {
+              $('.validar-campos-short').addClass('d-none');
+              $('.input-telefono').removeClass('error');
+            }
+          });
+        }
+
+        if (direccion.length <= 0) {
+          $('.validar-campos-short').removeClass('d-none');
+          $('.input-direccion').addClass('error');
+
+          $('.input-direccion').focusout(function(){
+            if($('.input-direccion').val() != "") {
+              $('.validar-campos-short').addClass('d-none');
+              $('.input-direccion').removeClass('error');
+            }
+          });
+        }
+
+        if (mensaje.length <= 0) {
+          $('.validar-campos-short').removeClass('d-none');
+          $('.mensaje').addClass('error');
+
+          $('.mensaje').focusout(function(){
+            if($('.mensaje').val() != "") {
+              $('.validar-campos-short').addClass('d-none');
+              $('.mensaje').removeClass('error');
+            }
+          });
+        }
+
 
       }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
   });
 
 });
+//

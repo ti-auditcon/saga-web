@@ -29,7 +29,7 @@ class MailController extends Controller
            return response()->json(['errors' => $validator->errors()->all()]);
        }
 
-      Mail::to("info@sagaservice.cl")->send(new ContactMail($request->input()));
+      Mail::to("jberrioscifuentes@gmail.com")->send(new ContactMail($request->input()));
 
       if (Mail::failures()) {
         //dd('algo paso');

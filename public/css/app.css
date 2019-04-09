@@ -2058,6 +2058,8 @@ header {
       .contact-form .the-form form .fields-general input:focus {
         background: transparent;
         border: solid 1px rgba(103, 116, 127, 0.5); }
+    .contact-form .the-form form .fields-general input.error {
+      border: solid 1px red; }
     .contact-form .the-form form .fields-empresa input {
       font-family: 'Route 159', sans-serif;
       padding: 12px 11px;
@@ -2140,6 +2142,8 @@ header {
       .contact-form .the-form form textarea.mensaje:focus {
         background: transparent;
         border: solid 1px rgba(103, 116, 127, 0.5); }
+    .contact-form .the-form form textarea.error {
+      border: solid 1px red; }
     .contact-form .the-form form button.send-button {
       font-family: 'Route 159', sans-serif;
       padding: 10px;
@@ -2844,7 +2848,7 @@ footer {
     background: #50B308;
     color: white; }
   .mensaje-formulario .mensaje-error {
-    background: #67747F;
+    background: rgba(255, 0, 0, 0.4);
     color: black; }
 
 .mapa {

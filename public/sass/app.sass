@@ -2090,6 +2090,8 @@ header
           &:focus
             background: transparent
             border: solid 1px rgba($lightGray, 0.5)
+        input.error
+          border: solid 1px red
       .fields-empresa
         input
           font-family: 'Route 159', sans-serif
@@ -2165,6 +2167,8 @@ header
         &:focus
           background: transparent
           border: solid 1px rgba($lightGray, 0.5)
+      textarea.error
+        border: solid 1px red
       button.send-button
         font-family: 'Route 159', sans-serif
         padding: 10px
@@ -2961,7 +2965,7 @@ footer
     background: $ultraDarkGreen
     color: white
   .mensaje-error
-    background: $lightGray
+    background: rgba(red, 0.4)
     color: black
 
 // Mapa
