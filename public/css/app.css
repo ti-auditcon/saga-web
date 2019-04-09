@@ -2837,7 +2837,7 @@ footer {
     .mensaje-formulario .mensaje-cargando p, .mensaje-formulario .mensaje-enviado p, .mensaje-formulario .mensaje-error p {
       color: white; }
   .mensaje-formulario .mensaje-cargando {
-    background: #50B308;
+    background: #67747F;
     color: white; }
     .mensaje-formulario .mensaje-cargando p {
       padding-left: 40px;

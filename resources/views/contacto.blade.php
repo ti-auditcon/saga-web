@@ -19,7 +19,7 @@
       <form action="{{ route('ruta') }}" class="row formulario" id="captcha-form">
 
           <div class="validar-campos d-none animated fadeIn">
-            Revise los siguientes errores: <span class="elementito"></span>
+            Por favor, seleccione un servicio
           </div>
           <div class="validar-campos-short d-none animated fadeIn">
             Rellene los campos antes de enviar
@@ -43,7 +43,7 @@
           </div>
 
           {{-- Opcional: Data Empresa --}}
-          <div class="fields-empresa bd-none animated fast fadeIn" id="campos-datosEmpresa">
+          <div class="fields-empresa animated fast fadeIn" id="campos-datosEmpresa">
             <input type="text" name="nombreEmpresa" placeholder="Nombre de la Empresa" class="input-nombreEmpresa">
             <input type="text" name="direccionEmpresa" placeholder="Dirección de la Empresa" class="input-direccionEmpresa">
           </div>

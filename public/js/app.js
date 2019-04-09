@@ -252,7 +252,7 @@ $(function(){
       var mensaje = $(".mensaje").val();
       var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
 
-      if (nombre.length > 0 && correo.length > 0 && testEmail.test(correo) && telefono.length > 0 && direccion.length > 0 && mensaje.length > 0){
+      if (nombre.length > 0 && correo.length > 0 && testEmail.test(correo) && telefono.length > 0 && direccion.length > 0 && mensaje.length > 0 && $('button.select-button-c').hasClass('selected')){
 
         $('.mensaje-formulario .mensaje-cargando').toggleClass('d-none');
         $("#boton-enviar").attr("disabled", true);
@@ -349,6 +349,22 @@ $(function(){
             }
           });
         }
+
+        if (!$('.select-button-c').hasClass('selected')) {
+          $('.validar-campos').removeClass('d-none');
+
+          // $('.select-button-c').click(function(){
+          //   $('.validar-campos-short').addClass('d-none');
+          // });
+
+          // if ($('.select-button-c').hasClass('selected') {
+          //   $('.validar-campos-short').addClass('d-none');
+          // }
+        }
+
+        $('.select-button-c').click(function(){
+          $('.validar-campos').addClass('d-none');
+        });
 
 
       }
