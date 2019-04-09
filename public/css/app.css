@@ -331,6 +331,9 @@ small, .font_small {
     padding-left: 120px;
     padding-right: 120px; } }
 
+.d-none {
+  display: none !important; }
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -2809,6 +2812,40 @@ footer {
     .enviado h2 {
       font-size: 42px;
       margin-bottom: 48px; } }
+
+.validar-campos {
+  padding: 14px 20px;
+  background: #FFCCCC;
+  color: black;
+  margin-bottom: 34px; }
+
+.validar-campos-short {
+  padding: 14px 20px;
+  background: #FFCCCC;
+  color: black;
+  margin-bottom: 34px; }
+
+.mensaje-formulario {
+  font-size: 15px; }
+  .mensaje-formulario .mensaje-cargando, .mensaje-formulario .mensaje-enviado, .mensaje-formulario .mensaje-error {
+    padding: 14px 20px;
+    margin-top: 34px; }
+    .mensaje-formulario .mensaje-cargando p, .mensaje-formulario .mensaje-enviado p, .mensaje-formulario .mensaje-error p {
+      color: white; }
+  .mensaje-formulario .mensaje-cargando {
+    background: #50B308;
+    color: white; }
+    .mensaje-formulario .mensaje-cargando p {
+      padding-left: 40px;
+      padding-top: 4px;
+      padding-bottom: 0;
+      margin: 0; }
+  .mensaje-formulario .mensaje-enviado {
+    background: #50B308;
+    color: white; }
+  .mensaje-formulario .mensaje-error {
+    background: #67747F;
+    color: black; }
 
 .mapa {
   height: 400px; }

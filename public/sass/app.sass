@@ -147,6 +147,9 @@ small, .font_small
     padding-left: 120px
     padding-right: 120px
 
+.d-none
+  display: none !important
+
 // General Animations
 .animated
   -webkit-animation-duration: 1s
@@ -2925,6 +2928,41 @@ footer
       font-size: 42px
       // line-height: 42px
       margin-bottom: 48px
+
+.validar-campos
+  padding: 14px 20px
+  background: #FFCCCC
+  color: black
+  margin-bottom: 34px
+
+.validar-campos-short
+  padding: 14px 20px
+  background: #FFCCCC
+  color: black
+  margin-bottom: 34px
+
+.mensaje-formulario
+  font-size: 15px
+  .mensaje-cargando, .mensaje-enviado, .mensaje-error
+    padding: 14px 20px
+    margin-top: 34px
+    .lds-ripple
+    p
+      color: white
+  .mensaje-cargando
+    background: $ultraDarkGreen
+    color: white
+    p
+      padding-left: 40px
+      padding-top: 4px
+      padding-bottom: 0
+      margin: 0
+  .mensaje-enviado
+    background: $ultraDarkGreen
+    color: white
+  .mensaje-error
+    background: $lightGray
+    color: black
 
 // Mapa
 .mapa

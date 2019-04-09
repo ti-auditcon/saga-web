@@ -1,6 +1,7 @@
 @extends('layouts.app')
 @section('page-title')
 <title>Contacto - SAGA Service</title>
+<meta name="csrf-token" content="{{ csrf_token() }}">
 @endsection
 
 @section('content')
@@ -12,12 +13,17 @@
 
   {{-- Formulario --}}
   <section class="contact-form pd-lr">
-    {{-- <p class="contact-form-intro">Si tiene dudas, consultas o cualquier motivo por el que desea que sepamos de usted puede contactarnos personalmente desde su correo a info@sagaservice.cl<br><br>
-    También puede enviarnos un mensaje desde este formulario de contacto.</p> --}}
 
     <div class="the-form animated fadeIn slow">
-      {!! Form::open(['action' => 'MailController@sendmail','class'=>'row','method'=>'POST','id'=>'captcha-form']) !!}
+      {{-- {!! Form::open(['action' => 'route("ruta")','class'=>'row','method'=>'POST','id'=>'captcha-form']) !!} --}}
+      <form action="{{ route('ruta') }}" class="row formulario" id="captcha-form">
 
+          <div class="validar-campos d-none animated fadeIn">
+            Revise los siguientes errores: <span class="elementito"></span>
+          </div>
+          <div class="validar-campos-short d-none animated fadeIn">
+            Rellene los campos antes de enviar
+          </div>
 
           {{-- For: Selección: Empresa / Hogar --}}
           <div class="fields-for">
@@ -26,73 +32,76 @@
             <label class="checkbox-label" for="checkbox-empresa">Empresa</label>
             <input type="checkbox" class="select-checkbox select-checkbox-hogares" id="checkbox-hogares" value = "Hogar" name="consulta" >
             <label class="checkbox-label" for="checkbox-hogares">Hogares</label>
-            {{-- <button type="button" class="select-button button-empresa">
-              Empresa
-            </button>
-            <button type="button" class="select-button button-hogares">
-              Hogar
-            </button> --}}
           </div>
 
           {{-- Datos Generales: Nombre, Apellido, Correo, Numero --}}
           <div class="fields-general">
-            <input type="text" name="nombre" placeholder="Nombre">
-            <input type="text" name="email" placeholder="Correo">
-            <input type="text" name="telefono" placeholder="Número de Contacto">
-            <input type="text" name="direccion" placeholder="Dirección" class="animated fast fadeIn">
+            <input type="text" name="nombre" placeholder="Nombre" class="input-nombre">
+            <input type="text" name="email" placeholder="Correo" class="input-correo">
+            <input type="text" name="telefono" placeholder="Número de Contacto" class="input-telefono">
+            <input type="text" name="direccion" placeholder="Dirección" class="animated fast fadeIn input-direccion">
           </div>
 
           {{-- Opcional: Data Empresa --}}
           <div class="fields-empresa bd-none animated fast fadeIn" id="campos-datosEmpresa">
-            <input type="text" name="nombreEmpresa" placeholder="Nombre de la Empresa">
-            <input type="text" name="direccionEmpresa" placeholder="Dirección de la Empresa">
+            <input type="text" name="nombreEmpresa" placeholder="Nombre de la Empresa" class="input-nombreEmpresa">
+            <input type="text" name="direccionEmpresa" placeholder="Dirección de la Empresa" class="input-direccionEmpresa">
           </div>
 
           {{-- Seleccionar Motivo --}}
           <div class="fields-motivo">
             <p><b>Motivo:</b></p>
-            <input type="checkbox" class="select-checkbox select-checkbox-consultas" id="checkbox-consultas" name="motivo" value="consulta">
+            <input type="checkbox" class="select-checkbox select-checkbox-consultas" id="checkbox-consultas" name="motivoConsulta" value="consulta">
             <label class="checkbox-label" for="checkbox-consultas">Consultas</label>
-            <input type="checkbox" class="select-checkbox select-checkbox-visita" id="checkbox-visitas" name="motivo" value="visita">
+            <input type="checkbox" class="select-checkbox select-checkbox-visita" id="checkbox-visitas" name="motivoVisita" value="visita">
             <label class="checkbox-label" for="checkbox-visitas">Solicitar una Visita</label>
-            {{-- <button type="button" class="select-button-b">
-              Consultas Generales
-            </button>
-            <button type="button" class="select-button-b">
-              Solicitar una Visita
-            </button> --}}
           </div>
 
           {{-- Seleccionar Servicios --}}
           <div class="fields-servicios">
             <p><b>Seleccione uno o más servicios:</b></p>
             <button type="button" class="select-button-c" >
-              <input type="checkbox" hidden name="servicios[]" value="Desratización"  />
+              <input class="servicios" hidden name="servicios[]" value="Desratización"  />
               Desratización
             </button>
             <button type="button" class="select-button-c">
-              <input type="checkbox" hidden name="servicios[]" value="Sanitización"  />
+              <input class="servicios" hidden name="servicios[]" value="Sanitización"  />
               Sanitización
             </button>
             <button type="button" class="select-button-c">
-              <input type="checkbox" hidden name="servicios[]" value="Desinsectación"  />
+              <input class="servicios" hidden name="servicios[]" value="Desinsectación"  />
               Desinsectación
             </button>
             <button type="button" class="select-button-c">
-              <input type="checkbox" hidden name="servicios[]" value="Otras Plagas"  />
+              <input class="servicios" hidden name="servicios[]" value="Otras Plagas"  />
               Otras Plagas
             </button>
             <button type="button" class="select-button-c">
-              <input type="checkbox" hidden name="servicios[]" value="Ornamental"  />
-              Ornamental
+              <input class="servicios" hidden name="servicios[]" value="Jardinería"  />
+              Jardinería
             </button>
           </div>
 
           {{-- Mensaje --}}
           <textarea class="mensaje" placeholder="Describa su solicitud" name="mensaje"></textarea>
-          <button class="send-button" onClick="this.form.submit(); this.disabled=true; this.value='Enviando…'; " id="boton-enviar">Enviar</button>
 
-      {{Form::close()}}
+          <button class="send-button" id="boton-enviar">Enviar</button>
+
+          <div class="mensaje-formulario">
+            <div class="mensaje-cargando d-none animated fadeIn">
+              Cargando...
+            </div>
+            <div class="mensaje-enviado d-none animated fadeIn">
+              Mensaje Enviado. Nos contactaremos con usted a la brevedad.
+            </div>
+            <div class="mensaje-error d-none animated fadeIn">
+              Tuvimos problemas enviando su mensaje por este formulario, por favor contactenos directamente a info@sagaservice.cl.
+            </div>
+          </div>
+
+
+      {{-- {{Form::close()}} --}}
+      </form>
     </div>
   </section>
 
@@ -130,38 +139,8 @@
       </div>
     </div>
     <div class="mapa">
-      {{-- <div class="mapouter"> --}}
-        {{-- <div class="gmap_canvas"> --}}
-          <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Rauqu%C3%A9n%20441&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-          </iframe>
-        {{-- </div> --}}
-        <style>
-        /* .mapouter{text-align:right;height:500px;width:100%;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:100%;} */
-        </style>
-      {{-- </div> --}}
+      <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Av.%20Rauqu%C3%A9n%20441&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+      </iframe>
     </div>
   </section>
 @endsection
-
-{{-- @section('specialScripts')
-  <script>
-    // Initialize and add the map
-    function initMap() {
-      // The location of Uluru
-      var uluru = {lat: -34.9658882, lng: -71.2066924};
-      // The map, centered at Uluru
-      var map = new google.maps.Map(
-          document.getElementById('map'), {zoom: 15, center: uluru});
-      // The marker, positioned at Uluru
-      var marker = new google.maps.Marker({position: uluru, map: map});
-    }
-  </script>
-  <!--Load the API from the specified URL
-  * The async attribute allows the browser to render the page while the API loads
-  * The key parameter will contain your own API key (which is not needed for this tutorial)
-  * The callback parameter executes the initMap() function
-  -->
-  <script async defer
-  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_hhejFMvhP3S4rt0jwlcE3YHACYV0b0&callback=initMap">
-  </script>
-@endsection --}}

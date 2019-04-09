@@ -196,4 +196,145 @@ $(function(){
     autoStart: true,
 
   });
+
+
+  // Validacion de Campos: Formulario
+
+  var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+  var campo_error = '';
+
+  $('.input-nombre').focusout(function(){
+    if($('.input-nombre').val() == "") {
+      $('.validar-campos').removeClass('d-none');
+      $("span.elementito").html("Ingrese un Nombre");
+    } else if ($('.input-nombre').val() != "") {
+      $('.validar-campos').addClass('d-none');
+    }
+  });
+  $('.input-correo').focusout(function(){
+    if($('.input-correo').val() == "" || !testEmail.test($('.input-correo').val())) {
+      $('.validar-campos').removeClass('d-none');
+      $("span.elementito").html("Ingrese un correo válido");
+    } else if ($('.input-correo').val() != "") {
+      $('.validar-campos').addClass('d-none');
+    }
+  });
+  $('.input-telefono').focusout(function(){
+    if($('.input-telefono').val() == "") {
+      $('.validar-campos').removeClass('d-none');
+      $("span.elementito").html("Ingrese un teléfono");
+    } else if ($('.input-telefono').val() != "") {
+      $('.validar-campos').addClass('d-none');
+    }
+  });
+  $('.input-direccion').focusout(function(){
+    if($('.input-direccion').val() == "") {
+      $('.validar-campos').removeClass('d-none');
+      $("span.elementito").html("Ingrese una dirección");
+    } else if ($('.input-direccion').val() != "") {
+      $('.validar-campos').addClass('d-none');
+    }
+  });
+  $('.mensaje').focusout(function(){
+    if($('.mensaje').val() == "") {
+      $('.validar-campos').removeClass('d-none');
+      $("span.elementito").html("Ingrese un Mensaje");
+    } else if ($('.mensaje').val() != "") {
+      $('.validar-campos').addClass('d-none');
+    }
+  });
+
+
+
+  // Validacion de Envio: Formulario
+  $.ajaxSetup({
+    headers: {
+      'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+  });
+
+  $("#boton-enviar").click(function(e) {
+      e.preventDefault();
+      var form_action = $('.formulario').attr('action');
+
+      // Consultar para
+      var tipo = '';
+      if ( $('.select-checkbox-empresa').is(':checked') ) {
+        var tipo = 'Empresa';
+      } else if ( $('.select-checkbox-hogares').is(':checked') ) {
+        var tipo = 'Hogar';
+      }
+      // console.log(checkEmpresa);
+
+      // Datos Generales
+      var nombre = $(".input-nombre").val();
+      var correo = $(".input-correo").val();
+      var telefono = $(".input-telefono").val();
+      var direccion = $(".input-direccion").val();
+
+      // Datos Generales: Empresa
+      var nombreEmpresa = $(".input-nombreEmpresa").val();
+      var direccionEmpresa = $(".input-direccionEmpresa").val();
+
+      // Motivo:
+      var motivo = '';
+      if ( $('.select-checkbox-consultas').is(':checked') ) {
+        motivo = 'Consulta'
+      } else if ( $('.select-checkbox-visita').is(':checked') ) {
+        motivo = 'Solicitud de Visita'
+      }
+
+      // Servicios:
+      var servicios = '';
+      var inputs = $('button.selected .servicios');
+      servicios = [].map.call(inputs, function( input ) {
+        return input.value;
+      })
+
+      // Mensaje:
+      var mensaje = $(".mensaje").val();
+      var testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+
+      if (nombre.length > 0 && correo.length > 0 && testEmail.test(correo) && telefono.length > 0 && direccion.length > 0 && mensaje.length > 0){
+
+        $('.mensaje-formulario .mensaje-cargando').toggleClass('d-none');
+
+        $.post( form_action, {
+          nombre: nombre,
+          email: correo,
+          telefono: telefono,
+          direccion: direccion,
+          mensaje: mensaje,
+          nombreEmpresa: nombreEmpresa,
+          direccionEmpresa: direccionEmpresa,
+          tipo: tipo,
+          motivo: motivo,
+          servicios: servicios
+        } ).done(function(data) {
+
+            console.log('email send');
+
+            if (data['errors']) {
+              $.each(data['errors'], function( index, value ){});
+            } else {
+              $('.mensaje-formulario .mensaje-cargando').toggleClass('d-none');
+              $('.mensaje-formulario .mensaje-enviado').toggleClass('d-none')
+              .delay(4000).queue(function(){
+                $('.mensaje-formulario .mensaje-enviado').toggleClass('d-none').dequeue();
+              });
+            }
+          }
+        ).fail(function(data){
+          $('.mensaje-formulario .mensaje-error').toggleClass('d-none');
+          console.log('email fail '+data);
+        });
+
+      } else {
+
+        // $('.validar-campos-short').removeClass('d-none');
+
+      }
+
+  });
+
 });

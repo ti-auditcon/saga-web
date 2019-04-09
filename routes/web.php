@@ -26,11 +26,12 @@ Route::get('/saga', function () {
 Route::get('/contacto', function () {
     return view('contacto');
 });
-Route::get('/enviado', function () {
-    return view('enviado');
-});
+// Route::get('/enviado', function () {
+//     return view('enviado');
+// });
 
-Route::post('/enviado', 'MailController@sendmail');
+// Route::post('/enviado', 'MailController@sendmail');
+Route::post('/enviado', 'MailController@sendmail')->name('ruta');
 
 // Servicios Empresas
 Route::get('/servicios/empresas/desratizacion', function () {
