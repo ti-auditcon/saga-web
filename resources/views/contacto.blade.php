@@ -95,7 +95,7 @@
               Mensaje Enviado. Nos contactaremos con usted a la brevedad.
             </div>
             <div class="mensaje-error d-none animated fadeIn">
-              Tuvimos problemas enviando su mensaje por este formulario, por favor contactenos directamente a info@sagaservice.cl.
+              Tuvimos problemas enviando su mensaje por este formulario, por favor contáctenos directamente a info@sagaservice.cl.
             </div>
           </div>
 
