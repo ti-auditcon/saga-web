@@ -5,13 +5,26 @@
 
 @section('content')
   {{-- Title Section --}}
-  <section class="title-section pd-lr" style="background-image: url('{{asset('/img/img-porque-saga.jpg')}}')">
+  <section class="title-section pd-lr hero" style="background-image: url('{{asset('/img/img-porque-saga.jpg')}}')">
     <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/saga_icon.png') }}">
     <h1 class="animated fadeIn ultra-slow">¿Porqué elegir SAGA?</h1>
+    <a id="myBtn" class="cta-button cta-button-hero button-color-blue color-white ">Ver Política de Empresa</a>
   </section>
+ <!-- Trigger/Open The Modal -->
 
+
+ <!-- The Modal -->
+ <div id="myModal" class="modal">
+ 
+   <!-- Modal content -->
+   <div class="modal-content">
+     <span class="closeModal">&times;</span>
+     <embed src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://sagaservice.cl/pdf/saga2020.pdf" width="500" height="375">
+   </div>
+ 
+ </div> 
   {{-- Comp --}}
-  <section class="comp pd-lr background-blue color-white">
+  <section class="comp pd-lr background-blue color-white ">
     <h2 data-aos="fade-in" data-aos-duration="800">Nuestro compromiso es<br>realizar bien nuestro trabajo</h2>
     {{-- <div class="equipo-wrapper">
       <img src="../img/equipo.jpg" alt="Equipo Saga">
@@ -98,4 +111,75 @@
     </div>
     <div class="item-img" style="background-image: url('{{ asset('/img/cta_en-accion.jpg') }}')"></div>
   </section>
+@endsection
+
+@section('style')
+<style>
+  .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.closeModal {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+</style>
+@endsection
+
+@section('specialScripts')
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("closeModal")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+//hen the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+} 
+</script>
 @endsection

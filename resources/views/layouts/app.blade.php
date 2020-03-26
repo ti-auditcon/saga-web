@@ -11,6 +11,7 @@
       <link rel="stylesheet" href="{{ asset('/css/aos.min.css') }}">
       <link rel="stylesheet" href="{{ asset('/css/chocolat.css') }}" type="text/css" media="screen" charset="utf-8">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+      @yield('style')
 
       {{-- Favicons --}}
       <link rel="apple-touch-icon-precomposed" sizes="57x57" href="{{ asset('/fav/apple-touch-icon-57x57.png') }}" />
