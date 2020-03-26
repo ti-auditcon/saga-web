@@ -8,7 +8,8 @@
   <section class="title-section pd-lr hero" style="background-image: url('{{asset('/img/img-porque-saga.jpg')}}')">
     <img class="animated fadeIn ultra-slow" src="{{ asset('/icons/saga_icon.png') }}">
     <h1 class="animated fadeIn ultra-slow">¿Porqué elegir SAGA?</h1>
-    <a  class="cta-button cta-button-hero button-color-blue color-white " href="https://drive.google.com/viewerng/viewer?url=https://sagaservice.cl/pdf/saga2020.pdf" target="_blank">Ver Política de Empresa</a>
+    <br>
+    <a class="cta-button cta-button-hero button-color-blue color-white" href="https://sagaservice.cl/pdf/saga2020.pdf" target="_blank">Ver Política de Empresa</a>
   </section>
  <!-- Trigger/Open The Modal -->
 
