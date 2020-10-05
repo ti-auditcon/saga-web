@@ -119,7 +119,7 @@
         <img src="{{ asset('/icons/contacto_telefono.png') }}">
         <div class="item-inner">
           <h3>Llámenos al</h3>
-          <p>(75) 2 590 148<br>
+          <p>(75) 2 397 706<br>
             +56 9 656 58 526
           </p>
         </div>

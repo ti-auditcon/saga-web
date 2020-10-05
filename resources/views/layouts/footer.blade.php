@@ -30,7 +30,7 @@
           <img src="{{ asset('/icons/icono_llamenos.png') }}">
           <p>
             <small>Llámenos al</small><br>
-            <a href="teL:+56752223696" id="boton-numero-fijo">(75) 2 590 148</a><br>
+            <a href="teL:+56752397706" id="boton-numero-fijo">(75) 2 397 706</a><br>
             <a href="teL:+56965658526" id="boton-numero-celular">(9) 656 58 526</a>
           </p>
         </div>
@@ -38,7 +38,7 @@
           <img src="{{ asset('/icons/icono_contactenos.png') }}">
           <p>
             <small>Contáctenos a</small><br>
-            <a href="mailto:info@sagaservice.cl" id="boton-email">info@sagaservice.cl</a>
+            <a href="mailto:depto.rrhhsagaservice@gmail.com" id="boton-email">depto.rrhhsagaservice@gmail.com</a>
           </p>
         </div>
         {{-- <div class="item">

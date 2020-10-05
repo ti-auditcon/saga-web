@@ -30,7 +30,8 @@
           <a class="animated fadeIn" href="{{url('/saga')}}">¿Por qué SAGA?</a>
           {{-- <a class="animated fadeIn" href="{{url('/contacto')}}">Contacto</a> --}}
         {{-- </ul> --}}
-        <a class="button-cta-header animated fadeIn" href="{{url('/contacto')}}" id="boton-solicitar-visita">Solicitar Visita</a>
+        {{-- <a class="button-cta-header animated fadeIn" href="{{url('/contacto')}}" id="boton-solicitar-visita">Solicitar Visita</a> --}}
+        <a class="button-cta-header animated fadeIn" href="#" id="boton-solicitar-visita">Iniciar Sesión</a>
       </nav>
     </div>
 

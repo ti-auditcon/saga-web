@@ -20,7 +20,8 @@
     </div>
     <h1 class="hero-title animated fadeIn ultra-slow">Controla tus plagas de manera limpia, segura y profesional</h1>
     <p class="animated fadeIn ultra-slow">Más de 20 años de experiencia nos avalan. La cercanía con nuestros clientes y trabajos garantizados nos identifican como líderes en el control fitosanitario de empresas y hogares en el centro-sur de Chile</p>
-    <a class="cta-button cta-button-hero button-color-blue color-white animated fadeIn ultra-slow" href="#">Saber más</a>
+    {{-- <a class="cta-button cta-button-hero button-color-blue color-white animated fadeIn ultra-slow" href="#">Saber más</a> --}}
+    <a class="cta-button button-color-blue color-white animated fadeIn ultra-slow" href="{{url('/contacto')}}">Solicitar Visita</a>
   </section>
 
   {{-- Clientes --}}
