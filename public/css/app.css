@@ -521,7 +521,7 @@ small, .font_small {
 }
 
 .color-blue {
-  color: #0459D3;
+  color: #0D3478;
 }
 
 .color-greenLight {
@@ -553,7 +553,7 @@ small, .font_small {
 }
 
 .background-blue {
-  background: #0459D3;
+  background: #0D3478;
 }
 
 .background-greenLight {
@@ -633,7 +633,7 @@ header .header-menu button.hamburger {
 }
 header .header-menu .main-menu {
   position: absolute;
-  background: #0459D3;
+  background: #0D3478;
   width: 100%;
   height: 100vh;
   left: 0;
@@ -813,7 +813,7 @@ header .header-menu .sh {
   }
 }
 .darkHeader {
-  background: #0459D3;
+  background: #0D3478;
   position: fixed;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
@@ -824,7 +824,7 @@ header .header-menu .sh {
 }
 .darkHeader .header-menu .main-menu .button-cta-header {
   background: white;
-  color: #0459D3;
+  color: #0D3478;
   -webkit-transition: all ease-in-out 0.3s;
   -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
@@ -913,7 +913,7 @@ header .header-menu .sh {
 }
 .hero .cta-button {
   width: auto;
-  background: #0459D3;
+  background: #0D3478;
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
@@ -1037,7 +1037,7 @@ header .header-menu .sh {
 }
 .clientes::before {
   content: "";
-  background: #0459D3;
+  background: #0D3478;
   position: absolute;
   width: 100%;
   height: 90%;
@@ -1582,7 +1582,7 @@ header .header-menu .sh {
 .present::before {
   content: "";
   position: absolute;
-  background: #0459D3;
+  background: #0D3478;
   left: 0;
   right: 0;
   top: 0;
