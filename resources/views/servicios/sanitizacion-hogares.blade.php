@@ -17,7 +17,7 @@
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
       <div class="img" style="background-image: url('/img/servicios_sanitizacion.jpg')"></div>
-      <div class="data background-gray">
+      <div class="data background-charcoal">
         <h3>¿Porqué es Importante?</h3>
         <p>La multiplicación y reproducción de los microorganismos se produce a gran escala siendo capaces de sobrevivir a diversos medio ambientes. Su transmisión es muy fácil y puede producirse al contacto con las superficies infectadas o de persona a persona, dejándonos propensos a enfermedades contagiosas.</p>
         <h3>Beneficios</h3>

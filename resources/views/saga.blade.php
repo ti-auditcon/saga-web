@@ -88,7 +88,7 @@
   </section>
 
   {{-- Marcas --}}
-  <section class="marcas pd-lr background-lightGray">
+  <section class="marcas pd-lr background-realGray">
     <h2 class="present-title" data-aos="fade-in" data-aos-duration="400">
       Grandes marcas respaldan nuestro profesionalismo
     </h2>

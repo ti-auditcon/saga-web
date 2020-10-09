@@ -6,11 +6,16 @@
 @import 'hamburger'
 
 // Colores
-$mainBlue: #0459D3
-$mainBlue: #0d3977
-$mainBlue: #022E7A // textos
-$mainBlue: #0D3478 // textos
-$mainDarkBlue: #0449AD
+// $mainBlue: #0459D3 // OLD
+// $mainBlue: #0d3977
+// $mainBlue: #022E7A // textos
+// $mainBlue: #0D3478 // textos
+// $mainBlue: #465663 // textos
+// $mainBlue: #224868 // textos
+// $mainBlue: #0D395D // textos
+// $mainDarkBlue: #0449AD // OLD
+$mainBlue: #123E63
+$mainDarkBlue: #082E4E
 $lightGreen: #81DF20
 $ultraLightGreen: #97E448
 $darkGreen: #58C408
@@ -18,6 +23,7 @@ $ultraDarkGreen: #50B308
 $brown: #54291E
 $realGray: #465663
 $lightGray: #67747F
+$charcoal: #2f4658
 
 /* General */
 
@@ -27,6 +33,9 @@ html
 
 body
   font-family: 'Route 159', Helvetica, sans-serif
+  text-rendering: optimizeLegibility
+  -webkit-font-smoothing: antialized
+  -moz-osx-font-smoothing: grayscale
   font-weight: 400
   line-height: 1.45
 
@@ -247,6 +256,9 @@ small, .font_small
 .color-lightGray
   color: $lightGray
 
+.color-realGray
+  color: $realGray
+
 .background-white
   background: white
 
@@ -270,6 +282,12 @@ small, .font_small
 
 .background-lightGray
   background: $lightGray
+
+.background-realGray
+  background: $realGray
+
+.background-charcoal
+  background: $charcoal
 
 // General Buttons
 .cta-button
@@ -336,21 +354,23 @@ header
         width: 100%
         text-align: center
         display: block
-        color: rgba(white, 1)
+        color: white
         font-size: 18px
         line-height: 22px
         text-decoration: none
         letter-spacing: 0.2px
         margin-bottom: 24px
         padding-bottom: 2px
+        font-weight: 500
         transition: all ease-in-out 0.2s
         &:hover
-          color: rgba(white, 0.7)
+          // color: rgba(white, 1)
+          // font-weight: 600
       .button-cta-header
         background: $ultraDarkGreen
         color: rgba(white, 1)
         text-decoration: none
-        font-weight: 600
+        font-weight: 500
         padding: 11px 16px
         font-size: 14px
         display: block
@@ -431,6 +451,7 @@ header
           padding: 9px 20px
           height: auto
           margin-left: 5px
+          margin-right: 0
           transition: all ease-in-out 0.2s
           &:hover
             background: $darkGreen
@@ -452,9 +473,10 @@ header
         // ul
         a
           letter-spacing: 0.5px
-          margin-right: 40px
+          margin-right: 44px
         .button-cta-header
           margin-left: 7px
+          // margin-right: 0
       .sh
 
 @media (min-width: 1400px)
@@ -471,7 +493,7 @@ header
         .hamburger
         // ul
         a
-          margin-right: 48px
+          margin-right: 58px
           &:last-child
             margin-right: 0
         .button-cta-header
@@ -507,13 +529,12 @@ header
   .header-menu
     .main-menu
       .button-cta-header
-        background: white
-        color: $mainBlue
+        background: $darkGreen
+        color: white
         transition: all ease-in-out 0.3s
         &:hover
-          background: $darkGreen
           color: white
-          // background: $mainDarkBlue
+          background: $lightGreen
 
 @media (min-width: 667px)
   .darkHeader
@@ -574,19 +595,20 @@ header
     line-height: 36px
     font-size: 27px
   p
-    color: white
+    color: rgba(white, 1)
     font-size: 14px
     line-height: 20px
+    font-weight: 300
     margin-bottom: 28px
   .cta-button
     width: auto
-    background: $mainBlue
+    background: $mainDarkBlue
     transition: all ease-in-out 0.2s
-    -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.3)
-    -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.3)
-    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.3)
+    -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2)
+    -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2)
+    box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2)
     &:hover
-      background: $mainDarkBlue
+      background: $mainBlue
       -webkit-box-shadow: 0px 4px 17px 0px rgba(0,0,0,0)
       -moz-box-shadow: 0px 4px 17px 0px rgba(0,0,0,0)
       box-shadow: 0px 4px 17px 0px rgba(0,0,0,0)
@@ -604,7 +626,7 @@ header
       line-height: 40px
       font-size: 30px
     p
-      color: white
+      // color: white
       font-size: 15px
       line-height: 22px
       margin-bottom: 28px
@@ -1173,6 +1195,7 @@ header
     display: grid
     .item
       background: $realGray
+      background: $charcoal
       padding: 35px 32px 38px
       margin-bottom: 18px
       border-radius: 4px
@@ -1199,7 +1222,7 @@ header
         -moz-box-shadow: 0px 7px 36px 0px rgba(0,0,0,0)
         box-shadow: 0px 7px 36px 0px rgba(0,0,0,0)
     .item-1
-      background-image: url('../img/back_none.jpg')
+      background-image: url('../img/back_none.png')
       background-size: cover
       background-position: center
       -moz-transition: all ease 0.3s
@@ -1210,7 +1233,7 @@ header
       &:hover
         background-image: url('../img/present_point1.jpg')
     .item-2
-      background-image: url('../img/back_none.jpg')
+      background-image: url('../img/back_none.png')
       background-size: cover
       background-position: -130px
       background-position: center
@@ -1222,7 +1245,7 @@ header
       &:hover
         background-image: url('../img/present_point2.jpg')
     .item-3
-      background-image: url('../img/back_none.jpg')
+      background-image: url('../img/back_none.png')
       background-size: cover
       background-position: center
       -moz-transition: all ease 0.3s
@@ -1233,7 +1256,7 @@ header
       &:hover
         background-image: url('../img/present_point5.jpg')
     .item-4
-      background-image: url('../img/back_none.jpg')
+      background-image: url('../img/back_none.png')
       background-size: cover
       background-position: -75px
       -moz-transition: all ease 0.3s
@@ -1244,7 +1267,7 @@ header
       &:hover
         background-image: url('../img/present_point6.jpg')
     .item-5
-      background-image: url('../img/back_none.jpg')
+      background-image: url('../img/back_none.png')
       background-size: cover
       background-position: center
       -moz-transition: all ease 0.3s
@@ -1255,7 +1278,7 @@ header
       &:hover
         background-image: url('../img/present_point7.jpg')
     .item-6
-      background-image: url('../img/back_none.jpg')
+      background-image: url('../img/back_none.png')
       background-size: cover
       background-position: center
       -moz-transition: all ease 0.3s
@@ -1649,9 +1672,9 @@ header
       font-size: 14px
     .cta-button-visita
       transition: all ease-in-out 0.2s
-      -webkit-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.3)
-      -moz-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.3)
-      box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.3)
+      -webkit-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.2)
+      -moz-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.2)
+      box-shadow: 0px 3px 15px 0px rgba(0,0,0,0.2)
       &:hover
         -webkit-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0)
         -moz-box-shadow: 0px 3px 15px 0px rgba(0,0,0,0)
@@ -2176,7 +2199,7 @@ header
         background: $ultraDarkGreen
         border: none
         color: white
-        font-weight: 600
+        font-weight: 500
         margin-top: 12px
         cursor: pointer
         transition: all ease-in-out 0.2s
@@ -2423,7 +2446,7 @@ header
   .ubicacion
     display: grid
     grid-template-columns: 0.4fr 0.6fr
-    background: $lightGray
+    background: $realGray
     .datos-direccion
       align-self: center
       padding: 60px 33px 58px
@@ -2522,6 +2545,7 @@ header
 /* Footer */
 footer
   background: $realGray
+  background: $charcoal
   color: white
   padding-bottom: 24px
   overflow: hidden
@@ -2534,7 +2558,7 @@ footer
     align-items: center
     align-content: center
     padding: 30px 0 26px
-    border-bottom: solid 1px #67747F
+    border-bottom: solid 1px $realGray
     .item
       img
         // width: 20px
@@ -2581,9 +2605,10 @@ footer
           color: white
           text-decoration: none
           transition: all ease-in-out 0.2s
-          opacity: 1
+          opacity: 0.8
+          // opacity: 0.7
           &:hover
-            opacity: 0.8
+            opacity: 1
         a.rrss-links
           img
             width: 25px
@@ -2620,14 +2645,17 @@ footer
       ul
         a
           display: block
-          color: #C5CACF
+          // color: #929EA8
+          color: #FFFFFF
+          font-weight: 400
+          // color: #91A3B0
           text-decoration: none
           font-size: 14px
           margin-bottom: 2.5px
-          opacity: 1
+          opacity: 0.6
           transition: all ease-in-out 0.2s
           &:hover
-            opacity: 0.7
+            opacity: 0.9
     .rrss-atencion
       // text-align: center
       margin-top: 8px
@@ -2637,22 +2665,29 @@ footer
       p
         color: white
         font-size: 14px
+        font-weight: 500
         margin-bottom: 12px
+        span
+          // opacity: 0.8
+          font-weight: 300
   .copy
     padding: 42px 0 0
     p
       margin-bottom: 0
       text-align: center
-      color: rgba(#C5CACF, 0.8)
+      // color: rgba(#C5CACF, 0.8)
+      color: #929EA8
       font-size: 11px
+      font-weight: 400
       a
         color: white
         text-decoration: none
-        border-bottom: solid 1px white
+        // border-bottom: solid 1px white
         transition: all ease 0.3s
-        opacity: 0.8
+        opacity: 0.6
         &:hover, &:focus
-          border-bottom: solid 1px transparent
+          opacity: 0.8
+          // border-bottom: solid 1px transparent
 
 @media (min-width: 667px)
   footer
@@ -2764,8 +2799,8 @@ footer
     .copy
       padding: 28px 0 0
       p
-        font-size: 13px
-        line-height: 20px
+        font-size: 12px
+        line-height: 18px
         letter-spacing: 0.1px
         a
 
@@ -2859,8 +2894,8 @@ footer
     .copy
       padding: 28px 0 0
       p
-        font-size: 13px
-        line-height: 21px
+        // font-size: 13px
+        // line-height: 21px
         a
 
 @media (min-width: 1600px)

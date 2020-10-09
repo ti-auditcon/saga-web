@@ -17,7 +17,7 @@
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
       <div class="img" style="background-image: url('/img/ornamentacion2.jpg')"></div>
-      <div class="data background-gray">
+      <div class="data background-charcoal">
         <h3>¿En qué consiste?</h3>
         <p>El servicio de jardineria de SAGA Service cierra el ciclo integral de servicios de control de plagas. Consiste en la mantención y conservación de jardines logrando un ambiente controlado, higiénico y estético.</p>
         <p>De esta manera su jardín no solo estará libre de plagas, sino que también contribuirá a ofrecer una mejor imágen de su empresa u hogar.</p>

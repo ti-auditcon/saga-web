@@ -81,6 +81,34 @@ p {
 }
 @font-face {
   font-family: "Route 159";
+  src: url("../fonts/Route159-Light.eot");
+  src: url("../fonts/Route159-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Route159-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Route 159";
+  src: url("../fonts/Route159-LightItalic.eot");
+  src: url("../fonts/Route159-LightItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Route159-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Route 159";
+  src: url("../fonts/Route159-SemiBold.eot");
+  src: url("../fonts/Route159-SemiBold.eot?#iefix") format("embedded-opentype"), url("../fonts/Route159-SemiBold.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Route 159";
+  src: url("../fonts/Route159-SemiBoldItalic.eot");
+  src: url("../fonts/Route159-SemiBoldItalic.eot?#iefix") format("embedded-opentype"), url("Route159-SemiBoldItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Route 159";
   src: url("../fonts/Route159-Bold.eot");
   src: url("../fonts/Route159-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Route159-Bold.woff") format("woff");
   font-weight: 600;
@@ -238,6 +266,9 @@ html {
 
 body {
   font-family: "Route 159", Helvetica, sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialized;
+  -moz-osx-font-smoothing: grayscale;
   font-weight: 400;
   line-height: 1.45;
 }
@@ -521,7 +552,7 @@ small, .font_small {
 }
 
 .color-blue {
-  color: #0D3478;
+  color: #123E63;
 }
 
 .color-greenLight {
@@ -548,12 +579,16 @@ small, .font_small {
   color: #67747F;
 }
 
+.color-realGray {
+  color: #465663;
+}
+
 .background-white {
   background: white;
 }
 
 .background-blue {
-  background: #0D3478;
+  background: #123E63;
 }
 
 .background-greenLight {
@@ -578,6 +613,14 @@ small, .font_small {
 
 .background-lightGray {
   background: #67747F;
+}
+
+.background-realGray {
+  background: #465663;
+}
+
+.background-charcoal {
+  background: #2f4658;
 }
 
 .cta-button {
@@ -633,7 +676,7 @@ header .header-menu button.hamburger {
 }
 header .header-menu .main-menu {
   position: absolute;
-  background: #0D3478;
+  background: #123E63;
   width: 100%;
   height: 100vh;
   left: 0;
@@ -667,18 +710,16 @@ header .header-menu .main-menu a {
   letter-spacing: 0.2px;
   margin-bottom: 24px;
   padding-bottom: 2px;
+  font-weight: 500;
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
-}
-header .header-menu .main-menu a:hover {
-  color: rgba(255, 255, 255, 0.7);
 }
 header .header-menu .main-menu .button-cta-header {
   background: #50B308;
   color: white;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   padding: 11px 16px;
   font-size: 14px;
   display: block;
@@ -762,6 +803,7 @@ header .header-menu .sh {
     padding: 9px 20px;
     height: auto;
     margin-left: 5px;
+    margin-right: 0;
     -webkit-transition: all ease-in-out 0.2s;
     -o-transition: all ease-in-out 0.2s;
     transition: all ease-in-out 0.2s;
@@ -782,7 +824,7 @@ header .header-menu .sh {
   }
   header .header-menu .main-menu a {
     letter-spacing: 0.5px;
-    margin-right: 40px;
+    margin-right: 44px;
   }
   header .header-menu .main-menu .button-cta-header {
     margin-left: 7px;
@@ -794,7 +836,7 @@ header .header-menu .sh {
     height: 158px;
   }
   header .header-menu .main-menu a {
-    margin-right: 48px;
+    margin-right: 58px;
   }
   header .header-menu .main-menu a:last-child {
     margin-right: 0;
@@ -813,7 +855,7 @@ header .header-menu .sh {
   }
 }
 .darkHeader {
-  background: #0D3478;
+  background: #123E63;
   position: fixed;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
@@ -823,15 +865,15 @@ header .header-menu .sh {
   padding-top: 4px;
 }
 .darkHeader .header-menu .main-menu .button-cta-header {
-  background: white;
-  color: #0D3478;
+  background: #58C408;
+  color: white;
   -webkit-transition: all ease-in-out 0.3s;
   -o-transition: all ease-in-out 0.3s;
   transition: all ease-in-out 0.3s;
 }
 .darkHeader .header-menu .main-menu .button-cta-header:hover {
-  background: #58C408;
   color: white;
+  background: #81DF20;
 }
 
 @media (min-width: 667px) {
@@ -909,19 +951,20 @@ header .header-menu .sh {
   color: white;
   font-size: 14px;
   line-height: 20px;
+  font-weight: 300;
   margin-bottom: 28px;
 }
 .hero .cta-button {
   width: auto;
-  background: #0D3478;
+  background: #082E4E;
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
-  -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
 }
 .hero .cta-button:hover {
-  background: #0449AD;
+  background: #123E63;
   -webkit-box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0);
   box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0);
 }
@@ -941,7 +984,6 @@ header .header-menu .sh {
     font-size: 30px;
   }
   .hero p {
-    color: white;
     font-size: 15px;
     line-height: 22px;
     margin-bottom: 28px;
@@ -1037,7 +1079,7 @@ header .header-menu .sh {
 }
 .clientes::before {
   content: "";
-  background: #0D3478;
+  background: #123E63;
   position: absolute;
   width: 100%;
   height: 90%;
@@ -1582,7 +1624,7 @@ header .header-menu .sh {
 .present::before {
   content: "";
   position: absolute;
-  background: #0D3478;
+  background: #123E63;
   left: 0;
   right: 0;
   top: 0;
@@ -1609,6 +1651,7 @@ header .header-menu .sh {
 }
 .present .items .item {
   background: #465663;
+  background: #2f4658;
   padding: 35px 32px 38px;
   margin-bottom: 18px;
   border-radius: 4px;
@@ -1640,7 +1683,7 @@ header .header-menu .sh {
   box-shadow: 0px 7px 36px 0px rgba(0, 0, 0, 0);
 }
 .present .items .item-1 {
-  background-image: url("../img/back_none.jpg");
+  background-image: url("../img/back_none.png");
   background-size: cover;
   background-position: center;
   -webkit-transition: all ease 0.3s;
@@ -1651,7 +1694,7 @@ header .header-menu .sh {
   background-image: url("../img/present_point1.jpg");
 }
 .present .items .item-2 {
-  background-image: url("../img/back_none.jpg");
+  background-image: url("../img/back_none.png");
   background-size: cover;
   background-position: -130px;
   background-position: center;
@@ -1663,7 +1706,7 @@ header .header-menu .sh {
   background-image: url("../img/present_point2.jpg");
 }
 .present .items .item-3 {
-  background-image: url("../img/back_none.jpg");
+  background-image: url("../img/back_none.png");
   background-size: cover;
   background-position: center;
   -webkit-transition: all ease 0.3s;
@@ -1674,7 +1717,7 @@ header .header-menu .sh {
   background-image: url("../img/present_point5.jpg");
 }
 .present .items .item-4 {
-  background-image: url("../img/back_none.jpg");
+  background-image: url("../img/back_none.png");
   background-size: cover;
   background-position: -75px;
   -webkit-transition: all ease 0.3s;
@@ -1685,7 +1728,7 @@ header .header-menu .sh {
   background-image: url("../img/present_point6.jpg");
 }
 .present .items .item-5 {
-  background-image: url("../img/back_none.jpg");
+  background-image: url("../img/back_none.png");
   background-size: cover;
   background-position: center;
   -webkit-transition: all ease 0.3s;
@@ -1696,7 +1739,7 @@ header .header-menu .sh {
   background-image: url("../img/present_point7.jpg");
 }
 .present .items .item-6 {
-  background-image: url("../img/back_none.jpg");
+  background-image: url("../img/back_none.png");
   background-size: cover;
   background-position: center;
   -webkit-transition: all ease 0.3s;
@@ -2143,8 +2186,8 @@ header .header-menu .sh {
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
-  -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
-  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.2);
 }
 .cta-visita .item-data .cta-button-visita:hover {
   -webkit-box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0);
@@ -2618,7 +2661,7 @@ header .header-menu .sh {
   background: #50B308;
   border: none;
   color: white;
-  font-weight: 600;
+  font-weight: 500;
   margin-top: 12px;
   cursor: pointer;
   -webkit-transition: all ease-in-out 0.2s;
@@ -2887,7 +2930,7 @@ header .header-menu .sh {
     display: grid;
     -ms-grid-columns: 0.4fr 0.6fr;
     grid-template-columns: 0.4fr 0.6fr;
-    background: #67747F;
+    background: #465663;
   }
   .ubicacion .datos-direccion {
     -ms-flex-item-align: center;
@@ -3006,6 +3049,7 @@ header .header-menu .sh {
 /* Footer */
 footer {
   background: #465663;
+  background: #2f4658;
   color: white;
   padding-bottom: 24px;
   overflow: hidden;
@@ -3023,7 +3067,7 @@ footer .certificaciones {
   -ms-flex-line-pack: center;
       align-content: center;
   padding: 30px 0 26px;
-  border-bottom: solid 1px #67747F;
+  border-bottom: solid 1px #465663;
 }
 footer .certificaciones .item img {
   height: 30px;
@@ -3083,10 +3127,10 @@ footer .the-footer .info-contacto .item a {
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
-  opacity: 1;
+  opacity: 0.8;
 }
 footer .the-footer .info-contacto .item a:hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 footer .the-footer .info-contacto .item a.rrss-links img {
   width: 25px;
@@ -3132,17 +3176,18 @@ footer .the-footer .footer-menus h5 {
 }
 footer .the-footer .footer-menus ul a {
   display: block;
-  color: #C5CACF;
+  color: #FFFFFF;
+  font-weight: 400;
   text-decoration: none;
   font-size: 14px;
   margin-bottom: 2.5px;
-  opacity: 1;
+  opacity: 0.6;
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
 }
 footer .the-footer .footer-menus ul a:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 footer .the-footer .rrss-atencion {
   margin-top: 8px;
@@ -3154,7 +3199,11 @@ footer .the-footer .rrss-atencion h5 {
 footer .the-footer .rrss-atencion p {
   color: white;
   font-size: 14px;
+  font-weight: 500;
   margin-bottom: 12px;
+}
+footer .the-footer .rrss-atencion p span {
+  font-weight: 300;
 }
 footer .copy {
   padding: 42px 0 0;
@@ -3162,20 +3211,20 @@ footer .copy {
 footer .copy p {
   margin-bottom: 0;
   text-align: center;
-  color: rgba(197, 202, 207, 0.8);
+  color: #929EA8;
   font-size: 11px;
+  font-weight: 400;
 }
 footer .copy p a {
   color: white;
   text-decoration: none;
-  border-bottom: solid 1px white;
   -webkit-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
-  opacity: 0.8;
+  opacity: 0.6;
 }
 footer .copy p a:hover, footer .copy p a:focus {
-  border-bottom: solid 1px transparent;
+  opacity: 0.8;
 }
 
 @media (min-width: 667px) {
@@ -3298,8 +3347,8 @@ footer .copy p a:hover, footer .copy p a:focus {
     padding: 28px 0 0;
   }
   footer .copy p {
-    font-size: 13px;
-    line-height: 20px;
+    font-size: 12px;
+    line-height: 18px;
     letter-spacing: 0.1px;
   }
 }
@@ -3400,10 +3449,6 @@ footer .copy p a:hover, footer .copy p a:focus {
   }
   footer .copy {
     padding: 28px 0 0;
-  }
-  footer .copy p {
-    font-size: 13px;
-    line-height: 21px;
   }
 }
 @media (min-width: 1600px) {

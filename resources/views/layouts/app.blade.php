@@ -7,7 +7,7 @@
       @yield('page-title')
 
       {{-- css --}}
-      <link rel="stylesheet" href="{{ asset('/css/app.css') }}?v=2">
+      <link rel="stylesheet" href="{{ asset('/css/app.css') }}?v=3">
       <link rel="stylesheet" href="{{ asset('/css/aos.min.css') }}">
       <link rel="stylesheet" href="{{ asset('/css/chocolat.css') }}" type="text/css" media="screen" charset="utf-8">
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">

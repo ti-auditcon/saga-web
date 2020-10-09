@@ -106,7 +106,7 @@
   </section>
 
   {{-- Dirección y Mapa --}}
-  <section class="ubicacion background-lightGray">
+  <section class="ubicacion background-charcoal">
     <div class="datos-direccion">
       <div class="item">
         <img src="{{ asset('/icons/contacto_ubicacion.png') }}">

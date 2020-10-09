@@ -17,7 +17,7 @@
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
       <div class="img" style="background-image: url('/img/servicios_desinsectacion.jpg')"></div>
-      <div class="data background-gray">
+      <div class="data background-charcoal">
         <h3>¿Qué hacemos?</h3>
         <p>Controlamos plagas de insectos de características voladores (moscas, zancudos, polillas, mosquitos, avispas, etc), rastreros (hormigas, cucarachas, pulgas, tijeretas, termitas, coleopteros, etc) y arácnidos (arañas de rincón).</p>
         <h3>¿Porqué es Importante?</h3>

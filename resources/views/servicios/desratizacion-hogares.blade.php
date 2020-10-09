@@ -18,7 +18,7 @@
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
       <div class="img" style="background-image: url('/img/servicios_desratizacion1.jpg')"></div>
-      <div class="data background-gray">
+      <div class="data background-charcoal">
         <h3>¿Cómo lo hacemos?</h3>
         <p>Mediante la implementación de medidas culturales y cebaderas de control específico, controlamos de manera altamente efectiva la población de roedores, en busca de su protección sanitaria y económica. El realizar seguimientos periódicos, con mayor énfasis en las estaciones de invierno y verano nos garantiza un mayor control debido a su alta natalidad.</p>
         <h3>¿Podríamos cuantificar estos daños económicamente?</h3>

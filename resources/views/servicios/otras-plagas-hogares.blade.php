@@ -17,7 +17,7 @@
 
     <div class="present-why present-why-servicios" data-aos="fade-up">
       <div class="img" style="background-image: url('/img/servicios_otras-plagas.jpg')"></div>
-      <div class="data background-gray">
+      <div class="data background-charcoal">
         <h3>¿Porqué es importante?</h3>
         <p>Las palomas y los murciélagos transmiten enfermedades, sin embargo forman parte importante de la cadena biológica y del ecosistema (los murciélagos, por ejemplo, son buenos controladores de plagas), por lo que es necesario aplicar métodos de erradicación del lugar sobrepoblado de estos, sin eliminarlos.</p>
         <p>Controlamos estos vectores para evitar la trasmisión de enfermedades infecciosas así como el daño estructural y ambiental.</p>
