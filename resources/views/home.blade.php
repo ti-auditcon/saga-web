@@ -6,18 +6,12 @@
 @section('content')
   {{-- Hero --}}
   <section class="hero pd-lr">
-    <video autoplay muted loop id="heroVideo">
+    {{-- <video autoplay muted loop id="heroVideo">
       <source class="sourceVideo" src="{{ asset('/img/hero_x.mp4')}}" type="video/mp4">
-    </video>
-    <div class="slider">
-      <div class="slider-img" style="background-image: url('{{ asset('/img/responsive/1-5.jpg') }}');"></div>
-      <div class="slider-img" style="background-image: url('{{ asset('/img/responsive/2.jpg') }}');"></div>
-      <div class="slider-img" style="background-image: url('{{ asset('/img/responsive/3.jpg') }}');"></div>
-      <div class="slider-img" style="background-image: url('{{ asset('/img/responsive/4.jpg') }}');"></div>
-      <div class="slider-img" style="background-image: url('{{ asset('/img/responsive/5.jpg') }}');"></div>
-      <div class="slider-img" style="background-image: url('{{ asset('/img/responsive/6.jpg') }}');"></div>
-      <div class="slider-img" style="background-image: url('{{ asset('/img/responsive/7.jpg') }}');"></div>
-    </div>
+    </video> --}}
+    {{-- <div class="slider">
+      <div class="slider-img" style="background-image: url('{{ asset('/img/desinsectacion.jpg') }}');"></div>
+    </div> --}}
     <h1 class="hero-title animated fadeIn ultra-slow">Controla tus plagas de manera limpia, segura y profesional</h1>
     <p class="animated fadeIn ultra-slow">Más de 20 años de experiencia nos avalan. La cercanía con nuestros clientes y trabajos garantizados nos identifican como líderes en el control fitosanitario de empresas y hogares en el centro-sur de Chile</p>
     {{-- <a class="cta-button cta-button-hero button-color-blue color-white animated fadeIn ultra-slow" href="#">Saber más</a> --}}

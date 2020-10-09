@@ -8,8 +8,8 @@
         <h4 style="color: #81DF20;">Certificaciones &<br>Membresias</h4>
       </div>
       <div class="item">
-        <img src="{{ asset('/icons/icono_certificado.png') }}">
-        <h4>ISO 9001</h4>
+        <img src="{{ asset('/icons/asr.png') }}">
+        <h4>ISO 9001: 2015</h4>
       </div>
       <div class="item">
         <img src="{{ asset('/icons/icono_certificado.png') }}">
@@ -38,7 +38,7 @@
           <img src="{{ asset('/icons/icono_contactenos.png') }}">
           <p>
             <small>Contáctenos a</small><br>
-            <a href="mailto:depto.rrhhsagaservice@gmail.com" id="boton-email">depto.rrhhsagaservice@gmail.com</a>
+            <a href="mailto:info@sagaservice.cl" id="boton-email">info@sagaservice.cl</a>
           </p>
         </div>
         {{-- <div class="item">

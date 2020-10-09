@@ -857,7 +857,7 @@ header .header-menu .sh {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  height: 120vh;
+  height: 100vh;
   text-align: center;
   background: url("../img/back-hero-index30.jpg");
   background-position: 75% 50%;
@@ -926,7 +926,7 @@ header .header-menu .sh {
   box-shadow: 0px 4px 17px 0px rgba(0, 0, 0, 0);
 }
 
-@media (min-height: 520px) {
+@media (orientation: landscape) {
   .hero {
     height: 100vh;
   }
@@ -950,7 +950,6 @@ header .header-menu .sh {
 @media (min-width: 667px) {
   .hero {
     padding: 54px 92px 0 92px;
-    background: transparent;
     background-position: center;
   }
   .hero h1 {
@@ -963,6 +962,10 @@ header .header-menu .sh {
     line-height: 26px;
     letter-spacing: 0.1px;
     margin-bottom: 34px;
+  }
+  .hero .slider-img {
+    height: 100vh;
+    background-position: center;
   }
 }
 @media (min-width: 900px) {
@@ -981,9 +984,6 @@ header .header-menu .sh {
   }
   .hero #heroVideo {
     display: inherit;
-  }
-  .hero .bx-wrapper {
-    display: none;
   }
 }
 @media (min-width: 1200px) {
@@ -1654,6 +1654,7 @@ header .header-menu .sh {
   background-image: url("../img/back_none.jpg");
   background-size: cover;
   background-position: -130px;
+  background-position: center;
   -webkit-transition: all ease 0.3s;
   -o-transition: all ease 0.3s;
   transition: all ease 0.3s;
@@ -3025,7 +3026,7 @@ footer .certificaciones {
   border-bottom: solid 1px #67747F;
 }
 footer .certificaciones .item img {
-  width: 20px;
+  height: 30px;
   vertical-align: middle;
   margin-right: 6px;
   margin-bottom: 10px;
@@ -3035,6 +3036,9 @@ footer .certificaciones .item h4 {
   margin: 0;
   display: inline-block;
   font-size: 13px;
+}
+footer .certificaciones .item:first-child img {
+  width: 30px;
 }
 footer .the-footer {
   padding-top: 34px;
@@ -3189,7 +3193,6 @@ footer .copy p a:hover, footer .copy p a:focus {
   }
   footer .certificaciones .item img {
     margin: 0;
-    width: 25px;
     margin-right: 12px;
   }
   footer .certificaciones .item h4 {
@@ -3271,6 +3274,9 @@ footer .copy p a:hover, footer .copy p a:focus {
   }
 }
 @media (min-width: 900px) {
+  footer .certificaciones .item img {
+    height: 38px;
+  }
   footer .the-footer {
     -ms-grid-columns: 1.4fr 1.1fr 1fr 0.9fr;
     grid-template-columns: 1.4fr 1.1fr 1fr 0.9fr;
@@ -3355,7 +3361,6 @@ footer .copy p a:hover, footer .copy p a:focus {
     padding-bottom: 40px;
   }
   footer .certificaciones .item img {
-    width: 28px;
     margin-right: 14px;
   }
   footer .certificaciones .item h4 {
