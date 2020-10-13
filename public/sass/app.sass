@@ -560,6 +560,7 @@ header
   height: 100vh
   text-align: center
   background: url('../img/back-hero-index30.jpg')
+  background: url('../img/back-hero-index60.jpg')
   background-position: 75% 50%
   background-repeat: no-repeat
   background-size: cover
@@ -568,6 +569,16 @@ header
   align-content: center
   position: relative
   overflow: hidden
+  &::before
+    content: ''
+    position: absolute
+    background: rgba(black, 0.3)
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
   .bx-wrapper
     background: transparent
     border: none
@@ -722,6 +733,7 @@ header
   &::before
     content: ''
     background: $mainBlue
+    background: $ultraDarkGreen
     position: absolute
     width: 100%
     height: 90%
