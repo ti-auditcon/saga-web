@@ -141,6 +141,7 @@ $(function(){
         // {src:'/lightbox/11.jpg'},
         // {src:'/lightbox/30.jpg'},
         {src:'/lightbox/42.jpg'},
+        {src:'/lightbox/50.jpg'},
         {src:'/lightbox/33.jpg'}],
       duration: 600,
       imageSize: 'contain'
@@ -191,7 +192,8 @@ $(function(){
     auto: true,
     pause: 3000,
     autoStart: true,
-
+    infiniteLoop: true,
+    // touchEnabled: true
   });
 
 
