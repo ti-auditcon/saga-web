@@ -120,11 +120,13 @@
     <div class="items" data-aos="fade-in" data-aos-duration="800">
       <img class="item" src="{{ asset('/icons/marcas_chv.png') }}">
       <img class="item" src="{{ asset('/icons/marcas_arauco.png') }}">
-      <img class="item" src="{{ asset('/icons/marcas_montes.png') }}">
+      {{-- <img class="item" src="{{ asset('/icons/marcas_montes.png') }}"> --}}
+      <img class="item" src="{{ asset('/icons/marcas_delmonte.png') }}">
       <img class="item" src="{{ asset('/icons/marcas_dole.png') }}">
       <img class="item" src="{{ asset('/icons/marcas_copefrut.png') }}">
       <img class="item" src="{{ asset('/icons/marcas_david.png') }}">
       <img class="item" src="{{ asset('/icons/marcas_puertas.png') }}">
+      <img class="item" src="{{ asset('/icons/marcas_esmax.png') }}">
     </div>
   </section>
 @endsection
