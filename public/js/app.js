@@ -115,8 +115,8 @@ $(function(){
         {src:'/lightbox/39.jpg'},
         {src:'/lightbox/2.jpg'},
         {src:'/lightbox/3.jpg'},
-        {src:'/lightbox/4.jpg'},
-        {src:'/lightbox/5.jpg'},
+        // {src:'/lightbox/4.jpg'},
+        // {src:'/lightbox/5.jpg'},
         {src:'/lightbox/40.jpg'},
         {src:'/lightbox/41.jpg'}],
       duration: 600,
@@ -128,7 +128,7 @@ $(function(){
       images: [
         {src:'/lightbox/16.jpg'},
         {src:'/lightbox/49.jpg'},
-        {src:'/lightbox/11.jpg'},
+        {src:'/lightbox/44.jpg'},
         {src:'/lightbox/12.jpg'},
         {src:'/lightbox/35.jpg'}],
       duration: 600,
@@ -152,7 +152,7 @@ $(function(){
     {
       images: [
         // {src:'/lightbox/7.jpg'},
-        {src:'/lightbox/25.jpg'},
+        // {src:'/lightbox/25.jpg'},
         {src:'/lightbox/10.jpg'},
         // {src:'/lightbox/8.jpg'},
         {src:'/lightbox/27.jpg'},
@@ -165,7 +165,7 @@ $(function(){
   $('.chocolat-personalizada').Chocolat(
     {
       images: [
-        {src:'/lightbox/38.jpg'},
+        // {src:'/lightbox/38.jpg'},
         {src:'/lightbox/46.jpg'},
         {src:'/lightbox/48.jpg'},
       ],
@@ -179,7 +179,7 @@ $(function(){
         // {src:'/lightbox/31.jpg'},
         // {src:'/lightbox/32.jpg'},
         {src:'/lightbox/33.jpg'},
-        {src:'/lightbox/43.jpg'},
+        // {src:'/lightbox/43.jpg'},
       ],
       duration: 600,
       imageSize: 'contain'

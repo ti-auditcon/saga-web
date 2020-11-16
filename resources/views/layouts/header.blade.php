@@ -1,3 +1,6 @@
+{{-- Botón Whatsapp --}}
+<a class="whatsapp-button" href="https://wa.me/56965658526/?text=Hola,%20quisiera%20consultar%20por%20sus%20servicios"></a>
+
 <header class="main-header pd-lr animated fast">
 
   <div class="inner-header">
