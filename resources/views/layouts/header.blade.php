@@ -1,6 +1,19 @@
 {{-- Botón Whatsapp --}}
 <a class="whatsapp-button" href="https://wa.me/56965658526/?text=Hola,%20quisiera%20consultar%20por%20sus%20servicios"></a>
 
+<div class="contact-bar">
+  <div class="contact-bar-inner">
+    <div class="item">
+      <span>Llámenos a </span>
+      <a href="tel:+56965658526">+56 9 656 58 526</a>
+    </div>
+    <div class="item">
+      <span>Contáctenos a </span>
+      <a href="mailto:info@sagaservice.cl">info@sagaservice.cl</a>
+    </div>
+  </div>
+</div>
+
 <header class="main-header pd-lr animated fast">
 
   <div class="inner-header">

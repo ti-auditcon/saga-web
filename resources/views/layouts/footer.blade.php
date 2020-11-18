@@ -30,8 +30,8 @@
           <img src="{{ asset('/icons/icono_llamenos.png') }}">
           <p>
             <small>Llámenos al</small><br>
-            <a href="teL:+56752397706" id="boton-numero-fijo">(75) 2 397 706</a><br>
-            <a href="teL:+56965658526" id="boton-numero-celular">(9) 656 58 526</a>
+            <a href="tel:+56752397706" id="boton-numero-fijo">(75) 2 397 706</a><br>
+            <a href="tel:+56965658526" id="boton-numero-celular">(9) 656 58 526</a>
           </p>
         </div>
         <div class="item">

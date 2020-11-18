@@ -650,11 +650,11 @@ small, .font_small {
   margin: auto;
   text-align: center;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 10px 22px;
   font-size: 14px;
   font-weight: 600;
   letter-spacing: 0.3px;
-  border-radius: 2px;
+  border-radius: 4px;
 }
 
 .cta-button-hero {
@@ -665,12 +665,110 @@ small, .font_small {
   width: 140px;
 }
 
+.contact-bar {
+  position: absolute;
+  z-index: 9999;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding-top: 18px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: auto;
+  color: white;
+}
+.contact-bar .contact-bar-inner {
+  background-color: rgba(255, 255, 255, 0.12);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 12.5px;
+  padding: 6px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+.contact-bar .contact-bar-inner a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #58C408;
+  color: #81DF20;
+}
+.contact-bar .contact-bar-inner span {
+  display: none;
+}
+.contact-bar .contact-bar-inner .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (min-width: 667px) {
+  .contact-bar {
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .contact-bar .contact-bar-inner {
+    -ms-flex-wrap: no-wrap;
+        flex-wrap: no-wrap;
+    padding: 8px 14px;
+  }
+  .contact-bar .contact-bar-inner span {
+    display: inherit;
+    margin-right: 4px;
+  }
+}
+@media (min-width: 900px) {
+  .contact-bar {
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .contact-bar .contact-bar-inner {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+}
+@media (min-width: 1200px) {
+  .contact-bar {
+    padding-top: 24px;
+    padding-left: 85px;
+    padding-right: 85px;
+  }
+  .contact-bar .contact-bar-inner {
+    padding: 10px 20px;
+  }
+}
+@media (min-width: 1400px) {
+  .contact-bar {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  .contact-bar .contact-bar-inner {
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 1600px) {
+  .contact-bar {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
 /* Header */
 header {
   position: absolute;
-  top: 0;
+  top: 40px;
   width: 100%;
-  z-index: 999;
+  z-index: 9999;
   -webkit-transition: all ease 0.4s;
   -o-transition: all ease 0.4s;
   transition: all ease 0.4s;
@@ -700,8 +798,8 @@ header .header-menu .main-menu {
   background: #123E63;
   width: 100%;
   height: 100vh;
+  top: -40px;
   left: 0;
-  top: 0;
   right: 0;
   padding: 94px 24px 52px 24px;
   display: -webkit-box;
@@ -709,11 +807,11 @@ header .header-menu .main-menu {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -ms-flex-line-pack: stretch;
-      align-content: stretch;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 header .header-menu .main-menu .hamburger {
   position: absolute;
@@ -726,11 +824,9 @@ header .header-menu .main-menu a {
   display: block;
   color: white;
   font-size: 18px;
-  line-height: 22px;
   text-decoration: none;
   letter-spacing: 0.2px;
-  margin-bottom: 24px;
-  padding-bottom: 2px;
+  margin-bottom: 44px;
   font-weight: 500;
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
@@ -766,14 +862,14 @@ header .header-menu .sh {
 }
 
 @media (min-width: 667px) {
+  header {
+    top: 38px;
+  }
   header .inner-header {
     height: 130px;
   }
   header .header-branding img.logo {
     width: 135px;
-  }
-  header .header-menu .main-menu .button-cta-header {
-    border-radius: 2px;
   }
 }
 @media (min-width: 900px) {
@@ -837,6 +933,9 @@ header .header-menu .sh {
   }
 }
 @media (min-width: 1200px) {
+  header {
+    top: 32px;
+  }
   header .inner-header {
     height: 158px;
   }
@@ -877,6 +976,7 @@ header .header-menu .sh {
 }
 .darkHeader {
   background: #123E63;
+  top: 0;
   position: fixed;
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25);
@@ -884,6 +984,9 @@ header .header-menu .sh {
 .darkHeader .inner-header {
   height: 70px;
   padding-top: 4px;
+}
+.darkHeader .header-menu .main-menu {
+  top: 0;
 }
 .darkHeader .header-menu .main-menu .button-cta-header {
   background: #58C408;
@@ -993,6 +1096,7 @@ header .header-menu .sh {
   width: auto;
   z-index: 99;
   background: #082E4E;
+  border-radius: 4px;
   -webkit-transition: all ease-in-out 0.2s;
   -o-transition: all ease-in-out 0.2s;
   transition: all ease-in-out 0.2s;
@@ -1014,11 +1118,6 @@ header .header-menu .sh {
   }
 }
 @media (min-width: 350px) {
-  .hero h1 {
-    margin-bottom: 21px;
-    line-height: 40px;
-    font-size: 30px;
-  }
   .hero p {
     font-size: 15px;
     line-height: 22px;

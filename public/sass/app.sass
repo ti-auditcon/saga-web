@@ -314,12 +314,12 @@ small, .font_small
   // color: white
   text-align: center
   text-decoration: none
-  padding: 10px 20px
+  padding: 10px 22px
   font-size: 14px
   font-weight: 600
   letter-spacing: 0.3px
   // text-transform: uppercase
-  border-radius: 2px
+  border-radius: 4px
 
 .cta-button-hero
   width: 120px
@@ -330,12 +330,105 @@ small, .font_small
 // .button-color-blue
 //   background: $mainBlue
 
+.contact-bar
+  position: absolute
+  z-index: 9999
+  left: 0
+  right: 0
+  width: 100%
+  padding:
+    // top: 20px
+    top: 18px
+    left: 16px
+    right: 16px
+  margin: auto
+  color: white
+  .contact-bar-inner
+    // background-color: red
+    background-color: rgba(white, 0.12)
+    width: 100%
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    // font-size: 13px
+    font-size: 12.5px
+    padding: 6px 12px
+    box-sizing: border-box
+    border-radius: 4px
+    a
+      text-decoration: none
+      font-weight: 600
+      color: $darkGreen
+      color: $lightGreen
+    span
+      display: none
+    .item
+      display: flex
+
+@media (min-width: 667px)
+  .contact-bar
+    padding:
+      top: 20px
+      left: 30px
+      right: 30px
+    .contact-bar-inner
+      // display: flex
+      flex-wrap: no-wrap
+      // padding: 6px 12px
+      padding: 8px 14px
+      // font-size: 15px
+      span
+        display: inherit
+        margin-right: 4px
+
+@media (min-width: 900px)
+  .contact-bar
+    padding:
+      top: 20px
+      left: 40px
+      right: 40px
+    .contact-bar-inner
+      padding: 10px 16px
+      font-size: 13px
+
+@media (min-width: 1200px)
+  .contact-bar
+    padding:
+      top: 24px
+      left: 85px
+      right: 85px
+    .contact-bar-inner
+      padding: 10px 20px
+
+@media (min-width: 1400px)
+  .contact-bar
+    padding:
+      // top: 24px
+      left: 120px
+      right: 120px
+    .contact-bar-inner
+      max-width: 1300px
+      margin:
+        left: auto
+        right: auto
+      // padding: 10px 20px
+
+
+@media (min-width: 1600px)
+  .contact-bar
+    padding:
+      // top: 24px
+      left: 120px
+      right: 120px
+    .contact-bar-inner
+      // padding: 10px 20px
+
 /* Header */
 header
   position: absolute
-  top: 0
+  top: 40px
   width: 100%
-  z-index: 999
+  z-index: 9999
   transition: all ease 0.4s
   .inner-header
     height: 98px
@@ -355,14 +448,16 @@ header
       background: $mainBlue
       width: 100%
       height: 100vh
+      top: -40px
       left: 0
-      top: 0
       right: 0
       padding: 94px 24px 52px 24px
       display: flex
       flex-wrap: wrap
-      align-items: stretch
-      align-content: stretch
+      align-items: center
+      align-content: center
+      // align-items: stretch
+      // align-content: stretch
       .hamburger
         position: absolute
         right: 16px
@@ -373,11 +468,12 @@ header
         display: block
         color: white
         font-size: 18px
-        line-height: 22px
+        // line-height: 22px
         text-decoration: none
         letter-spacing: 0.2px
-        margin-bottom: 24px
-        padding-bottom: 2px
+        margin-bottom: 44px
+        // margin-bottom: 18px
+        // padding-bottom: 2px
         font-weight: 500
         transition: all ease-in-out 0.2s
         &:hover
@@ -411,6 +507,7 @@ header
 
 @media (min-width: 667px)
   header
+    top: 38px
     .inner-header
       height: 130px
     .header-branding
@@ -424,7 +521,7 @@ header
           // width: auto
         .button-cta-header
           // width: auto
-          border-radius: 2px
+          // border-radius: 2px
       .sh
 
 @media (min-width: 900px)
@@ -477,6 +574,7 @@ header
 
 @media (min-width: 1200px)
   header
+    top: 32px
     .inner-header
       height: 158px
     .header-branding
@@ -536,6 +634,7 @@ header
 
 .darkHeader
   background: $mainBlue
+  top: 0
   position: fixed
   -webkit-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25)
   -moz-box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.25)
@@ -545,6 +644,7 @@ header
     padding-top: 4px
   .header-menu
     .main-menu
+      top: 0
       .button-cta-header
         background: $darkGreen
         color: white
@@ -635,6 +735,7 @@ header
     width: auto
     z-index: 99
     background: $mainDarkBlue
+    border-radius: 4px
     transition: all ease-in-out 0.2s
     -webkit-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2)
     -moz-box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.2)
@@ -654,9 +755,9 @@ header
 @media (min-width: 350px)
   .hero
     h1
-      margin-bottom: 21px
-      line-height: 40px
-      font-size: 30px
+      // margin-bottom: 21px
+      // line-height: 40px
+      // font-size: 30px
     p
       // color: white
       font-size: 15px
